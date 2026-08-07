@@ -1,0 +1,6 @@
+# Keep LF in the repo. The workflow's `run:` blocks are executed by bash on
+# ubuntu-latest, and CRLF there causes "command not found" style failures.
+* text=auto eol=lf
+*.py text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf

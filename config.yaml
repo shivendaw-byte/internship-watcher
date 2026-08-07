@@ -1,0 +1,169 @@
+# ---------------------------------------------------------------------------
+# Internship watcher config
+#
+# You are a sophomore in the 2026-27 academic year, so the target is
+# SUMMER 2027 internships. Most of these postings open Aug 2026 - Jan 2027.
+# ---------------------------------------------------------------------------
+
+# Email digest settings (credentials live in .env / GitHub Secrets, not here)
+email:
+  subject_prefix: "[Internship Watch]"
+  # If nothing new appears for this many days, send a short "still running"
+  # note anyway. A silent watcher is indistinguishable from a broken one.
+  heartbeat_days: 7
+
+match:
+  # A posting must contain at least one of these to count as an internship.
+  # Keep this generous -- an extra email costs you nothing, a miss costs a lot.
+  include_any:
+    - intern
+    - internship
+    - "co-op"
+    - coop
+    - "summer analyst"
+    - "summer associate"
+    - "summer business analyst"
+    - apprentice
+    - student
+    - "early career"
+    - "campus hire"
+    - "undergraduate"
+    - "insight program"
+    - "spring week"
+    - "sophomore"
+    - "launch program"
+    - "explore program"
+
+  # ...but drop it if it matches any of these (grad-level or wrong audience).
+  exclude_any:
+    - mba
+    - "ph.d"
+    - phd
+    - doctoral
+    - postdoc
+    - "advanced degree"
+    - "experienced hire"
+    - "master's student"
+    - "masters student"
+
+  # Matching any of these marks the posting HIGH PRIORITY in the email
+  # (bubbled to the top, flagged in the subject line).
+  priority_any:
+    - "2027"
+    - sophomore
+    - "second year"
+    - "first year"
+    - "rising junior"
+    - "summer 2027"
+
+  # Optional: only keep postings whose location mentions one of these.
+  # Empty list = no location filtering. Note that many sources do not expose a
+  # location at all, and those are always kept rather than silently dropped.
+  locations_any:
+    - "United States"
+    - "New York"
+    - "Purchase"
+    - "Harrison"
+    - "Atlanta"
+    - "Philadelphia"
+    - "Boston"
+    - "Chicago"
+    - "San Francisco"
+    - "Austin"
+    - "Washington"
+    - "Miami"
+    - "Foster City"
+    - "Ashburn"
+    - "Remote"
+
+sources:
+  # --- verified working -----------------------------------------------------
+  - name: Mastercard
+    type: workday
+    host: mastercard.wd1.myworkdayjobs.com
+    tenant: mastercard
+    site: CorporateCareers
+    # Workday ignores server-side search, so we pull the whole board and filter
+    # locally. Raise max_results if the board grows past this.
+    max_results: 1400
+
+  - name: Visa
+    type: workday
+    host: visa.wd5.myworkdayjobs.com
+    tenant: visa
+    site: Visa
+    max_results: 1400
+
+  - name: EY / EY-Parthenon
+    type: successfactors
+    base_url: "https://careers.ey.com/ey"
+    search_terms: ["intern", "summer", "parthenon"]
+    max_results: 100
+
+  - name: Google
+    type: google_careers
+    urls:
+      - "https://www.google.com/about/careers/applications/jobs/results?target_level=INTERN_AND_APPRENTICE&location=United%20States&sort_by=date"
+      - "https://www.google.com/about/careers/applications/jobs/results?q=intern%202027&location=United%20States&sort_by=date"
+
+  # --- community-curated lists ---------------------------------------------
+  # These are usually the FIRST place a sophomore-eligible posting shows up --
+  # often days before the company's own careers page is worth checking.
+  #
+  # The three underclassmen repos are already curated for your class year, so
+  # they run with `filter: false` (every row is relevant by definition and the
+  # keyword filter would wrongly drop entries like "Microsoft Explore").
+
+  - name: "Underclassmen Opportunities (Cruz-Lopez)"
+    type: github_markdown
+    repo: Jose-Gael-Cruz-Lopez/underclassmen-opportunities
+    branch: main
+    filter: false
+
+  - name: "Underclassmen Opportunities (LuisaE)"
+    type: github_markdown
+    repo: LuisaE/opportunities
+    branch: master
+    filter: false
+
+  - name: "Underclassmen Internships (zapplyjobs)"
+    type: github_markdown
+    repo: zapplyjobs/underclassmen-internships
+    branch: main
+    filter: false
+
+  # Not underclassmen-specific and much larger, so the keyword/location filter
+  # stays ON here to keep the volume sane.
+  - name: "Summer 2027 Internships (vanshb03)"
+    type: github_markdown
+    repo: vanshb03/Summer2027-Internships
+    branch: main
+
+  # Publishes an explicit Open / Not Yet Open status per program, so this
+  # catches the exact moment a PM/APM internship opens.
+  - name: "APM List (PM internships)"
+    type: apmlist
+    buckets: ["internship"]
+    statuses: ["Open"]
+    may_be_empty: true
+
+# ---------------------------------------------------------------------------
+# Deliberately NOT included, and why:
+#
+#   simplify.jobs/dashboard
+#       Your personal logged-in dashboard. Scraping it needs your session
+#       cookie, which would mean storing your credentials in a repo. Not worth
+#       it -- Simplify's underlying listings largely mirror the GitHub repos
+#       above, which are public and need no auth. Keep using Simplify manually
+#       for autofill and tracking.
+#
+#   intern-list.com
+#       Renders client-side from jobright.ai. Its only public endpoint returns
+#       aggregate counts (166k jobs), not listings, and it is not curated for
+#       underclassmen. Nothing reliable to parse.
+#
+#   interninsider.me
+#       Listings are injected by JavaScript; the served HTML has no job data.
+#       Would need a headless browser for a source that mostly duplicates the
+#       repos above.
+# ---------------------------------------------------------------------------

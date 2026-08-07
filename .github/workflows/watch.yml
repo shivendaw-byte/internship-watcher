@@ -1,0 +1,64 @@
+name: internship-watch
+
+on:
+  schedule:
+    # Every 3 hours. GitHub cron is UTC and can lag by several minutes under
+    # load, which is fine -- postings stay open for days, not minutes.
+    - cron: "0 */3 * * *"
+  workflow_dispatch:        # lets you run it manually from the Actions tab
+
+permissions:
+  contents: write           # needed to commit state.json back to the repo
+
+concurrency:
+  group: internship-watch   # never let two runs race on state.json
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Check career sites
+        id: check
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+        run: |
+          set +e
+          python watcher.py
+          code=$?
+          echo "exit_code=$code" >> "$GITHUB_OUTPUT"
+          # 0 = clean, 1 = ran but some source is unhealthy, 2 = email failed
+          if [ "$code" -ge 2 ]; then exit "$code"; fi
+
+      - name: Persist seen-postings state
+        run: |
+          git config user.name  "internship-watcher"
+          git config user.email "actions@users.noreply.github.com"
+          if [ -n "$(git status --porcelain state.json)" ]; then
+            git add state.json
+            git commit -m "state: $(date -u +%Y-%m-%dT%H:%MZ)"
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" || true
+            git push
+          else
+            echo "no state change"
+          fi
+
+      - name: Flag unhealthy sources in the run summary
+        if: steps.check.outputs.exit_code == '1'
+        run: |
+          echo "One or more sources failed to return data." >> "$GITHUB_STEP_SUMMARY"
+          echo "You were emailed about it. Check the log above." >> "$GITHUB_STEP_SUMMARY"
