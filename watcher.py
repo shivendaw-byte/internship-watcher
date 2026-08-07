@@ -242,8 +242,12 @@ def run(args) -> int:
             state["last_email"] = now_iso()
             print(f"Emailed: {subject}")
         except notify.NotifyError as exc:
-            print(f"! EMAIL FAILED: {exc}", file=sys.stderr)
-            save_state(state)
+            # Deliberately do NOT save state here. If the digest never went out,
+            # these postings must stay "unseen" so the next run reports them
+            # again -- otherwise a transient SMTP failure silently swallows the
+            # one posting you were waiting for.
+            print(f"! EMAIL FAILED (state not saved, will retry): {exc}",
+                  file=sys.stderr)
             return 2
     else:
         print("Nothing new and no issues; no email sent.")
