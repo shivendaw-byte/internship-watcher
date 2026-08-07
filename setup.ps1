@@ -5,15 +5,36 @@
 # encrypted GitHub secrets, sends you the current backlog, and switches on the
 # automatic schedule.
 #
-# Safe to re-run. It skips anything already done.
+# Safe to re-run as many times as you like. It skips anything already done.
 
-$ErrorActionPreference = "Stop"
+# NOTE on error handling: this script must NOT use $ErrorActionPreference =
+# "Stop". In Windows PowerShell 5.1, redirecting a native program's stderr
+# (e.g. `gh auth status 2>&1`) wraps each line in a NativeCommandError, which
+# under "Stop" aborts the whole script -- so gh merely *reporting* "you are not
+# logged in" would kill setup before it could log you in. Instead we check
+# $LASTEXITCODE explicitly after every external command, and run silent probes
+# through cmd.exe so their stderr never reaches PowerShell at all.
+$ErrorActionPreference = "Continue"
 Set-Location -Path $PSScriptRoot
 
 function Say  ($m) { Write-Host ""; Write-Host "== $m" -ForegroundColor Cyan }
 function Ok   ($m) { Write-Host "   [ok] $m" -ForegroundColor Green }
 function Warn ($m) { Write-Host "   [!]  $m" -ForegroundColor Yellow }
-function Die  ($m) { Write-Host ""; Write-Host "STOPPED: $m" -ForegroundColor Red; exit 1 }
+function Die  ($m) {
+    Write-Host ""
+    Write-Host "STOPPED: $m" -ForegroundColor Red
+    Write-Host "Nothing is broken - just fix the above and run this again." -ForegroundColor DarkGray
+    Write-Host ""
+    Read-Host "Press Enter to close"
+    exit 1
+}
+
+# Run a command quietly via cmd.exe and return its exit code. Keeps native
+# stderr out of PowerShell entirely, so no scary red text and no crash.
+function Quiet ($cmdline) {
+    cmd /c "$cmdline >nul 2>nul"
+    return $LASTEXITCODE
+}
 
 Write-Host ""
 Write-Host "  Internship Watcher setup" -ForegroundColor White
@@ -40,7 +61,7 @@ foreach ($n in @("python", "py")) {
     $c = Get-Command $n -ErrorAction SilentlyContinue
     if ($c) { $py = $c.Source; break }
 }
-if (-not $py) { Die "Python not found. Install it from https://python.org and re-run." }
+if (-not $py) { Die "Python not found. Install from https://python.org (tick 'Add Python to PATH'), then re-run." }
 Ok "Python found"
 
 Say "Installing Python packages (quick)"
@@ -51,22 +72,33 @@ Ok "Packages ready"
 # ------------------------------------------------------------ 2. github auth
 Say "Step 2 of 7: signing in to GitHub"
 
-& $gh auth status 2>&1 | Out-Null
-if ($LASTEXITCODE -ne 0) {
-    Write-Host "   A browser window will open. Sign in, then come back here." -ForegroundColor DarkGray
-    Write-Host "   (Choose: GitHub.com  ->  HTTPS  ->  Login with a web browser)" -ForegroundColor DarkGray
+if ((Quiet "`"$gh`" auth status") -ne 0) {
     Write-Host ""
+    Write-Host "   You are not signed in yet, so a browser window will open." -ForegroundColor DarkGray
+    Write-Host "   Answer the prompts like this:" -ForegroundColor DarkGray
+    Write-Host "     Where do you use GitHub?      ->  GitHub.com" -ForegroundColor DarkGray
+    Write-Host "     Preferred protocol?           ->  HTTPS" -ForegroundColor DarkGray
+    Write-Host "     Authenticate Git?             ->  Y" -ForegroundColor DarkGray
+    Write-Host "     How to authenticate?          ->  Login with a web browser" -ForegroundColor DarkGray
+    Write-Host "   Then copy the one-time code it shows and paste it in the browser." -ForegroundColor DarkGray
+    Write-Host ""
+
     & $gh auth login
-    if ($LASTEXITCODE -ne 0) { Die "GitHub sign-in did not complete." }
+
+    if ((Quiet "`"$gh`" auth status") -ne 0) {
+        Die "GitHub sign-in did not complete. Run this script again to retry."
+    }
 }
-$who = (& $gh api user --jq .login 2>$null)
+
+$who = (cmd /c "`"$gh`" api user --jq .login 2>nul").Trim()
+if (-not $who) { Die "Signed in, but could not read your GitHub username." }
 Ok "Signed in as $who"
 
 # ------------------------------------------------------------- 3. email info
 Say "Step 3 of 7: your email settings"
 
 if (Test-Path ".env") {
-    Warn ".env already exists - keeping it. Delete it and re-run to change."
+    Warn ".env already exists - keeping it. Delete that file and re-run to change it."
 } else {
     Write-Host ""
     Write-Host "   The watcher sends mail through a Gmail account." -ForegroundColor DarkGray
@@ -81,27 +113,32 @@ if (Test-Path ".env") {
     Write-Host "   and still RECEIVE at your school address. That works fine." -ForegroundColor DarkGray
     Write-Host ""
 
-    $sender = Read-Host "   Gmail address that SENDS the alerts"
+    $sender = (Read-Host "   Gmail address that SENDS the alerts").Trim()
     if (-not $sender) { Die "No sender address given." }
 
-    $secure = Read-Host "   Its 16-character app password (hidden as you type)" -AsSecureString
+    Write-Host "   (the password will stay invisible as you type - that is normal)" -ForegroundColor DarkGray
+    $secure = Read-Host "   Its 16-character app password" -AsSecureString
     $bstr   = [Runtime.InteropServices.Marshal]::SecureStringToBSTR($secure)
     $appPw  = [Runtime.InteropServices.Marshal]::PtrToStringAuto($bstr)
     [Runtime.InteropServices.Marshal]::ZeroFreeBSTR($bstr)
     if (-not $appPw) { Die "No app password given." }
     $appPw = $appPw -replace '\s', ''
 
-    $to = Read-Host "   Where should alerts be DELIVERED? (your everyday inbox)"
+    $to = (Read-Host "   Where should alerts be DELIVERED? (your everyday inbox)").Trim()
     if (-not $to) { $to = $sender }
 
-    @(
-        "SMTP_HOST=smtp.gmail.com"
-        "SMTP_PORT=587"
-        "SMTP_USER=$sender"
-        "SMTP_PASS=$appPw"
-        "EMAIL_FROM=$sender"
-        "EMAIL_TO=$to"
-    ) | Set-Content -Path ".env" -Encoding utf8
+    try {
+        @(
+            "SMTP_HOST=smtp.gmail.com"
+            "SMTP_PORT=587"
+            "SMTP_USER=$sender"
+            "SMTP_PASS=$appPw"
+            "EMAIL_FROM=$sender"
+            "EMAIL_TO=$to"
+        ) | Set-Content -Path ".env" -Encoding utf8 -ErrorAction Stop
+    } catch {
+        Die "Could not write the .env file: $_"
+    }
     Ok "Saved to .env (this file is never uploaded to GitHub)"
 }
 
@@ -110,25 +147,25 @@ Say "Sending a test email"
 if ($LASTEXITCODE -ne 0) {
     Write-Host ""
     Warn "The test email failed - almost always a wrong app password."
-    Warn "Delete .env and re-run this script to try again."
-    Die "Fix the email settings first; everything else depends on them."
+    Warn "Delete the file .env in this folder, then run this script again."
+    Die "Email must work before the rest is worth doing."
 }
-Ok "Test sent - check your inbox before continuing"
+Ok "Test sent - check that inbox before continuing"
 
 # ---------------------------------------------------------------- 4. the repo
 Say "Step 4 of 7: creating the public GitHub repo"
 
-# Public, deliberately: public repos get UNLIMITED free Actions minutes, which
-# is what lets this poll every 30 minutes in peak season. There are no
-# credentials in the repo -- .env is gitignored and the real values live in
-# GitHub's encrypted secrets, which are never readable from the repo itself.
+# Public deliberately: public repos get UNLIMITED free Actions minutes, which
+# is what makes 30-minute polling free. No credentials live in the repo --
+# .env is gitignored and the real values go to encrypted GitHub secrets.
 $repoName = "internship-watcher"
-$existing = (& $gh repo view "$who/$repoName" --json name 2>$null)
-if ($LASTEXITCODE -eq 0 -and $existing) {
+
+if ((Quiet "`"$gh`" repo view $who/$repoName --json name") -eq 0) {
     Warn "Repo $who/$repoName already exists - reusing it"
-    & git remote remove origin 2>$null | Out-Null
+    Quiet "git remote remove origin" | Out-Null
     & git remote add origin "https://github.com/$who/$repoName.git"
     & git push -u origin main
+    if ($LASTEXITCODE -ne 0) { Die "Could not push to the existing repo." }
 } else {
     & $gh repo create $repoName --public --source . --push
     if ($LASTEXITCODE -ne 0) { Die "Could not create the repo." }
@@ -143,11 +180,11 @@ foreach ($line in (Get-Content ".env")) {
     if ($line -match '^\s*([A-Z_]+)\s*=\s*(.*)$') { $envMap[$matches[1]] = $matches[2] }
 }
 foreach ($k in @("SMTP_HOST","SMTP_PORT","SMTP_USER","SMTP_PASS","EMAIL_FROM","EMAIL_TO")) {
-    if (-not $envMap.ContainsKey($k)) { Die "$k missing from .env" }
+    if (-not $envMap.ContainsKey($k)) { Die "$k is missing from .env" }
     $envMap[$k] | & $gh secret set $k --repo "$who/$repoName"
     if ($LASTEXITCODE -ne 0) { Die "Could not store secret $k" }
 }
-Ok "All 6 secrets stored (GitHub encrypts these; nobody can read them back)"
+Ok "All 6 secrets stored (GitHub encrypts these; they cannot be read back)"
 
 # ------------------------------------------------------------- 6. the backlog
 Say "Step 6 of 7: emailing you everything that is open RIGHT NOW"
@@ -155,7 +192,7 @@ Say "Step 6 of 7: emailing you everything that is open RIGHT NOW"
 if (Test-Path "state.json") {
     Warn "Already seeded - skipping the backlog email"
 } else {
-    Write-Host "   This takes about 2 minutes and sends one big catalogue email." -ForegroundColor DarkGray
+    Write-Host "   This takes about 2 minutes. Please wait..." -ForegroundColor DarkGray
     & $py watcher.py --notify-first-run
     if ($LASTEXITCODE -ge 2) { Die "The run failed before sending. See the error above." }
     Ok "Backlog email sent"
@@ -163,17 +200,16 @@ if (Test-Path "state.json") {
 
 if (Test-Path "state.json") {
     & git add state.json
-    & git commit -q -m "Seed initial state" 2>$null | Out-Null
-    & git push -q origin main 2>$null | Out-Null
-    Ok "Saved what it has already seen, so it won't re-alert you"
+    Quiet "git commit -m `"Seed initial state`"" | Out-Null
+    Quiet "git push origin main" | Out-Null
+    Ok "Saved what it has already seen, so it will not re-alert you"
 }
 
 # ------------------------------------------------------------ 7. switching on
 Say "Step 7 of 7: switching on the automatic schedule"
 
-& $gh workflow run internship-watch --repo "$who/$repoName" 2>$null | Out-Null
-if ($LASTEXITCODE -ne 0) {
-    Warn "Could not trigger a test run automatically."
+if ((Quiet "`"$gh`" workflow run internship-watch --repo $who/$repoName") -ne 0) {
+    Warn "Could not start a test run automatically."
     Warn "Open https://github.com/$who/$repoName/actions and click 'Run workflow'."
 } else {
     Ok "Test run started"
@@ -184,7 +220,7 @@ Write-Host "  ------------------------------------------------------------" -For
 Write-Host "  DONE. It now runs by itself." -ForegroundColor Green
 Write-Host "  ------------------------------------------------------------" -ForegroundColor Green
 Write-Host ""
-Write-Host "  Aug-Jan (recruiting season):  every hour, 8am-7pm ET weekdays"
+Write-Host "  Aug-Jan (recruiting season):  every 30 min, 8am-7pm ET weekdays"
 Write-Host "                                every 3 hours otherwise"
 Write-Host "  Feb-Jul (quiet):              3 times a day"
 Write-Host ""
@@ -194,3 +230,4 @@ Write-Host "  nothing new, never a broken watcher."
 Write-Host ""
 Write-Host "  Check on it:  https://github.com/$who/$repoName/actions"
 Write-Host ""
+Read-Host "Press Enter to close"
