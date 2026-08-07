@@ -76,9 +76,9 @@ if (Test-Path ".env") {
     Write-Host "     3. Create one called 'internship watcher'" -ForegroundColor DarkGray
     Write-Host "     4. Copy the 16-character code it shows you" -ForegroundColor DarkGray
     Write-Host ""
-    Write-Host "   Note: your Penn account probably blocks app passwords." -ForegroundColor DarkGray
+    Write-Host "   Note: school/work Google accounts usually block app passwords." -ForegroundColor DarkGray
     Write-Host "   If step 2 shows nothing, use a personal Gmail to SEND," -ForegroundColor DarkGray
-    Write-Host "   and still RECEIVE at your Penn address. That works fine." -ForegroundColor DarkGray
+    Write-Host "   and still RECEIVE at your school address. That works fine." -ForegroundColor DarkGray
     Write-Host ""
 
     $sender = Read-Host "   Gmail address that SENDS the alerts"
@@ -91,8 +91,8 @@ if (Test-Path ".env") {
     if (-not $appPw) { Die "No app password given." }
     $appPw = $appPw -replace '\s', ''
 
-    $to = Read-Host "   Where should alerts be DELIVERED? [sdawda@sas.upenn.edu]"
-    if (-not $to) { $to = "sdawda@sas.upenn.edu" }
+    $to = Read-Host "   Where should alerts be DELIVERED? (your everyday inbox)"
+    if (-not $to) { $to = $sender }
 
     @(
         "SMTP_HOST=smtp.gmail.com"
@@ -116,8 +116,12 @@ if ($LASTEXITCODE -ne 0) {
 Ok "Test sent - check your inbox before continuing"
 
 # ---------------------------------------------------------------- 4. the repo
-Say "Step 4 of 7: creating the private GitHub repo"
+Say "Step 4 of 7: creating the public GitHub repo"
 
+# Public, deliberately: public repos get UNLIMITED free Actions minutes, which
+# is what lets this poll every 30 minutes in peak season. There are no
+# credentials in the repo -- .env is gitignored and the real values live in
+# GitHub's encrypted secrets, which are never readable from the repo itself.
 $repoName = "internship-watcher"
 $existing = (& $gh repo view "$who/$repoName" --json name 2>$null)
 if ($LASTEXITCODE -eq 0 -and $existing) {
@@ -126,10 +130,10 @@ if ($LASTEXITCODE -eq 0 -and $existing) {
     & git remote add origin "https://github.com/$who/$repoName.git"
     & git push -u origin main
 } else {
-    & $gh repo create $repoName --private --source . --push
+    & $gh repo create $repoName --public --source . --push
     if ($LASTEXITCODE -ne 0) { Die "Could not create the repo." }
 }
-Ok "Code is on GitHub (private)"
+Ok "Code is on GitHub (public)"
 
 # ------------------------------------------------------------- 5. the secrets
 Say "Step 5 of 7: storing your email settings as encrypted GitHub secrets"

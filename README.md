@@ -60,7 +60,7 @@ Right-click **`setup.ps1`** → *Run with PowerShell*. Or paste this into a
 terminal:
 
 ```bash
-powershell -ExecutionPolicy Bypass -File "C:\Users\shive\OneDrive\Desktop\internship-watcher\setup.ps1"
+powershell -ExecutionPolicy Bypass -File .\setup.ps1
 ```
 
 It asks you three questions and does the other seven steps itself: signs you
@@ -76,26 +76,31 @@ links you straight there, but the steps are:
 2. Go to <https://myaccount.google.com/apppasswords>
 3. Create one named "internship watcher", copy the 16-character code
 
-Your Penn account is Google Workspace and usually blocks app passwords. If
-step 2 shows no option, use a **personal Gmail to send** and keep your Penn
+University accounts are Google Workspace and usually block app passwords. If
+step 2 shows no option, use a **personal Gmail to send** and keep your school
 address as the destination — the script asks for these separately.
 
 ### Schedule
 
 | When | How often |
 |---|---|
-| Aug–Jan, weekdays 8am–7pm ET | every hour |
+| Aug–Jan, weekdays 8am–7pm ET | **every 30 minutes** |
 | Aug–Jan, nights and weekends | every 3 hours |
 | Feb–Jul | 3× a day |
 
 Aug–Jan is when Summer 2027 postings actually drop. The four cron entries are
-written not to overlap, so no run is ever triggered twice. Peak season works
-out to roughly 420 runs/month at ~2.3 min each — about 975 of the 2,000 free
-monthly Actions minutes on a private repo.
+verified non-overlapping, so no run is ever triggered twice.
+
+The repo is **public**, which means unlimited free Actions minutes — that's
+what makes 30-minute polling free. Nothing sensitive is in it: `.env` is
+gitignored, and the real email credentials live in GitHub's encrypted secrets,
+which cannot be read back out of the repo. The workflow only triggers on
+`schedule` and `workflow_dispatch`, never on `pull_request`, so a stranger's
+fork or PR can't reach those secrets.
 
 ### Doing it by hand instead
 
-If you'd rather not run the script: create a private repo, push this folder,
+If you'd rather not run the script: create the repo, push this folder,
 add `SMTP_HOST` `SMTP_PORT` `SMTP_USER` `SMTP_PASS` `EMAIL_FROM` `EMAIL_TO`
 under Settings → Secrets and variables → Actions, then run the
 `internship-watch` workflow once from the Actions tab.
@@ -104,7 +109,7 @@ under Settings → Secrets and variables → Actions, then run the
 is awake, which is how you miss a posting in October):
 
 ```bash
-schtasks /create /tn "InternshipWatch" /tr "python C:\Users\shive\OneDrive\Desktop\internship-watcher\watcher.py" /sc hourly /mo 3
+schtasks /create /tn "InternshipWatch" /tr "python %CD%\watcher.py" /sc hourly /mo 3
 ```
 
 ## Why it won't fail silently

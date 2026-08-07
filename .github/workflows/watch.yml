@@ -10,9 +10,10 @@ on:
     # The three peak entries are written so they never overlap; a duplicate
     # trigger would just burn Actions minutes for nothing.
 
-    # Peak, weekdays 12:00-23:00 UTC (08:00-19:00 ET) -- hourly.
-    # This is US business hours, when postings genuinely go live.
-    - cron: "0 12-23 * 8-12,1 1-5"
+    # Peak, weekdays 12:00-23:00 UTC (08:00-19:00 ET) -- every 30 minutes.
+    # This is US business hours, when postings genuinely go live. The repo is
+    # public, so Actions minutes are unlimited and this costs nothing.
+    - cron: "0,30 12-23 * 8-12,1 1-5"
     # Peak, overnight every day -- every 3 hours.
     - cron: "0 0,3,6,9 * 8-12,1 *"
     # Peak, weekend afternoons -- every 3 hours.
