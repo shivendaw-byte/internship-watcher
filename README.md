@@ -54,70 +54,54 @@ Undergrad Software / ML internships (Fall–Summer 2027), Microsoft Explore,
 LinkedIn First Play, Google STEP, and open PM internships at Microsoft, TikTok
 and Appian. Worth acting on this week.
 
-## Setup
+## Setup — run one command
 
-### 1. Credentials
-
-```bash
-cp .env.example .env
-```
-
-Fill in `.env`. For Gmail you need an **App Password**, not your normal
-password: enable 2-Step Verification, then go to
-<https://myaccount.google.com/apppasswords>.
-
-Your Penn address (`sdawda@sas.upenn.edu`) is Google Workspace and app
-passwords are often disabled by university policy. If you don't see the
-app-password option, use a personal Gmail as `SMTP_USER`/`EMAIL_FROM` and keep
-`EMAIL_TO` as your Penn address.
-
-Verify it works:
+Right-click **`setup.ps1`** → *Run with PowerShell*. Or paste this into a
+terminal:
 
 ```bash
-python watcher.py --test-email
+powershell -ExecutionPolicy Bypass -File "C:\Users\shive\OneDrive\Desktop\internship-watcher\setup.ps1"
 ```
 
-### 2. First run
+It asks you three questions and does the other seven steps itself: signs you
+into GitHub, creates the private repo, pushes the code, stores your email
+settings as encrypted GitHub secrets, sends you everything open today, and
+switches on the schedule. It's safe to re-run — it skips whatever is done.
 
-```bash
-pip install -r requirements.txt
-python watcher.py --dry-run --notify-first-run
-```
+**The one thing you must do by hand** is create a Gmail **App Password** (a
+16-character code, not your normal password). The script tells you when and
+links you straight there, but the steps are:
 
-That prints what it would send without emailing or saving anything. When it
-looks right, run it for real:
+1. Turn on 2-Step Verification on the Google account
+2. Go to <https://myaccount.google.com/apppasswords>
+3. Create one named "internship watcher", copy the 16-character code
 
-```bash
-python watcher.py
-```
+Your Penn account is Google Workspace and usually blocks app passwords. If
+step 2 shows no option, use a **personal Gmail to send** and keep your Penn
+address as the destination — the script asks for these separately.
 
-The first real run **seeds** `state.json` with everything currently open and
-deliberately does not email you about it — otherwise you'd get a wall of stale
-postings. From then on you only hear about genuinely new ones.
+### Schedule
 
-Since a lot of the curated-list roles are open *today*, you probably do want
-that first backlog once. Run it with:
+| When | How often |
+|---|---|
+| Aug–Jan, weekdays 8am–7pm ET | every hour |
+| Aug–Jan, nights and weekends | every 3 hours |
+| Feb–Jul | 3× a day |
 
-```bash
-python watcher.py --notify-first-run
-```
+Aug–Jan is when Summer 2027 postings actually drop. The four cron entries are
+written not to overlap, so no run is ever triggered twice. Peak season works
+out to roughly 420 runs/month at ~2.3 min each — about 975 of the 2,000 free
+monthly Actions minutes on a private repo.
 
-That's a single ~327-item catalogue email. After that, expect a handful a day.
+### Doing it by hand instead
 
-### 3. Run it automatically (recommended: GitHub Actions)
+If you'd rather not run the script: create a private repo, push this folder,
+add `SMTP_HOST` `SMTP_PORT` `SMTP_USER` `SMTP_PASS` `EMAIL_FROM` `EMAIL_TO`
+under Settings → Secrets and variables → Actions, then run the
+`internship-watch` workflow once from the Actions tab.
 
-Your laptop being asleep in October is how you miss a posting. GitHub Actions
-runs in the cloud for free.
-
-1. Create a **private** GitHub repo and push this folder to it.
-2. Repo → Settings → Secrets and variables → Actions → add `SMTP_HOST`,
-   `SMTP_PORT`, `SMTP_USER`, `SMTP_PASS`, `EMAIL_FROM`, `EMAIL_TO`.
-3. Actions tab → enable workflows → run `internship-watch` manually once.
-
-It then runs every 3 hours and commits `state.json` back so it remembers what
-it has already seen.
-
-**Local alternative** (Windows Task Scheduler) if you'd rather not use GitHub:
+**No-GitHub alternative** (Windows Task Scheduler — only runs when your laptop
+is awake, which is how you miss a posting in October):
 
 ```bash
 schtasks /create /tn "InternshipWatch" /tr "python C:\Users\shive\OneDrive\Desktop\internship-watcher\watcher.py" /sc hourly /mo 3

@@ -2,9 +2,25 @@ name: internship-watch
 
 on:
   schedule:
-    # Every 3 hours. GitHub cron is UTC and can lag by several minutes under
-    # load, which is fine -- postings stay open for days, not minutes.
-    - cron: "0 */3 * * *"
+    # All times UTC. GitHub cron can lag several minutes under load, which is
+    # fine -- postings stay open for days, not minutes.
+    #
+    # PEAK SEASON = Aug through Jan (months 8-12,1), when Summer 2027 roles
+    # actually drop. Off-season is much quieter, so we back right off.
+    # The three peak entries are written so they never overlap; a duplicate
+    # trigger would just burn Actions minutes for nothing.
+
+    # Peak, weekdays 12:00-23:00 UTC (08:00-19:00 ET) -- hourly.
+    # This is US business hours, when postings genuinely go live.
+    - cron: "0 12-23 * 8-12,1 1-5"
+    # Peak, overnight every day -- every 3 hours.
+    - cron: "0 0,3,6,9 * 8-12,1 *"
+    # Peak, weekend afternoons -- every 3 hours.
+    - cron: "0 12,15,18,21 * 8-12,1 0,6"
+
+    # Off-season (Feb-Jul) -- 3x a day is plenty.
+    - cron: "0 2,10,18 * 2-7 *"
+
   workflow_dispatch:        # lets you run it manually from the Actions tab
 
 permissions:
