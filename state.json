@@ -3,7 +3,7 @@
   "sources": {
     "APM List (PM internships)": {
       "last_count": 3,
-      "last_ok": "2026-08-08T18:25:15+00:00",
+      "last_ok": "2026-08-08T21:22:41+00:00",
       "seen": [
         "appianinternshipopen",
         "microsoftinternshipopen",
@@ -12,7 +12,7 @@
     },
     "EY / EY-Parthenon": {
       "last_count": 282,
-      "last_ok": "2026-08-08T18:25:14+00:00",
+      "last_ok": "2026-08-08T21:22:39+00:00",
       "seen": [
         "1117881201",
         "1117982701",
@@ -105,6 +105,8 @@
         "1393227833",
         "1393238033",
         "1393305733",
+        "1393342733",
+        "1393367933",
         "1393368633",
         "1393394433",
         "1393416433",
@@ -439,7 +441,7 @@
     },
     "Google": {
       "last_count": 6,
-      "last_ok": "2026-08-08T18:25:14+00:00",
+      "last_ok": "2026-08-08T21:22:40+00:00",
       "seen": [
         "121628144896484038",
         "124491726204084934",
@@ -450,8 +452,8 @@
       ]
     },
     "Mastercard": {
-      "last_count": 1106,
-      "last_ok": "2026-08-08T18:24:36+00:00",
+      "last_count": 1103,
+      "last_ok": "2026-08-08T21:22:00+00:00",
       "seen": [
         "R-207875",
         "R-208485",
@@ -1585,7 +1587,7 @@
     },
     "Summer 2027 Internships (vanshb03)": {
       "last_count": 172,
-      "last_ok": "2026-08-08T18:25:15+00:00",
+      "last_ok": "2026-08-08T21:22:40+00:00",
       "seen": [
         "abundantsoftwareengineeringinternresearchfocused",
         "akunacapitalhardwareengineerintern",
@@ -1763,7 +1765,7 @@
     },
     "Underclassmen Internships (zapplyjobs)": {
       "last_count": 48,
-      "last_ok": "2026-08-08T18:25:15+00:00",
+      "last_ok": "2026-08-08T21:22:40+00:00",
       "seen": [
         "8vcfellowship",
         "activisionblizzardsparx",
@@ -1817,7 +1819,7 @@
     },
     "Underclassmen Opportunities (Cruz-Lopez)": {
       "last_count": 46,
-      "last_ok": "2026-08-08T18:25:14+00:00",
+      "last_ok": "2026-08-08T21:22:40+00:00",
       "seen": [
         "adobe",
         "applemachinelearningaiundergradinternshipsfallwinterspringsummer2027deadlineroll",
@@ -1869,7 +1871,7 @@
     },
     "Underclassmen Opportunities (LuisaE)": {
       "last_count": 137,
-      "last_ok": "2026-08-08T18:25:15+00:00",
+      "last_ok": "2026-08-08T21:22:40+00:00",
       "seen": [
         "8vcfellowships",
         "abercrombiefitchsophomoresummit",
@@ -2011,8 +2013,8 @@
       ]
     },
     "Visa": {
-      "last_count": 777,
-      "last_ok": "2026-08-08T18:25:06+00:00",
+      "last_count": 776,
+      "last_ok": "2026-08-08T21:22:28+00:00",
       "seen": [
         "/job/IN---Remote---IND/Data-Scientist---Visa-Consulting---Analytics_REF081808W",
         "REF059465W",
