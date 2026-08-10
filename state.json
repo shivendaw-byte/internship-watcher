@@ -1,19 +1,20 @@
 {
-  "last_email": "2026-08-10T13:15:39+00:00",
+  "last_email": "2026-08-10T14:39:00+00:00",
   "sources": {
     "APM List (PM internships)": {
       "last_count": 4,
-      "last_ok": "2026-08-10T13:15:38+00:00",
+      "last_ok": "2026-08-10T14:38:58+00:00",
       "seen": [
         "americanexpressinternshipopen",
         "appianinternshipopen",
+        "janestreetinternshipopen",
         "microsoftinternshipopen",
         "tiktokinternshipopen"
       ]
     },
     "EY / EY-Parthenon": {
       "last_count": 283,
-      "last_ok": "2026-08-10T13:15:36+00:00",
+      "last_ok": "2026-08-10T14:38:57+00:00",
       "seen": [
         "1077003901",
         "1077688801",
@@ -654,6 +655,12 @@
         "1424789333",
         "1424798133",
         "1424799633",
+        "1424810233",
+        "1424812133",
+        "1424822733",
+        "1424825233",
+        "1424827833",
+        "1424830433",
         "695560401",
         "697395001",
         "698357101",
@@ -674,7 +681,7 @@
     },
     "Google": {
       "last_count": 6,
-      "last_ok": "2026-08-10T13:15:37+00:00",
+      "last_ok": "2026-08-10T14:38:58+00:00",
       "seen": [
         "121628144896484038",
         "124491726204084934",
@@ -685,8 +692,8 @@
       ]
     },
     "Mastercard": {
-      "last_count": 1100,
-      "last_ok": "2026-08-10T13:14:55+00:00",
+      "last_count": 1102,
+      "last_ok": "2026-08-10T14:38:16+00:00",
       "seen": [
         "R-207875",
         "R-208485",
@@ -1079,6 +1086,7 @@
         "R-278688",
         "R-278692",
         "R-278695",
+        "R-278697",
         "R-278728",
         "R-278729",
         "R-278735",
@@ -1145,6 +1153,7 @@
         "R-279499",
         "R-279500",
         "R-279502",
+        "R-279516",
         "R-279519",
         "R-279537",
         "R-279539",
@@ -1695,6 +1704,7 @@
         "R-286558",
         "R-286569",
         "R-286578",
+        "R-286582",
         "R-286586",
         "R-286592",
         "R-286593",
@@ -1826,6 +1836,7 @@
         "R-287484",
         "R-287496",
         "R-287499",
+        "R-287505",
         "R-287523",
         "R-287535",
         "R-287539",
@@ -1850,7 +1861,7 @@
     },
     "Summer 2027 Internships (vanshb03)": {
       "last_count": 172,
-      "last_ok": "2026-08-10T13:15:37+00:00",
+      "last_ok": "2026-08-10T14:38:58+00:00",
       "seen": [
         "abundantsoftwareengineeringinternresearchfocused",
         "akunacapitalhardwareengineerintern",
@@ -2028,7 +2039,7 @@
     },
     "Underclassmen Internships (zapplyjobs)": {
       "last_count": 48,
-      "last_ok": "2026-08-10T13:15:37+00:00",
+      "last_ok": "2026-08-10T14:38:58+00:00",
       "seen": [
         "8vcfellowship",
         "activisionblizzardsparx",
@@ -2082,7 +2093,7 @@
     },
     "Underclassmen Opportunities (Cruz-Lopez)": {
       "last_count": 46,
-      "last_ok": "2026-08-10T13:15:37+00:00",
+      "last_ok": "2026-08-10T14:38:58+00:00",
       "seen": [
         "adobe",
         "applemachinelearningaiundergradinternshipsfallwinterspringsummer2027deadlineroll",
@@ -2141,7 +2152,7 @@
     },
     "Underclassmen Opportunities (LuisaE)": {
       "last_count": 137,
-      "last_ok": "2026-08-10T13:15:37+00:00",
+      "last_ok": "2026-08-10T14:38:58+00:00",
       "seen": [
         "8vcfellowships",
         "abercrombiefitchsophomoresummit",
@@ -2284,7 +2295,7 @@
     },
     "Visa": {
       "last_count": 760,
-      "last_ok": "2026-08-10T13:15:27+00:00",
+      "last_ok": "2026-08-10T14:38:48+00:00",
       "seen": [
         "/job/IN---Remote---IND/Data-Scientist---Visa-Consulting---Analytics_REF081808W",
         "REF059465W",
