@@ -3,7 +3,7 @@
   "sources": {
     "APM List (PM internships)": {
       "last_count": 4,
-      "last_ok": "2026-08-12T13:16:37+00:00",
+      "last_ok": "2026-08-12T14:38:41+00:00",
       "seen": [
         "americanexpressinternshipopen",
         "appianinternshipopen",
@@ -14,7 +14,7 @@
     },
     "EY / EY-Parthenon": {
       "last_count": 266,
-      "last_ok": "2026-08-12T13:16:36+00:00",
+      "last_ok": "2026-08-12T14:38:40+00:00",
       "seen": [
         "1047189901",
         "1056873701",
@@ -1016,7 +1016,7 @@
     },
     "Google": {
       "last_count": 6,
-      "last_ok": "2026-08-12T13:16:36+00:00",
+      "last_ok": "2026-08-12T14:38:41+00:00",
       "seen": [
         "121628144896484038",
         "124491726204084934",
@@ -1027,8 +1027,8 @@
       ]
     },
     "Mastercard": {
-      "last_count": 1128,
-      "last_ok": "2026-08-12T13:15:56+00:00",
+      "last_count": 1134,
+      "last_ok": "2026-08-12T14:37:55+00:00",
       "seen": [
         "R-207875",
         "R-208485",
@@ -1759,6 +1759,7 @@
         "R-281497",
         "R-281517",
         "R-281521",
+        "R-281522",
         "R-281525",
         "R-281526",
         "R-281528",
@@ -1905,6 +1906,7 @@
         "R-282469",
         "R-282472",
         "R-282488",
+        "R-282489",
         "R-282498",
         "R-282501",
         "R-282512",
@@ -2002,6 +2004,7 @@
         "R-286137",
         "R-286139",
         "R-286142",
+        "R-286146",
         "R-286147",
         "R-286157",
         "R-286159",
@@ -2117,6 +2120,7 @@
         "R-286713",
         "R-286717",
         "R-286718",
+        "R-286725",
         "R-286727",
         "R-286731",
         "R-286736",
@@ -2179,6 +2183,7 @@
         "R-287097",
         "R-287098",
         "R-287100",
+        "R-287132",
         "R-287135",
         "R-287145",
         "R-287146",
@@ -2282,7 +2287,9 @@
         "R-288036",
         "R-288065",
         "R-288073",
+        "R-288160",
         "R-288170",
+        "R-288171",
         "R-288195",
         "R-288197",
         "R-288215",
@@ -2300,7 +2307,7 @@
     },
     "Summer 2027 Internships (vanshb03)": {
       "last_count": 172,
-      "last_ok": "2026-08-12T13:16:37+00:00",
+      "last_ok": "2026-08-12T14:38:41+00:00",
       "seen": [
         "abundantsoftwareengineeringinternresearchfocused",
         "akunacapitalhardwareengineerintern",
@@ -2478,7 +2485,7 @@
     },
     "Underclassmen Internships (zapplyjobs)": {
       "last_count": 48,
-      "last_ok": "2026-08-12T13:16:37+00:00",
+      "last_ok": "2026-08-12T14:38:41+00:00",
       "seen": [
         "8vcfellowship",
         "activisionblizzardsparx",
@@ -2532,7 +2539,7 @@
     },
     "Underclassmen Opportunities (Cruz-Lopez)": {
       "last_count": 46,
-      "last_ok": "2026-08-12T13:16:36+00:00",
+      "last_ok": "2026-08-12T14:38:41+00:00",
       "seen": [
         "adobe",
         "applemachinelearningaiundergradinternshipsfallwinterspringsummer2027deadlineroll",
@@ -2591,7 +2598,7 @@
     },
     "Underclassmen Opportunities (LuisaE)": {
       "last_count": 137,
-      "last_ok": "2026-08-12T13:16:37+00:00",
+      "last_ok": "2026-08-12T14:38:41+00:00",
       "seen": [
         "8vcfellowships",
         "abercrombiefitchsophomoresummit",
@@ -2734,7 +2741,7 @@
     },
     "Visa": {
       "last_count": 778,
-      "last_ok": "2026-08-12T13:16:28+00:00",
+      "last_ok": "2026-08-12T14:38:28+00:00",
       "seen": [
         "/job/IN---Remote---IND/Data-Scientist---Visa-Consulting---Analytics_REF081808W",
         "REF059465W",
@@ -3443,6 +3450,7 @@
         "REF085224W",
         "REF085225W",
         "REF085233W",
+        "REF085234W",
         "REF085236W",
         "REF085238W",
         "REF085241W",
@@ -3559,6 +3567,7 @@
         "REF087318W",
         "REF087321W",
         "REF087325W",
+        "REF087326W",
         "REF087334W",
         "REF087336W",
         "REF087341W",
@@ -3568,6 +3577,7 @@
         "REF087361W",
         "REF087371W",
         "REF087376W",
+        "REF087381W",
         "REF087387W",
         "REF087388W",
         "REF087391W",
