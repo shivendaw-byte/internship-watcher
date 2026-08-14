@@ -3,7 +3,7 @@
   "sources": {
     "APM List (PM internships)": {
       "last_count": 4,
-      "last_ok": "2026-08-14T07:13:26+00:00",
+      "last_ok": "2026-08-14T09:54:15+00:00",
       "seen": [
         "americanexpressinternshipopen",
         "appianinternshipopen",
@@ -14,7 +14,7 @@
     },
     "EY / EY-Parthenon": {
       "last_count": 279,
-      "last_ok": "2026-08-14T07:13:24+00:00",
+      "last_ok": "2026-08-14T09:54:14+00:00",
       "seen": [
         "1047189901",
         "1056873701",
@@ -662,6 +662,7 @@
         "1405442233",
         "1405452433",
         "1405508233",
+        "1405509733",
         "1405545633",
         "1405558333",
         "1405565933",
@@ -1074,6 +1075,7 @@
         "1415629233",
         "1415631633",
         "1415633433",
+        "1415633533",
         "1415639033",
         "1415657233",
         "1415661933",
@@ -1373,7 +1375,7 @@
     },
     "Google": {
       "last_count": 6,
-      "last_ok": "2026-08-14T07:13:25+00:00",
+      "last_ok": "2026-08-14T09:54:14+00:00",
       "seen": [
         "121628144896484038",
         "124491726204084934",
@@ -1384,8 +1386,8 @@
       ]
     },
     "Mastercard": {
-      "last_count": 1103,
-      "last_ok": "2026-08-14T07:12:43+00:00",
+      "last_count": 1112,
+      "last_ok": "2026-08-14T09:53:35+00:00",
       "seen": [
         "R-207875",
         "R-208485",
@@ -2348,6 +2350,7 @@
         "R-284376",
         "R-284379",
         "R-284382",
+        "R-284402",
         "R-284403",
         "R-284407",
         "R-284408",
@@ -2437,6 +2440,7 @@
         "R-286343",
         "R-286353",
         "R-286366",
+        "R-286370",
         "R-286371",
         "R-286372",
         "R-286374",
@@ -2494,6 +2498,7 @@
         "R-286609",
         "R-286631",
         "R-286632",
+        "R-286633",
         "R-286634",
         "R-286655",
         "R-286657",
@@ -2518,6 +2523,7 @@
         "R-286736",
         "R-286738",
         "R-286765",
+        "R-286770",
         "R-286774",
         "R-286778",
         "R-286781",
@@ -2539,6 +2545,8 @@
         "R-286877",
         "R-286894",
         "R-286909",
+        "R-286910",
+        "R-286916",
         "R-286927",
         "R-286930",
         "R-286931",
@@ -2546,6 +2554,7 @@
         "R-286934",
         "R-286955",
         "R-286956",
+        "R-286972",
         "R-286975",
         "R-286976",
         "R-286986",
@@ -2695,6 +2704,7 @@
         "R-288065",
         "R-288073",
         "R-288095",
+        "R-288100",
         "R-288136",
         "R-288160",
         "R-288170",
@@ -2725,7 +2735,7 @@
     },
     "Summer 2027 Internships (vanshb03)": {
       "last_count": 172,
-      "last_ok": "2026-08-14T07:13:26+00:00",
+      "last_ok": "2026-08-14T09:54:15+00:00",
       "seen": [
         "abundantsoftwareengineeringinternresearchfocused",
         "akunacapitalhardwareengineerintern",
@@ -2903,7 +2913,7 @@
     },
     "Underclassmen Internships (zapplyjobs)": {
       "last_count": 48,
-      "last_ok": "2026-08-14T07:13:26+00:00",
+      "last_ok": "2026-08-14T09:54:15+00:00",
       "seen": [
         "8vcfellowship",
         "activisionblizzardsparx",
@@ -2957,7 +2967,7 @@
     },
     "Underclassmen Opportunities (Cruz-Lopez)": {
       "last_count": 46,
-      "last_ok": "2026-08-14T07:13:25+00:00",
+      "last_ok": "2026-08-14T09:54:14+00:00",
       "seen": [
         "adobe",
         "applemachinelearningaiundergradinternshipsfallwinterspringsummer2027deadlineroll",
@@ -3016,7 +3026,7 @@
     },
     "Underclassmen Opportunities (LuisaE)": {
       "last_count": 137,
-      "last_ok": "2026-08-14T07:13:25+00:00",
+      "last_ok": "2026-08-14T09:54:15+00:00",
       "seen": [
         "8vcfellowships",
         "abercrombiefitchsophomoresummit",
@@ -3159,7 +3169,7 @@
     },
     "Visa": {
       "last_count": 778,
-      "last_ok": "2026-08-14T07:13:13+00:00",
+      "last_ok": "2026-08-14T09:54:05+00:00",
       "seen": [
         "/job/IN---Remote---IND/Data-Scientist---Visa-Consulting---Analytics_REF081808W",
         "REF059465W",
