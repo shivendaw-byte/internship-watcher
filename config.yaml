@@ -45,6 +45,10 @@ match:
     - "experienced hire"
     - "master's student"
     - "masters student"
+    # Capital One posts "Current Master's - Data Science Internship", so the
+    # bare word has to be excluded too, not just "master's student".
+    - "master's"
+    - masters
 
   # Matching any of these marks the posting HIGH PRIORITY in the email
   # (bubbled to the top, flagged in the subject line).
@@ -56,25 +60,133 @@ match:
     - "rising junior"
     - "summer 2027"
 
-  # Optional: only keep postings whose location mentions one of these.
-  # Empty list = no location filtering. Note that many sources do not expose a
-  # location at all, and those are always kept rather than silently dropped.
-  locations_any:
-    - "United States"
-    - "New York"
-    - "Purchase"
-    - "Harrison"
-    - "Atlanta"
-    - "Philadelphia"
-    - "Boston"
-    - "Chicago"
-    - "San Francisco"
-    - "Austin"
-    - "Washington"
-    - "Miami"
-    - "Foster City"
-    - "Ashburn"
-    - "Remote"
+  # Location filtering FAILS OPEN. Drop a posting only when its location
+  # clearly names somewhere you can't work; keep everything else, including
+  # postings with no location listed.
+  #
+  # The previous approach -- an allowlist of US cities -- silently dropped real
+  # roles in McLean, Santa Clara, Plano, Seattle and every other hub nobody
+  # thought to add. Missing a posting is the only failure that actually costs
+  # you, so the default is now "keep unless clearly foreign".
+  #
+  # Matching is whole-word, so "India" does not match "Indianapolis, Indiana".
+  # Delete any line here to start receiving that country's roles.
+  locations_exclude:
+    - india
+    - brazil
+    - brasil
+    - colombia
+    - mexico
+    - chile
+    - argentina
+    - peru
+    - "costa rica"
+    - "dominican republic"
+    - guatemala
+    - panama
+    - uruguay
+    - canada
+    - "united kingdom"
+    - england
+    - scotland
+    - ireland
+    - france
+    - germany
+    - spain
+    - portugal
+    - italy
+    - netherlands
+    - belgium
+    - switzerland
+    - sweden
+    - denmark
+    - norway
+    - finland
+    - poland
+    - romania
+    - hungary
+    - czechia
+    - austria
+    - greece
+    - latvia
+    - lithuania
+    - estonia
+    - turkey
+    - israel
+    - "united arab emirates"
+    - dubai
+    - "saudi arabia"
+    - qatar
+    - egypt
+    - "south africa"
+    - nigeria
+    - kenya
+    - china
+    - "hong kong"
+    - taiwan
+    - japan
+    - korea
+    - singapore
+    - malaysia
+    - indonesia
+    - thailand
+    - vietnam
+    - philippines
+    - australia
+    - "new zealand"
+    # Many boards give a city with a truncated or missing country
+    # ("Toronto, ON" / "London, Eng" / "Netherlands - Amsterdam"), so the
+    # major non-US hubs are listed by city name too.
+    - toronto
+    - ontario
+    - montreal
+    - vancouver
+    - ottawa
+    - london
+    - dublin
+    - amsterdam
+    - paris
+    - milan
+    - madrid
+    - munich
+    - berlin
+    - warsaw
+    - prague
+    - zurich
+    - stockholm
+    - "tel aviv"
+    - bangalore
+    - bengaluru
+    - hyderabad
+    - gurgaon
+    - gurugram
+    - noida
+    - pune
+    - mumbai
+    - chennai
+    - delhi
+    - tokyo
+    - taipei
+    - beijing
+    - shanghai
+    - shenzhen
+    - seoul
+    - sydney
+    - melbourne
+    - "sao paulo"
+    - bogota
+    - santiago
+    - lima
+    - "buenos aires"
+    - "mexico city"
+    - guadalajara
+    - cairo
+    - nairobi
+    - lagos
+
+  # Optional strict allowlist, normally left empty. If you ever fill this in,
+  # ONLY postings matching it survive -- which is how roles got lost before.
+  locations_any: []
 
 sources:
   # --- verified working -----------------------------------------------------
@@ -99,6 +211,42 @@ sources:
     base_url: "https://careers.ey.com/ey"
     search_terms: ["intern", "summer", "parthenon"]
     max_results: 100
+
+  # --- added later, all verified returning live postings -------------------
+  - name: Capital One
+    type: workday
+    host: capitalone.wd12.myworkdayjobs.com
+    tenant: capitalone
+    site: Capital_One
+    max_results: 2000
+
+  - name: NVIDIA
+    type: workday
+    host: nvidia.wd5.myworkdayjobs.com
+    tenant: nvidia
+    site: NVIDIAExternalCareerSite
+    max_results: 2200
+
+  - name: Salesforce
+    type: workday
+    host: salesforce.wd12.myworkdayjobs.com
+    tenant: salesforce
+    site: External_Career_Site
+    max_results: 1800
+
+  - name: Adobe
+    type: workday
+    host: adobe.wd5.myworkdayjobs.com
+    tenant: adobe
+    site: external_experienced
+    max_results: 1000
+
+  - name: PayPal
+    type: workday
+    host: paypal.wd1.myworkdayjobs.com
+    tenant: paypal
+    site: jobs
+    max_results: 600
 
   - name: Google
     type: google_careers

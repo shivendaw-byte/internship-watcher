@@ -85,6 +85,31 @@ _KW_CACHE: dict[str, "re.Pattern[str]"] = {}
 # Workday returns placeholders like "3 Locations" instead of a real place.
 _VAGUE_LOCATION = re.compile(r"^\d+\s+locations?$", re.I)
 
+# A US marker beats the country/city blocklist. Without this, "New London, CT"
+# is dropped because it contains "London", and "Ontario, CA" because it
+# contains "Ontario" -- both are real US cities.
+_US_ABBR = re.compile(
+    r"\b(?:AL|AK|AZ|AR|CA|CO|CT|DE|FL|GA|HI|ID|IL|IN|IA|KS|KY|LA|ME|MD|MA|MI|"
+    r"MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|OH|OK|OR|PA|RI|SC|SD|TN|TX|UT|VT|"
+    r"VA|WA|WV|WI|WY|DC)\b"
+)
+_US_WORD = re.compile(r"\b(?:U\.?S\.?A?|United States)\b", re.I)
+_US_STATE_NAMES = (
+    "alabama alaska arizona arkansas california colorado connecticut delaware "
+    "florida georgia hawaii idaho illinois indiana iowa kansas kentucky "
+    "louisiana maine maryland massachusetts michigan minnesota mississippi "
+    "missouri montana nebraska nevada ohio oklahoma oregon pennsylvania "
+    "tennessee texas utah vermont virginia washington wisconsin wyoming"
+).split()
+
+
+def _looks_american(location: str) -> bool:
+    """True when the location clearly names somewhere in the US."""
+    if _US_WORD.search(location) or _US_ABBR.search(location):
+        return True
+    low = location.lower()
+    return any(_kw(s).search(low) for s in _US_STATE_NAMES)
+
 
 def _kw(word: str):
     """Whole-word keyword matcher.
@@ -111,13 +136,18 @@ def classify(job: Job, rules: dict) -> tuple[bool, bool]:
     if any(_kw(s).search(hay) for s in rules.get("exclude_any") or []):
         return False, False
 
-    # Location filtering only applies when the source gave us a usable location.
-    # An unknown or placeholder location keeps the job rather than silently
-    # dropping what might be exactly the posting you're waiting for.
-    locs = [s.lower() for s in rules.get("locations_any") or []]
+    # Location filtering FAILS OPEN, on purpose. An allowlist of US cities
+    # silently dropped real roles in McLean, Santa Clara, Plano and anywhere
+    # else nobody thought to list. So instead: keep everything except postings
+    # whose location clearly names somewhere you can't work. Whole-word
+    # matching matters here -- "India" must not match "Indianapolis, Indiana".
     loc = job.location.lower()
-    if locs and loc and not _VAGUE_LOCATION.match(job.location):
-        if not any(s in loc for s in locs):
+    if loc and not _VAGUE_LOCATION.match(job.location) and not _looks_american(job.location):
+        if any(_kw(s).search(loc) for s in rules.get("locations_exclude") or []):
+            return False, False
+        # Optional strict allowlist; empty by default and normally left that way.
+        locs = [s.lower() for s in rules.get("locations_any") or []]
+        if locs and not any(s in loc for s in locs):
             return False, False
 
     priority = any(_kw(s).search(hay) for s in rules.get("priority_any") or [])
