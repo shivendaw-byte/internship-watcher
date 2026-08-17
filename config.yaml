@@ -295,6 +295,22 @@ sources:
     repo: Jose-Gael-Cruz-Lopez/underclassmen-opportunities
     branch: main
     filter: false
+    # This repo lists scholarships and state tuition grants alongside real
+    # internships. Two passes remove them: whole tables whose columns give
+    # them away, then individual scholarship rows hiding in the mixed
+    # "Opportunity" tables (UNCF, Posse, National Merit).
+    skip_tables_with: ["scholarship", "amount", "award"]
+    exclude_terms:
+      - scholarship
+      - scholarships
+      - tuition
+      - grant
+      - "financial aid"
+      - "student aid"
+      # Aimed at high schoolers, not college sophomores.
+      - "hs senior"
+      - "high school"
+      - "essay contest"
 
   - name: "Underclassmen Opportunities (LuisaE)"
     type: github_markdown

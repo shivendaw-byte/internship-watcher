@@ -207,6 +207,20 @@ def run(args) -> int:
         for msg in sources.WARNINGS.pop(name, []):
             health.append(f"{name}: {msg}")
 
+        # Per-source drop list, applied even when `filter: false`. Curated repos
+        # mix in things you don't want (scholarships, tuition grants) that no
+        # generic internship rule would catch.
+        drop_terms = [t.lower() for t in src.get("exclude_terms") or []]
+        if drop_terms:
+            before = len(jobs)
+            jobs = [
+                j for j in jobs
+                if not any(_kw(t).search(f"{j.title} {j.location}".lower())
+                           for t in drop_terms)
+            ]
+            if before != len(jobs):
+                print(f"[{name}] dropped {before - len(jobs)} by exclude_terms")
+
         apply_filter = src.get("filter", src.get("type") != "page_watch")
         kept: list[tuple[Job, bool]] = []
         for j in jobs:

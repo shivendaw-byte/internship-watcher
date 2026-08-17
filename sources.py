@@ -563,6 +563,9 @@ _COLS = {
 # than quietly parsing a fraction of the file.
 _KNOWN_UNMAPPED = {"", "status", "links", "link", "apply", "application"}
 
+# Sentinel meaning "we are inside a table that should be skipped entirely".
+_SKIP_TABLE: list[str] = []
+
 
 def _md_cell_text(cell: str) -> str:
     """Strip markdown links, HTML tags and badge images down to plain text."""
@@ -637,6 +640,12 @@ def github_markdown(src: dict, session) -> list[Job]:
 
         if header is None:
             header = [_md_cell_text(c).lower() for c in cells]
+            # Whole-table skip: a repo that mixes internships with scholarship
+            # listings signals it in the column names ("Amount", "Award").
+            skip_words = [w.lower() for w in src.get("skip_tables_with") or []]
+            if skip_words and any(w in h for h in header for w in skip_words):
+                header = _SKIP_TABLE
+                continue
             # If nothing in this header identifies the job, every row under it
             # will be dropped. Say so instead of silently parsing a fraction.
             if not any(_COLS.get(h) in ("company", "role", "name") for h in header):
@@ -645,6 +654,8 @@ def github_markdown(src: dict, session) -> list[Job]:
                 if unknown:
                     lost_headers.add(", ".join(unknown))
             continue
+        if header is _SKIP_TABLE:
+            continue  # inside a table excluded by skip_tables_with
         if set("".join(cells).replace("|", "")) <= set("-: "):
             continue  # separator row
 
