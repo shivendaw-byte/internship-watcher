@@ -252,6 +252,66 @@ def google_careers(src: dict, session) -> list[Job]:
 
 
 # --------------------------------------------------------------------------
+# Amazon  (verified) -- amazon.jobs exposes a plain JSON search
+# --------------------------------------------------------------------------
+
+def amazon_jobs(src: dict, session) -> list[Job]:
+    """amazon.jobs/en/search.json is a public, unauthenticated JSON endpoint.
+
+    It genuinely honours `base_query`, unlike Workday's ignored `searchText`,
+    so we can search server-side and stay cheap. `country_code` is returned
+    per job (USA / ITA / IND ...), which is a far more reliable location
+    signal than free-text city strings.
+    """
+    page = int(src.get("page_size", 100))
+    cap = int(src.get("max_results", 500))
+    keep_countries = {c.upper() for c in src.get("countries", ["USA"])}
+
+    found: dict[str, Job] = {}
+    any_returned = False
+    for term in src.get("search_terms") or ["intern"]:
+        offset = 0
+        while offset < cap:
+            url = (
+                "https://www.amazon.jobs/en/search.json"
+                f"?base_query={requests_quote(term)}&result_limit={page}&offset={offset}"
+                "&sort=recent"
+            )
+            data = _get(session, url).json()
+            jobs = data.get("jobs") or []
+            if not jobs:
+                break
+            any_returned = True
+            for j in jobs:
+                cc = (j.get("country_code") or "").upper()
+                if keep_countries and cc and cc not in keep_countries:
+                    continue
+                jid = str(j.get("id_icims") or j.get("id") or "")
+                path = j.get("job_path") or ""
+                if not jid or not path:
+                    continue
+                found[jid] = Job(
+                    id=jid,
+                    title=_clean(j.get("title", "")),
+                    url=f"https://www.amazon.jobs{path}",
+                    location=_clean(j.get("normalized_location", "")),
+                    posted=_clean(j.get("posted_date", "")),
+                    source=src["name"],
+                )
+            offset += page
+
+    if not any_returned:
+        raise SourceError("amazon.jobs returned no jobs for any search term")
+    return list(found.values())  # may be empty if nothing matched the country
+
+
+def requests_quote(s: str) -> str:
+    from urllib.parse import quote
+
+    return quote(s)
+
+
+# --------------------------------------------------------------------------
 # Greenhouse / Lever  (for smaller firms you may add later)
 # --------------------------------------------------------------------------
 
@@ -556,6 +616,7 @@ def apmlist(src: dict, session) -> list[Job]:
 
 ADAPTERS = {
     "workday": workday,
+    "amazon_jobs": amazon_jobs,
     "github_markdown": github_markdown,
     "apmlist": apmlist,
     "successfactors": successfactors,

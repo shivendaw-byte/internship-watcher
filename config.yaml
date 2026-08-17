@@ -248,6 +248,12 @@ sources:
     site: jobs
     max_results: 600
 
+  - name: Amazon
+    type: amazon_jobs
+    search_terms: ["intern", "internship", "summer 2027"]
+    countries: ["USA"]      # country_code is returned per job; far more
+    max_results: 500        # reliable than parsing free-text city strings
+
   - name: Google
     type: google_careers
     urls:

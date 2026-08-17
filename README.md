@@ -33,6 +33,28 @@ status per program, so the watcher catches the exact moment one flips open
 rather than waiting for a new listing to appear. Right now 35 of its 39 PM
 internships are "Not Yet Open" — those are the ones you want to hear about.
 
+### Companies that resist scraping
+
+Microsoft, Apple, Meta and Deloitte were attempted and **not added**, because
+shipping a source that looks like it works but silently returns junk is worse
+than not having it:
+
+- **Deloitte** — `apply.deloitte.com/en_US/careers/SearchJobs/intern` looks like
+  a keyword search but ignores the keyword; it returned "Manager, International
+  Tax" and "Event Planner".
+- **Apple** — the search page's server-rendered HTML ignores `?search=intern`
+  and returns unfiltered roles (including overseas retail jobs).
+- **Microsoft** — the `gcsservices.careers.microsoft.com` search API returns 404
+  on every documented path variant tried.
+- **Meta** — job listings are entirely JavaScript-rendered; the served HTML
+  contains no job links at all.
+
+All four would need a headless browser (Playwright), which runs fine in GitHub
+Actions but roughly triples each run. Worth doing only if the curated lists
+start missing them — and note those lists already carry Apple's Undergrad
+Software/ML internships and Microsoft Explore, often earlier than the career
+pages surface them.
+
 ### Three sources I couldn't use
 
 - **simplify.jobs/dashboard** — your logged-in dashboard. Scraping it needs your
