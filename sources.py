@@ -550,11 +550,38 @@ def github_markdown(src: dict, session) -> list[Job]:
     Each repo uses a different column layout, so columns are mapped by header
     name rather than by position.
     """
+    import os
+
     repo = src["repo"]
     branch = src.get("branch", "main")
     path = src.get("path", "README.md")
-    url = f"https://raw.githubusercontent.com/{repo}/{branch}/{path}"
-    body = _get(session, url).text
+
+    # Prefer the REST API over raw.githubusercontent.com. Anonymous raw fetches
+    # are rate-limited to roughly 60/hour per IP, and Actions runners share IPs,
+    # so four repos every 30 minutes reliably earns an HTTP 429 -- which then
+    # looks like a broken source. The API accepts GITHUB_TOKEN (present in every
+    # Actions run) and allows 5000/hour. It is also reachable on networks that
+    # block raw.githubusercontent.com outright.
+    token = os.environ.get("GITHUB_TOKEN", "").strip()
+    api_headers = {"Accept": "application/vnd.github.raw"}
+    if token:
+        api_headers["Authorization"] = f"Bearer {token}"
+
+    api_url = f"https://api.github.com/repos/{repo}/readme"
+    if path != "README.md":
+        api_url = f"https://api.github.com/repos/{repo}/contents/{path}"
+    api_url += f"?ref={branch}"
+
+    try:
+        body = _request(session, "GET", api_url, headers=api_headers, attempts=2).text
+        url = api_url
+    except SourceError as api_exc:
+        # Fall back to raw, so a token-less local run still works.
+        url = f"https://raw.githubusercontent.com/{repo}/{branch}/{path}"
+        try:
+            body = _get(session, url).text
+        except SourceError as raw_exc:
+            raise SourceError(f"{api_exc}; raw fallback also failed: {raw_exc}") from raw_exc
 
     lines = body.splitlines()
     rows_seen = 0

@@ -61,6 +61,9 @@ jobs:
           # Only needed if the USAJOBS source is enabled in config.yaml.
           USAJOBS_KEY: ${{ secrets.USAJOBS_KEY }}
           USAJOBS_EMAIL: ${{ secrets.USAJOBS_EMAIL }}
+          # Lifts the curated-list fetches from ~60/hour (anonymous, shared
+          # runner IP) to 5000/hour, which stops spurious HTTP 429 failures.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set +e
           # Scheduled runs leave this empty, so the flag is only ever added
