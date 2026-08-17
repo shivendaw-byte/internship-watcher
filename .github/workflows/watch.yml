@@ -23,6 +23,11 @@ on:
     - cron: "0 2,10,18 * 2-7 *"
 
   workflow_dispatch:        # lets you run it manually from the Actions tab
+    inputs:
+      notify_first_run:
+        description: "Email the current backlog for any newly added source"
+        type: boolean
+        default: false
 
 permissions:
   contents: write           # needed to commit state.json back to the repo
@@ -58,7 +63,14 @@ jobs:
           USAJOBS_EMAIL: ${{ secrets.USAJOBS_EMAIL }}
         run: |
           set +e
-          python watcher.py
+          # Scheduled runs leave this empty, so the flag is only ever added
+          # when you tick the box on a manual run.
+          FLAGS=""
+          if [ "${{ inputs.notify_first_run }}" = "true" ]; then
+            FLAGS="--notify-first-run"
+            echo "Backlog mode: newly added sources will be emailed."
+          fi
+          python watcher.py $FLAGS
           code=$?
           echo "exit_code=$code" >> "$GITHUB_OUTPUT"
           # 0 = clean, 1 = ran but some source is unhealthy, 2 = email failed
