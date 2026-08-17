@@ -272,7 +272,7 @@ sources:
   #   3. Change enabled below to true, then commit and push.
   - name: USAJOBS (federal)
     type: usajobs
-    enabled: false
+    enabled: true
     search_terms: ["intern", "pathways student", "student trainee"]
     max_pages: 3
 
