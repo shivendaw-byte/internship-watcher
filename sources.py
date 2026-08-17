@@ -312,6 +312,84 @@ def requests_quote(s: str) -> str:
 
 
 # --------------------------------------------------------------------------
+# USAJOBS -- every federal internship (Pathways, agency programs)
+# --------------------------------------------------------------------------
+
+def usajobs(src: dict, session) -> list[Job]:
+    """The official federal job API. Covers essentially all public-sector
+    internships, including Pathways.
+
+    Needs a free API key (see README). Ships disabled; enable it after adding
+    USAJOBS_KEY and USAJOBS_EMAIL. If the response shape ever changes, this
+    raises rather than returning nothing, so you get told.
+    """
+    import os
+
+    key = os.environ.get("USAJOBS_KEY", "").strip()
+    email = os.environ.get("USAJOBS_EMAIL", "").strip()
+    if not key or not email:
+        raise SourceError(
+            "USAJOBS_KEY / USAJOBS_EMAIL not set. Get a free key at "
+            "https://developer.usajobs.gov/apirequest/ then add them as "
+            "GitHub secrets, or set enabled: false for this source."
+        )
+
+    headers = {
+        "Host": "data.usajobs.gov",
+        "User-Agent": email,
+        "Authorization-Key": key,
+    }
+    page_size = int(src.get("page_size", 100))
+    found: dict[str, Job] = {}
+    any_payload = False
+
+    for term in src.get("search_terms") or ["intern"]:
+        page = 1
+        while page <= int(src.get("max_pages", 3)):
+            url = (
+                "https://data.usajobs.gov/api/search"
+                f"?Keyword={requests_quote(term)}&ResultsPerPage={page_size}&Page={page}"
+            )
+            r = _request(session, "GET", url, headers=headers)
+            try:
+                payload = r.json()
+            except ValueError as exc:
+                raise SourceError("USAJOBS did not return JSON") from exc
+
+            result = payload.get("SearchResult")
+            if result is None:
+                raise SourceError("USAJOBS payload missing SearchResult (API changed?)")
+            any_payload = True
+
+            items = result.get("SearchResultItems") or []
+            if not items:
+                break
+            for it in items:
+                d = it.get("MatchedObjectDescriptor") or {}
+                jid = str(it.get("MatchedObjectId") or d.get("PositionID") or "")
+                title = _clean(d.get("PositionTitle", ""))
+                if not jid or not title:
+                    continue
+                locs = d.get("PositionLocationDisplay") or ""
+                if not locs:
+                    names = [l.get("LocationName", "") for l in (d.get("PositionLocation") or [])]
+                    locs = ", ".join(n for n in names[:2] if n)
+                found[jid] = Job(
+                    id=jid,
+                    title=title,
+                    url=d.get("PositionURI") or "https://www.usajobs.gov",
+                    location=_clean(locs),
+                    posted=_clean(d.get("PublicationStartDate", ""))[:10],
+                    source=src["name"],
+                )
+            page += 1
+
+    if not any_payload:
+        raise SourceError("USAJOBS returned no usable pages")
+    return list(found.values())
+
+
+# --------------------------------------------------------------------------
 # Greenhouse / Lever  (for smaller firms you may add later)
 # --------------------------------------------------------------------------
 
@@ -617,6 +695,7 @@ def apmlist(src: dict, session) -> list[Job]:
 ADAPTERS = {
     "workday": workday,
     "amazon_jobs": amazon_jobs,
+    "usajobs": usajobs,
     "github_markdown": github_markdown,
     "apmlist": apmlist,
     "successfactors": successfactors,

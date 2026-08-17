@@ -254,6 +254,28 @@ sources:
     countries: ["USA"]      # country_code is returned per job; far more
     max_results: 500        # reliable than parsing free-text city strings
 
+  # --- public sector ---------------------------------------------------
+  # One Workday board covers the whole Federal Reserve System: the Board of
+  # Governors plus all 12 regional banks (including Philadelphia).
+  - name: Federal Reserve System
+    type: workday
+    host: rb.wd5.myworkdayjobs.com
+    tenant: rb
+    site: FRS
+    max_results: 600
+
+  # Every federal internship, including Pathways. DISABLED until you add a
+  # free API key -- it is the only source here that needs one.
+  #   1. Request a key (instant, free): https://developer.usajobs.gov/apirequest/
+  #   2. gh secret set USAJOBS_KEY      (paste the key)
+  #      gh secret set USAJOBS_EMAIL    (the email you registered with)
+  #   3. Change enabled below to true, then commit and push.
+  - name: USAJOBS (federal)
+    type: usajobs
+    enabled: false
+    search_terms: ["intern", "pathways student", "student trainee"]
+    max_pages: 3
+
   - name: Google
     type: google_careers
     urls:
