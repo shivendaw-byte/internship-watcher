@@ -20,6 +20,18 @@ class SourceError(Exception):
     """Raised when a source cannot be read at all (network, HTTP, parse)."""
 
 
+# Non-fatal problems: the source returned usable data, but something about it
+# deserves telling the user (e.g. a table layout changed and rows are being
+# dropped). The watcher drains this after each adapter call and folds the
+# messages into the email's health section. Losing rows quietly is exactly the
+# failure this whole tool exists to avoid.
+WARNINGS: dict[str, list[str]] = {}
+
+
+def _warn(src: dict, message: str) -> None:
+    WARNINGS.setdefault(src.get("name", "?"), []).append(message)
+
+
 @dataclass(frozen=True)
 class Job:
     id: str          # stable per-company id; used to decide "have I seen this?"
@@ -501,13 +513,29 @@ _CLOSED_RE = re.compile(r"(🔒|❌|\bclosed\b|no longer accepting)", re.I)
 
 # Header aliases -> the field we want. Every repo names its columns differently.
 _COLS = {
+    # --- who is offering it ---
     "company": "company",
+    "organization": "company",
+    "organisation": "company",
+    "university/organization": "company",
+    "university": "company",
+    "employer": "company",
+    "agency": "company",
     "name": "name",
+    # --- what it is ---
     "role": "role",
     "position": "role",
     "title": "role",
+    "program": "role",
+    "programme": "role",
+    "opportunity": "role",
+    "scholarship": "role",
+    "fellowship": "role",
+    "internship": "role",
+    # --- where ---
     "location": "location",
     "locations": "location",
+    "state": "location",
     "application": "link",
     "application/link": "link",
     "apply": "link",
@@ -523,7 +551,17 @@ _COLS = {
     "description": "note",
     "approximate deadline": "note",
     "deadline": "note",
+    "type": "note",
+    "field": "note",
+    "amount": "note",
+    "award": "note",
+    "eligibility": "note",
 }
+
+# Column names seen in a tracked repo that map to nothing. Any unmapped header
+# means rows are being silently dropped, so github_markdown reports it rather
+# than quietly parsing a fraction of the file.
+_KNOWN_UNMAPPED = {"", "status", "links", "link", "apply", "application"}
 
 
 def _md_cell_text(cell: str) -> str:
@@ -588,6 +626,7 @@ def github_markdown(src: dict, session) -> list[Job]:
     found: dict[str, Job] = {}
     header: list[str] | None = None
     last_company = ""
+    lost_headers: set[str] = set()
 
     for line in lines:
         line = line.strip()
@@ -598,6 +637,13 @@ def github_markdown(src: dict, session) -> list[Job]:
 
         if header is None:
             header = [_md_cell_text(c).lower() for c in cells]
+            # If nothing in this header identifies the job, every row under it
+            # will be dropped. Say so instead of silently parsing a fraction.
+            if not any(_COLS.get(h) in ("company", "role", "name") for h in header):
+                unknown = [h for h in header if h not in _KNOWN_UNMAPPED
+                           and h not in _COLS]
+                if unknown:
+                    lost_headers.add(", ".join(unknown))
             continue
         if set("".join(cells).replace("|", "")) <= set("-: "):
             continue  # separator row
@@ -616,9 +662,13 @@ def github_markdown(src: dict, session) -> list[Job]:
         if src.get("skip_closed", True) and _CLOSED_RE.search(line):
             continue
 
-        # Repos use "↳" to mean "same company as the row above".
+        # Repos use "↳" to mean "same company as the row above". Only those
+        # explicit markers inherit -- treating a BLANK company as a
+        # continuation mislabelled unrelated rows, e.g. tagging the "Arizona
+        # Promise Program" as being from "Optimist International" simply
+        # because that name appeared further up the table.
         company = field.get("company", "")
-        if company in {"↳", "⤷", ""} and last_company:
+        if company in {"↳", "⤷"} and last_company:
             company = last_company
         elif company:
             last_company = company
@@ -651,6 +701,13 @@ def github_markdown(src: dict, session) -> list[Job]:
         raise SourceError(f"no markdown table rows found in {url} (layout changed?)")
     if not found:
         raise SourceError(f"{rows_seen} rows found in {url} but none parsed into jobs")
+    if lost_headers:
+        _warn(
+            src,
+            "unrecognised table columns, so some rows are being skipped -- add "
+            "them to _COLS in sources.py: "
+            + "; ".join(sorted(lost_headers)),
+        )
     return list(found.values())
 
 

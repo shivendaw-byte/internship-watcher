@@ -26,6 +26,7 @@ import requests
 import yaml
 
 import notify
+import sources
 from sources import ADAPTERS, Job, SourceError
 
 ROOT = pathlib.Path(__file__).resolve().parent
@@ -199,6 +200,12 @@ def run(args) -> int:
             stats[name] = "FAILED"
             print(f"[{name}] UNEXPECTED: {exc}", file=sys.stderr)
             continue
+
+        # Non-fatal problems the adapter noticed (e.g. table columns it did not
+        # recognise, meaning rows were skipped). Surfaced in the email so silent
+        # data loss becomes visible.
+        for msg in sources.WARNINGS.pop(name, []):
+            health.append(f"{name}: {msg}")
 
         apply_filter = src.get("filter", src.get("type") != "page_watch")
         kept: list[tuple[Job, bool]] = []
