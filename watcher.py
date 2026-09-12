@@ -175,6 +175,13 @@ def detect_function(job: Job, rules: dict) -> str | None:
 # being discarded on a guess -- missing one real match costs far more than
 # reading one extra line in a digest.
 MATCH, REVIEW, REJECT = "match", "review", "reject"
+# A fourth state, distinct from REVIEW on purpose. REVIEW means "the bot could
+# not judge this -- you decide", and it is only useful while it stays small.
+# The curated lists are mostly software roles, which do not fail ambiguously:
+# they clearly sit outside an econ profile. Calling that OFF_PROFILE keeps it
+# in the sheet (filterable, never dropped) without burying the handful of rows
+# that genuinely need a human.
+OFF_PROFILE = "off_profile"
 
 
 def classify_curated(job: Job, rules: dict) -> tuple[str, bool, str | None, str]:
@@ -216,7 +223,8 @@ def classify_curated(job: Job, rules: dict) -> tuple[str, bool, str | None, str]
         return MATCH, priority, function, "curated list + on-profile function"
     if not looks_like_role:
         return REVIEW, priority, function, "curated list, but not clearly a role"
-    return REVIEW, priority, None, "curated list, but function looks off-profile"
+    return (OFF_PROFILE, priority, None,
+            "curated list, function outside econ/business profile")
 
 
 def classify(job: Job, rules: dict) -> tuple[str, bool, str | None, str]:
@@ -407,7 +415,7 @@ def run(args) -> int:
                 flag = "*" if L.priority else ("?" if L.verdict == REVIEW else "-")
                 print(f"    {flag} [{L.verdict}] {L.job.title} | {L.job.url}")
         else:
-            new_jobs.extend(fresh)
+            new_jobs.extend(L for L in fresh if L.verdict != OFF_PROFILE)
             print(f"[{name}] {len(fresh)} new of {len(kept)} relevant")
 
         if not args.dry_run:

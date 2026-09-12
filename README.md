@@ -264,7 +264,8 @@ and across sources, which is what makes either approach hold.
 | `listing_id` | cross-source fingerprint; the join key, stable between runs |
 | `company` / `role_title` | split from the posting title |
 | `function` | `econ_policy` / `business` / `consulting_adjacent` / `unclassified` |
-| `eligibility` | `match` or `review` — never `reject` (those never reach the sheet) |
+| `eligibility` | `match`, `review`, or `off_profile` — never `reject` (those never reach the sheet) |
+| | `review` = the bot couldn't judge it, **you decide**. `off_profile` = clearly outside econ/business (mostly SWE from the curated lists) — kept and filterable, but not emailed, so `review` stays small enough to actually read. |
 | `eligibility_reason` | why it landed there; makes triaging `review` rows quick |
 | `source_type` / `source_name` | which layer and which board or list found it |
 | `location`, `date_posted`, `deadline` | as published; blank when the board doesn't say |

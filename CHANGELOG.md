@@ -84,6 +84,16 @@ Zero references from `watcher.py` or the workflow, by design.
 - The `state.json` seen-sets were left intact, so changing the filter did not
   re-notify anything — previously-scanned ids stay scanned.
 
+### Late correction worth knowing about
+
+The first recalibration pass pushed 517 of 566 sheet rows into `review`, which
+made that bucket useless -- its whole value is being small enough to read.
+Those rows were not ambiguous, though: curated-list software roles clearly sit
+outside an econ profile. So a fourth state, `off_profile`, now separates
+"clearly not your lane" from "the bot could not judge this". Off-profile rows
+stay in the sheet and stay filterable, but do not reach the email. Result:
+59 match / 114 review / 243 off_profile across the curated lists.
+
 ### Known gaps
 
 - `BlackRock` returns 0 relevant of 321. Verified genuine: its "Analyst"
