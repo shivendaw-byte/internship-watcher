@@ -151,12 +151,26 @@ breaking in November and you never noticing. So:
 
 Everything lives in `config.yaml`.
 
-- `include_any` / `exclude_any` — what counts as an internship. Matching is
-  whole-word, so `intern` won't match "International."
-- `priority_any` — postings matching these get flagged PRIORITY and sorted to
-  the top. Currently `2027`, `sophomore`, `rising junior`, etc.
-- `locations_any` — US cities/regions. Postings with no location listed are
-  **kept**, not dropped, so you never lose a match to missing metadata.
+Classification is three-way — `match` / `review` / `reject` — and the stages
+run in this order:
+
+- `role_any` — does it look like an early-career role at all? Failing this is
+  a silent reject, and it's what reduces a 1,900-posting board to a handful.
+- `hard_exclude` / `senior_only` — degrees or standing you don't have.
+- `function_exclude` — traditional MBB consulting, out of scope by choice.
+- `class_signals` — an explicit sophomore/2027 signal promotes `review` to
+  `match`. Without one you still see it, flagged for review.
+- `functions` — `econ_policy` / `business` / `consulting_adjacent`. Matching no
+  bucket yields `review`, never a reject.
+- `curated_role_extra` — extra role words (`program`, `fellowship`) trusted
+  **only** for the curated GitHub lists, so bare "Program" doesn't drag
+  full-time corporate postings into review.
+- `locations_exclude` — fails **open**: a posting is kept unless its location
+  clearly names somewhere you can't work, and any US state marker wins.
+
+Matching is whole-word throughout, so `intern` never matches "International".
+Bias is deliberately toward `review` over dropping: an extra line in a digest
+costs nothing, a missed posting costs a summer.
 
 Bias is deliberately toward over-including. An extra email costs you nothing.
 
