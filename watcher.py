@@ -177,6 +177,48 @@ def detect_function(job: Job, rules: dict) -> str | None:
 MATCH, REVIEW, REJECT = "match", "review", "reject"
 
 
+def classify_curated(job: Job, rules: dict) -> tuple[str, bool, str | None, str]:
+    """Classification for community-curated underclassmen lists.
+
+    These lists are already filtered for class year, so requiring an explicit
+    class-year signal would demote almost all of them. But they are NOT
+    filtered for function -- they are largely SWE -- and marking 186 software
+    internships as clear matches against an econ profile makes the digest
+    useless. So: trust the class year, still judge the function.
+
+    Nothing is dropped for being off-profile; it lands in `review`, which is
+    visible and triageable.
+    """
+    hay = f"{job.title} {job.location}".lower()
+
+    for term in rules.get("hard_exclude") or []:
+        if _kw(term).search(hay):
+            return REJECT, False, None, f"requires {term}"
+    for term in rules.get("senior_only") or []:
+        if _kw(term).search(hay):
+            return REJECT, False, None, f"aimed at {term}"
+    for term in rules.get("function_exclude") or []:
+        if _kw(term).search(hay):
+            return REJECT, False, None, f"traditional MBB consulting ({term})"
+    if not _location_ok(job, rules):
+        return REJECT, False, None, f"location out of scope ({job.location})"
+
+    function = detect_function(job, rules)
+    priority = any(_kw(s).search(hay) for s in rules.get("priority_any") or [])
+
+    # These lists mix real internships with conferences, memberships and brand
+    # ambassador gigs. Requiring a role keyword for MATCH keeps a conference
+    # from outranking an actual internship -- but it only demotes to REVIEW,
+    # so nothing curated is ever lost.
+    role_words = (rules.get("role_any") or []) +                  (rules.get("curated_role_extra") or [])
+    looks_like_role = any(_kw(s).search(hay) for s in role_words)
+    if looks_like_role and function:
+        return MATCH, priority, function, "curated list + on-profile function"
+    if not looks_like_role:
+        return REVIEW, priority, function, "curated list, but not clearly a role"
+    return REVIEW, priority, None, "curated list, but function looks off-profile"
+
+
 def classify(job: Job, rules: dict) -> tuple[str, bool, str | None, str]:
     """Return (verdict, is_priority, function, reason).
 
@@ -333,11 +375,10 @@ def run(args) -> int:
             if apply_filter:
                 verdict, pri, function, reason = classify(j, rules)
             else:
-                # Curated underclassmen lists are already filtered for his
-                # class year, so don't re-gate them -- but still label the
-                # function so the sheet stays useful.
-                verdict, pri, reason = MATCH, False, "curated underclassmen list"
-                function = detect_function(j, rules)
+                # Curated underclassmen lists: trust their class-year curation,
+                # but still judge function so off-profile roles land in review
+                # rather than masquerading as clear matches.
+                verdict, pri, function, reason = classify_curated(j, rules)
             if verdict == REJECT:
                 continue
             kept.append(Listing(

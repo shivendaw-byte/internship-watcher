@@ -59,6 +59,14 @@ match:
     - "rotational program"
     - "development program"
 
+  # Extra role words trusted ONLY for community-curated lists, where a
+  # pipeline programme is the normal shape of a real opportunity.
+  curated_role_extra:
+    - program
+    - programme
+    - fellowship
+    - scholars
+
   # STAGE 2 -- degrees or experience he does not have. Hard reject.
   hard_exclude:
     - mba
@@ -134,6 +142,12 @@ match:
     business:
       - "business analyst"
       - business
+      - quantitative
+      - quant
+      - trading
+      - trader
+      - markets
+      - econometrics
       - finance
       - financial
       - strategy
@@ -145,6 +159,7 @@ match:
       - wealth
       - risk
       - operations
+      - ops
       - "data analyst"
       - analytics
       - product

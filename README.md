@@ -200,3 +200,77 @@ python watcher.py --dry-run       # print, don't send, don't save
 python watcher.py --only Visa     # test one source
 python watcher.py --test-email    # check SMTP
 ```
+
+---
+
+## The Google Sheet
+
+**Sheet:** [Internship Tracker — Summer 2027 (bot-fed)](https://docs.google.com/spreadsheets/d/1WX4jaUt7B861RB5U9_suhup2WuA7jNmxln8s6rkZQIM/edit)
+
+The bot runs in GitHub Actions with no Google credentials, so it can't call the
+Sheets API. Instead it commits `listings.csv` to this public repo and the Sheet
+pulls it with `IMPORTDATA`. No Google Cloud project, no service account, no
+token to expire.
+
+### One manual step
+
+The Drive API escapes a leading `=`, so the formula arrived in the Sheet as
+plain text. Fix it once:
+
+1. Open the Sheet, click cell **A1**
+2. Delete what's there
+3. Paste this and press Enter:
+
+```
+=IMPORTDATA("https://raw.githubusercontent.com/shivendaw-byte/internship-watcher/main/listings.csv")
+```
+
+It then refreshes itself roughly hourly, forever. Nothing else to maintain.
+
+### The tradeoff, stated plainly
+
+`IMPORTDATA` output is **read-only** — anything typed into those cells is wiped
+on the next refresh. So the hand-edited columns live on a second tab.
+
+Add a tab called `Tracker`, and in its A1 paste:
+
+```
+={"listing_id","company","role_title","app_status","notes";ARRAYFORMULA({FILTER(Live!A2:C,Live!E2:E="match"),IFERROR(VLOOKUP(FILTER(Live!A2:A,Live!E2:E="match"),Status!A:C,{2,3},FALSE),"")})}
+```
+
+Simpler alternative if that gets fiddly: keep a plain `Status` tab with
+`listing_id | app_status | notes`, type into it freely, and `VLOOKUP` against
+`Live` when you want the joined view. The `listing_id` is stable across runs
+and across sources, which is what makes either approach hold.
+
+### Schema
+
+| column | meaning |
+|---|---|
+| `listing_id` | cross-source fingerprint; the join key, stable between runs |
+| `company` / `role_title` | split from the posting title |
+| `function` | `econ_policy` / `business` / `consulting_adjacent` / `unclassified` |
+| `eligibility` | `match` or `review` — never `reject` (those never reach the sheet) |
+| `eligibility_reason` | why it landed there; makes triaging `review` rows quick |
+| `source_type` / `source_name` | which layer and which board or list found it |
+| `location`, `date_posted`, `deadline` | as published; blank when the board doesn't say |
+| `date_discovered` | when this bot first saw it — never overwritten |
+| `apply_url` | direct link |
+| `priority` | TRUE when the posting names your class year or cycle |
+
+## Application prep (on demand only)
+
+Not wired into the bot — zero references from `watcher.py` or the workflow.
+
+```bash
+python apply_prep.py --list
+```
+
+```bash
+python apply_prep.py --id <listing_id> --fetch
+```
+
+That writes `prep/<company>-<id>/` with five prompts: resume tailoring, cover
+letter, recruiter outreach, referral DM, and STAR interview prep. Each is
+pre-loaded with the role and your profile. You paste the one you want into
+Claude. It never sends anything and never edits the sheet.
