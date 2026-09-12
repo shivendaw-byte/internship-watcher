@@ -13,9 +13,30 @@ email:
   heartbeat_days: 7
 
 match:
-  # A posting must contain at least one of these to count as an internship.
-  # Keep this generous -- an extra email costs you nothing, a miss costs a lot.
-  include_any:
+  # ---------------------------------------------------------------------------
+  # ELIGIBILITY PROFILE
+  # Sophomore at Penn (2026-27), Mathematical Economics + Political Science,
+  # targeting SUMMER 2027 internships. Lanes: business/corporate, economic
+  # policy (Fed / IMF / World Bank / Treasury / think tanks), and
+  # econ-consulting & research (Oliver Wyman ICG, Cornerstone Research).
+  # Explicitly NOT traditional MBB management consulting.
+  #
+  # Classification is THREE-WAY, not keep/drop:
+  #   match   looks like an early-career role AND carries an underclassman
+  #           or Summer-2027 signal
+  #   review  looks like an early-career role but eligibility or function is
+  #           unclear -- surfaced for a human decision
+  #   reject  not an early-career role at all, or demands standing/experience
+  #           he does not have
+  #
+  # Ambiguity always becomes `review`. The bot never silently discards a
+  # posting it merely failed to understand.
+  # ---------------------------------------------------------------------------
+
+  # STAGE 1 -- is this an early-career role at all? Failing this is a silent
+  # reject, and it is what reduces a 1,800-posting corporate board to a
+  # readable handful. Keep it generous.
+  role_any:
     - intern
     - internship
     - "co-op"
@@ -23,19 +44,23 @@ match:
     - "summer analyst"
     - "summer associate"
     - "summer business analyst"
+    - "summer scholar"
     - apprentice
     - student
     - "early career"
-    - "campus hire"
-    - "undergraduate"
+    - campus
+    - undergraduate
     - "insight program"
     - "spring week"
-    - "sophomore"
+    - sophomore
     - "launch program"
     - "explore program"
+    - "analyst program"
+    - "rotational program"
+    - "development program"
 
-  # ...but drop it if it matches any of these (grad-level or wrong audience).
-  exclude_any:
+  # STAGE 2 -- degrees or experience he does not have. Hard reject.
+  hard_exclude:
     - mba
     - "ph.d"
     - phd
@@ -45,13 +70,111 @@ match:
     - "experienced hire"
     - "master's student"
     - "masters student"
-    # Capital One posts "Current Master's - Data Science Internship", so the
-    # bare word has to be excluded too, not just "master's student".
     - "master's"
     - masters
+    - "law student"
+    - "2+ years"
+    - "3+ years"
+    - "5+ years"
+    - "two years of experience"
+    - "three years of experience"
+    - "years of professional experience"
 
-  # Matching any of these marks the posting HIGH PRIORITY in the email
-  # (bubbled to the top, flagged in the subject line).
+  # STAGE 2b -- aimed only at people ahead of him in the pipeline.
+  senior_only:
+    - "rising senior"
+    - "senior standing"
+    - "junior standing"
+    - "graduating 2026"
+    - "class of 2026"
+    - "class of 2027"
+    - "final year"
+    - "penultimate year"
+
+  # STAGE 3 -- explicit underclassman or correct-cycle signal. Presence of any
+  # of these promotes a posting from `review` to `match`.
+  class_signals:
+    - "2027"
+    - "summer 2027"
+    - sophomore
+    - "second year"
+    - "first year"
+    - "rising junior"
+    - underclassmen
+    - underclassman
+    - freshman
+    - "class of 2028"
+    - "class of 2029"
+    - "all undergraduates"
+    - "no class-year"
+    - "open to all undergrads"
+
+  # STAGE 4 -- which lane is this in? Matching no bucket yields `review`,
+  # never a reject, so an unfamiliar title still reaches him.
+  functions:
+    econ_policy:
+      - economist
+      - economic
+      - economics
+      - econometric
+      - policy
+      - "public policy"
+      - monetary
+      - fiscal
+      - macroeconomic
+      - "central bank"
+      - "international development"
+      - "research assistant"
+      - "research analyst"
+      - "economic research"
+      - "policy analyst"
+      - treasury
+      - statistics
+      - statistical
+    business:
+      - "business analyst"
+      - business
+      - finance
+      - financial
+      - strategy
+      - strategic
+      - corporate
+      - investment
+      - "asset management"
+      - portfolio
+      - wealth
+      - risk
+      - operations
+      - "data analyst"
+      - analytics
+      - product
+      - marketing
+      - client
+      - sales
+      - accounting
+      - audit
+    consulting_adjacent:
+      - "economic consulting"
+      - litigation
+      - antitrust
+      - valuation
+      - "expert testimony"
+      - "competition economics"
+      - consultant
+      - consulting
+
+  # Traditional MBB management consulting -- deliberately out of scope.
+  # Checked BEFORE the function buckets, so "management consulting" rejects
+  # even though "consulting" would otherwise match consulting_adjacent.
+  function_exclude:
+    - mckinsey
+    - "bain &"
+    - "bain and"
+    - "boston consulting"
+    - bcg
+    - "management consulting"
+
+  # Matching any of these sorts the posting to the top of the digest.
   priority_any:
     - "2027"
     - sophomore
@@ -59,18 +182,8 @@ match:
     - "first year"
     - "rising junior"
     - "summer 2027"
+    - "open to all undergrads"
 
-  # Location filtering FAILS OPEN. Drop a posting only when its location
-  # clearly names somewhere you can't work; keep everything else, including
-  # postings with no location listed.
-  #
-  # The previous approach -- an allowlist of US cities -- silently dropped real
-  # roles in McLean, Santa Clara, Plano, Seattle and every other hub nobody
-  # thought to add. Missing a posting is the only failure that actually costs
-  # you, so the default is now "keep unless clearly foreign".
-  #
-  # Matching is whole-word, so "India" does not match "Indianapolis, Indiana".
-  # Delete any line here to start receiving that country's roles.
   locations_exclude:
     - india
     - brazil
@@ -220,34 +333,6 @@ sources:
     site: Capital_One
     max_results: 2000
 
-  - name: NVIDIA
-    type: workday
-    host: nvidia.wd5.myworkdayjobs.com
-    tenant: nvidia
-    site: NVIDIAExternalCareerSite
-    max_results: 2200
-
-  - name: Salesforce
-    type: workday
-    host: salesforce.wd12.myworkdayjobs.com
-    tenant: salesforce
-    site: External_Career_Site
-    max_results: 1800
-
-  - name: Adobe
-    type: workday
-    host: adobe.wd5.myworkdayjobs.com
-    tenant: adobe
-    site: external_experienced
-    max_results: 1000
-
-  - name: PayPal
-    type: workday
-    host: paypal.wd1.myworkdayjobs.com
-    tenant: paypal
-    site: jobs
-    max_results: 600
-
   - name: Amazon
     type: amazon_jobs
     search_terms: ["intern", "internship", "summer 2027"]
@@ -275,6 +360,40 @@ sources:
     enabled: true
     search_terms: ["intern", "pathways student", "student trainee"]
     max_pages: 3
+
+  # --- economic policy, finance & econ-research employers -------------------
+  # All four Workday tenants verified live 2026-09-12 (postings returned:
+  # Vanguard 444, T. Rowe Price 135, BlackRock 321, IMF 11).
+  - name: Vanguard
+    type: workday
+    host: vanguard.wd5.myworkdayjobs.com
+    tenant: vanguard
+    site: vanguard_external
+    max_results: 800
+
+  - name: T. Rowe Price
+    type: workday
+    host: troweprice.wd5.myworkdayjobs.com
+    tenant: troweprice
+    site: TRowePrice
+    max_results: 400
+
+  - name: BlackRock
+    type: workday
+    host: blackrock.wd1.myworkdayjobs.com
+    tenant: blackrock
+    site: BlackRock_Professional
+    max_results: 600
+
+  # Small board by design -- the IMF posts few roles externally, so a low
+  # count here is normal rather than a sign the source broke.
+  - name: IMF
+    type: workday
+    host: imf.wd5.myworkdayjobs.com
+    tenant: imf
+    site: IMF
+    max_results: 200
+    may_be_empty: true
 
   - name: Google
     type: google_careers

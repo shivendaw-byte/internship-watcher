@@ -25,11 +25,27 @@ import sys
 import requests
 import yaml
 
+from dataclasses import dataclass
+
+import export
 import notify
 import sources
 from sources import ADAPTERS, Job, SourceError
 
 ROOT = pathlib.Path(__file__).resolve().parent
+
+
+@dataclass(frozen=True)
+class Listing:
+    """A posting plus everything the digest and the sheet need to show."""
+
+    job: Job
+    verdict: str                # match | review
+    priority: bool
+    function: str               # econ_policy | business | consulting_adjacent | ...
+    reason: str                 # why it landed on that verdict
+    source_type: str            # workday, github_markdown, ...
+    fingerprint: str            # cross-source identity
 
 # Job titles contain em-dashes and emoji; the default Windows console codepage
 # (cp1252) raises on them, which would crash a run that otherwise succeeded.
@@ -126,33 +142,121 @@ def _kw(word: str):
     return rx
 
 
-def classify(job: Job, rules: dict) -> tuple[bool, bool]:
-    """Return (keep, is_priority)."""
+def _location_ok(job: Job, rules: dict) -> bool:
+    """Location filtering FAILS OPEN, on purpose.
+
+    An allowlist of US cities silently dropped real roles in McLean, Santa
+    Clara, Plano and anywhere else nobody thought to list. So instead: keep
+    everything except postings whose location clearly names somewhere he
+    can't work. Whole-word matching matters here -- "India" must not match
+    "Indianapolis, Indiana".
+    """
+    loc = job.location.lower()
+    if not loc or _VAGUE_LOCATION.match(job.location) or _looks_american(job.location):
+        return True
+    if any(_kw(s).search(loc) for s in rules.get("locations_exclude") or []):
+        return False
+    locs = [s.lower() for s in rules.get("locations_any") or []]
+    if locs and not any(s in loc for s in locs):
+        return False
+    return True
+
+
+def detect_function(job: Job, rules: dict) -> str | None:
+    """Which lane a posting sits in, or None when nothing matches."""
+    hay = f"{job.title} {job.location}".lower()
+    for bucket, terms in (rules.get("functions") or {}).items():
+        if any(_kw(t).search(hay) for t in terms):
+            return bucket
+    return None
+
+
+# Verdicts. "review" exists so an ambiguous posting reaches a human instead of
+# being discarded on a guess -- missing one real match costs far more than
+# reading one extra line in a digest.
+MATCH, REVIEW, REJECT = "match", "review", "reject"
+
+
+def classify(job: Job, rules: dict) -> tuple[str, bool, str | None, str]:
+    """Return (verdict, is_priority, function, reason).
+
+    Staged so the reason is always specific enough to act on:
+      1. not an early-career role            -> reject (silent, high volume)
+      2. needs a degree/experience he lacks  -> reject
+      2b. aimed at juniors/seniors only      -> reject
+      3. MBB management consulting           -> reject (out of scope by choice)
+      4. location he can't work in           -> reject
+      5. has an underclassman/2027 signal    -> match
+      6. anything else                       -> review, with the gap named
+    """
     hay = f"{job.title} {job.location}".lower()
 
-    include = rules.get("include_any") or []
-    if include and not any(_kw(s).search(hay) for s in include):
-        return False, False
+    role_terms = rules.get("role_any") or []
+    if role_terms and not any(_kw(s).search(hay) for s in role_terms):
+        return REJECT, False, None, "not an early-career role"
 
-    if any(_kw(s).search(hay) for s in rules.get("exclude_any") or []):
-        return False, False
+    for term in rules.get("hard_exclude") or []:
+        if _kw(term).search(hay):
+            return REJECT, False, None, f"requires {term}"
 
-    # Location filtering FAILS OPEN, on purpose. An allowlist of US cities
-    # silently dropped real roles in McLean, Santa Clara, Plano and anywhere
-    # else nobody thought to list. So instead: keep everything except postings
-    # whose location clearly names somewhere you can't work. Whole-word
-    # matching matters here -- "India" must not match "Indianapolis, Indiana".
-    loc = job.location.lower()
-    if loc and not _VAGUE_LOCATION.match(job.location) and not _looks_american(job.location):
-        if any(_kw(s).search(loc) for s in rules.get("locations_exclude") or []):
-            return False, False
-        # Optional strict allowlist; empty by default and normally left that way.
-        locs = [s.lower() for s in rules.get("locations_any") or []]
-        if locs and not any(s in loc for s in locs):
-            return False, False
+    for term in rules.get("senior_only") or []:
+        if _kw(term).search(hay):
+            return REJECT, False, None, f"aimed at {term}"
 
+    # Checked before the function buckets so "management consulting" rejects
+    # even though the bare word "consulting" maps to consulting_adjacent.
+    for term in rules.get("function_exclude") or []:
+        if _kw(term).search(hay):
+            return REJECT, False, None, f"traditional MBB consulting ({term})"
+
+    if not _location_ok(job, rules):
+        return REJECT, False, None, f"location out of scope ({job.location})"
+
+    function = detect_function(job, rules)
     priority = any(_kw(s).search(hay) for s in rules.get("priority_any") or [])
-    return True, priority
+    has_class_signal = any(
+        _kw(s).search(hay) for s in rules.get("class_signals") or [])
+
+    if has_class_signal and function:
+        return MATCH, priority, function, "underclassman signal + known function"
+    if has_class_signal and not function:
+        return REVIEW, priority, None, "eligible year, but function unclear"
+    if function:
+        return REVIEW, priority, function, "no class-year stated - check eligibility"
+    return REVIEW, priority, None, "no class-year stated and function unclear"
+
+
+# ---------------------------------------------------------------------------
+# cross-source deduplication
+# ---------------------------------------------------------------------------
+
+_FP_SPLIT = re.compile(r"\s+[-–—]\s+")
+
+# Sources that scrape an employer directly. When the same posting arrives from
+# both a curated list and the employer's own board, the direct one wins -- it
+# is closer to the origin and carries the real apply URL.
+DIRECT_TYPES = {"workday", "successfactors", "google_careers", "amazon_jobs",
+                "usajobs", "greenhouse", "lever"}
+
+
+def fingerprint(job: Job, src_type: str) -> str:
+    """A source-independent identity for a posting.
+
+    The per-source `seen` sets can't catch a posting that appears in both a
+    GitHub list and an employer's Workday board -- those have different ids,
+    so it was previously counted and emailed twice. This collapses them on
+    normalised company + role text.
+    """
+    title = job.title
+    parts = _FP_SPLIT.split(title, 1)
+    if len(parts) == 2 and src_type not in DIRECT_TYPES:
+        company, role = parts[0], parts[1]
+    else:
+        company, role = job.source, title
+    role = re.sub(r"\(.*?\)|\[.*?\]", " ", role)          # drop parentheticals
+    role = re.sub(r"\b(20\d\d|summer|fall|winter|spring)\b", " ", role, flags=re.I)
+    blob = re.sub(r"[^a-z0-9]+", "", (company + role).lower())
+    return blob[:70]
 
 
 # ---------------------------------------------------------------------------
@@ -168,7 +272,8 @@ def run(args) -> int:
     session = requests.Session()
     session.headers.update({"User-Agent": UA, "Accept-Language": "en-US,en;q=0.9"})
 
-    new_jobs: list[tuple[Job, bool]] = []
+    new_jobs: list[Listing] = []
+    all_listings: list[Listing] = []
     health: list[str] = []
     stats: dict[str, str] = {}
 
@@ -222,16 +327,26 @@ def run(args) -> int:
                 print(f"[{name}] dropped {before - len(jobs)} by exclude_terms")
 
         apply_filter = src.get("filter", src.get("type") != "page_watch")
-        kept: list[tuple[Job, bool]] = []
+        src_type = src.get("type", "")
+        kept: list[Listing] = []
         for j in jobs:
             if apply_filter:
-                keep, pri = classify(j, rules)
+                verdict, pri, function, reason = classify(j, rules)
             else:
-                keep, pri = True, False
-            if keep:
-                kept.append((j, pri))
+                # Curated underclassmen lists are already filtered for his
+                # class year, so don't re-gate them -- but still label the
+                # function so the sheet stays useful.
+                verdict, pri, reason = MATCH, False, "curated underclassmen list"
+                function = detect_function(j, rules)
+            if verdict == REJECT:
+                continue
+            kept.append(Listing(
+                job=j, verdict=verdict, priority=pri,
+                function=function or "unclassified", reason=reason,
+                source_type=src_type, fingerprint=fingerprint(j, src_type)))
 
-        fresh = [(j, p) for j, p in kept if j.id not in seen]
+        all_listings.extend(kept)
+        fresh = [L for L in kept if L.job.id not in seen]
 
         # A source that used to return postings and now returns none is far
         # more likely to be broken than genuinely empty. Sources that can
@@ -247,8 +362,9 @@ def run(args) -> int:
         if first_run and not args.notify_first_run:
             print(f"[{name}] first run: seeding {len(kept)} relevant postings "
                   "(not emailed; use --notify-first-run to see them)")
-            for j, p in kept:
-                print(f"    {'*' if p else '-'} {j.title} | {j.url}")
+            for L in kept:
+                flag = "*" if L.priority else ("?" if L.verdict == REVIEW else "-")
+                print(f"    {flag} [{L.verdict}] {L.job.title} | {L.job.url}")
         else:
             new_jobs.extend(fresh)
             print(f"[{name}] {len(fresh)} new of {len(kept)} relevant")
@@ -259,6 +375,43 @@ def run(args) -> int:
                 "last_count": len(jobs),
                 "last_ok": now_iso(),
             }
+
+    # ---- cross-source dedup ---------------------------------------------
+    # Per-source `seen` sets cannot catch the same posting arriving from a
+    # curated GitHub list AND the employer's own board: different ids, so it
+    # was counted and emailed twice. Collapse on fingerprint, and let the
+    # direct-from-employer copy win since it carries the real apply URL.
+    seen_fp: set[str] = set(state.get("seen_fingerprints", []))
+    by_fp: dict[str, Listing] = {}
+    dupes_collapsed = 0
+    for L in sorted(new_jobs, key=lambda L: L.source_type not in DIRECT_TYPES):
+        if L.fingerprint in by_fp:
+            dupes_collapsed += 1
+            continue
+        by_fp[L.fingerprint] = L
+
+    already_reported = [fp for fp in by_fp if fp in seen_fp]
+    new_jobs = [L for fp, L in by_fp.items() if fp not in seen_fp]
+    if dupes_collapsed or already_reported:
+        print(f"dedup: collapsed {dupes_collapsed} same-run duplicate(s), "
+              f"suppressed {len(already_reported)} already reported via "
+              "another source")
+
+    # ---- write the CSV the Google Sheet reads ---------------------------
+    if not args.dry_run and all_listings:
+        today = dt.date.today().isoformat()
+        # Dedup across sources here too, so the sheet gets one row per posting.
+        sheet_rows = list({
+            L.fingerprint: L
+            for L in sorted(all_listings,
+                            key=lambda L: L.source_type not in DIRECT_TYPES)
+        }.values())
+        added, total = export.write(sheet_rows, today)
+        print(f"listings.csv: +{added} new, {total} rows total")
+
+    if not args.dry_run:
+        state["seen_fingerprints"] = sorted(
+            seen_fp | {L.fingerprint for L in new_jobs})
 
     # ---- decide whether to send -----------------------------------------
     heartbeat_days = int(email_cfg.get("heartbeat_days", 7))
@@ -273,7 +426,8 @@ def run(args) -> int:
 
     should_send = bool(new_jobs) or bool(health) or heartbeat_due
 
-    new_jobs.sort(key=lambda t: (not t[1], t[0].source, t[0].title))
+    new_jobs.sort(key=lambda L: (L.verdict != MATCH, not L.priority,
+                                L.job.source, L.job.title))
     subject, text_body, html_body = notify.render_digest(new_jobs, health, stats)
     subject = f"{email_cfg.get('subject_prefix', '[Internship Watch]')} {subject}"
 

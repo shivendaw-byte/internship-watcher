@@ -3,3 +3,6 @@ __pycache__/
 *.pyc
 .venv/
 venv/
+prep/
+config.yaml.bak
+notify.py.bak

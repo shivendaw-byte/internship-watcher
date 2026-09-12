@@ -79,12 +79,14 @@ jobs:
           # 0 = clean, 1 = ran but some source is unhealthy, 2 = email failed
           if [ "$code" -ge 2 ]; then exit "$code"; fi
 
-      - name: Persist seen-postings state
+      - name: Persist seen-postings state and the sheet CSV
         run: |
           git config user.name  "internship-watcher"
           git config user.email "actions@users.noreply.github.com"
-          if [ -n "$(git status --porcelain state.json)" ]; then
-            git add state.json
+          # listings.csv is committed alongside state.json because the Google
+          # Sheet reads it over IMPORTDATA -- the commit IS the publish step.
+          if [ -n "$(git status --porcelain state.json listings.csv)" ]; then
+            git add state.json listings.csv
             git commit -m "state: $(date -u +%Y-%m-%dT%H:%MZ)"
             git pull --rebase --autostash origin "${GITHUB_REF_NAME}" || true
             git push
