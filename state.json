@@ -1,5 +1,5 @@
 {
-  "last_email": "2026-09-19T02:26:39+00:00",
+  "last_email": "2026-09-19T07:41:43+00:00",
   "seen_fingerprints": [
     "amazoncustomersolutionsmanagerinternawsi",
     "amazonearlycareerexperienceprogrammanageramazonuniversitytalentacquisi",
@@ -66,7 +66,7 @@
   "sources": {
     "APM List (PM internships)": {
       "last_count": 9,
-      "last_ok": "2026-09-19T02:26:36+00:00",
+      "last_ok": "2026-09-19T07:41:40+00:00",
       "seen": [
         "amazoninternshipopen",
         "americanexpressinternshipopen",
@@ -1154,7 +1154,7 @@
     },
     "Amazon": {
       "last_count": 376,
-      "last_ok": "2026-09-19T02:25:47+00:00",
+      "last_ok": "2026-09-19T07:41:18+00:00",
       "seen": [
         "10387501",
         "10391774",
@@ -2342,6 +2342,7 @@
         "10554069",
         "10554077",
         "10554084",
+        "10554141",
         "3071340",
         "3088741",
         "3104589",
@@ -2762,8 +2763,8 @@
       ]
     },
     "Capital One": {
-      "last_count": 1791,
-      "last_ok": "2026-09-19T02:25:42+00:00",
+      "last_count": 1789,
+      "last_ok": "2026-09-19T07:41:12+00:00",
       "seen": [
         "R1000000",
         "R1000004",
@@ -5854,7 +5855,7 @@
     },
     "EY / EY-Parthenon": {
       "last_count": 255,
-      "last_ok": "2026-09-19T02:25:18+00:00",
+      "last_ok": "2026-09-19T07:40:47+00:00",
       "seen": [
         "1002856701",
         "1005882301",
@@ -11492,7 +11493,7 @@
     },
     "Google": {
       "last_count": 37,
-      "last_ok": "2026-09-19T02:26:33+00:00",
+      "last_ok": "2026-09-19T07:41:38+00:00",
       "seen": [
         "100648618540573382",
         "100798001798095558",
@@ -19621,7 +19622,7 @@
     },
     "Summer 2027 Internships (vanshb03)": {
       "last_count": 190,
-      "last_ok": "2026-09-19T02:26:34+00:00",
+      "last_ok": "2026-09-19T07:41:40+00:00",
       "seen": [
         "abundantsoftwareengineeringinternresearchfocused",
         "akunacapitalhardwareengineerintern",
@@ -19986,8 +19987,8 @@
       ]
     },
     "USAJOBS (federal)": {
-      "last_count": 393,
-      "last_ok": "2026-09-19T02:25:56+00:00",
+      "last_count": 388,
+      "last_ok": "2026-09-19T07:41:24+00:00",
       "seen": [
         "846709100",
         "846709200",
@@ -21002,6 +21003,7 @@
         "884621400",
         "884624200",
         "884649900",
+        "884669800",
         "884671900",
         "884688400",
         "884689900",
@@ -21029,6 +21031,7 @@
         "884857500",
         "884866200",
         "884884200",
+        "884886700",
         "884905800",
         "884927000",
         "884934100",
@@ -21043,18 +21046,26 @@
         "885023400",
         "885034900",
         "885047800",
+        "885067000",
         "885067200",
         "885082000",
         "885083800",
+        "885088500",
         "885098400",
         "885102400",
         "885104000",
         "885111200",
         "885160700",
+        "885169900",
+        "885170400",
         "885170600",
+        "885171800",
         "885171900",
+        "885173400",
+        "885174100",
         "885175300",
         "885194300",
+        "885205100",
         "885208700",
         "885252600",
         "885278300",
@@ -21068,12 +21079,13 @@
         "885325100",
         "885356700",
         "885391300",
-        "885399100"
+        "885399100",
+        "885456800"
       ]
     },
     "Underclassmen Internships (zapplyjobs)": {
       "last_count": 46,
-      "last_ok": "2026-09-19T02:26:34+00:00",
+      "last_ok": "2026-09-19T07:41:39+00:00",
       "seen": [
         "8vcfellowship",
         "abbqualityengineer",
@@ -21688,7 +21700,7 @@
     },
     "Underclassmen Opportunities (Cruz-Lopez)": {
       "last_count": 44,
-      "last_ok": "2026-09-19T02:26:33+00:00",
+      "last_ok": "2026-09-19T07:41:39+00:00",
       "seen": [
         "21stcenturyscholars",
         "aauwaauwlocalbranchundergraduatescholarshipsallmajorsdeadlinerollingbylocalbranc",
@@ -21867,7 +21879,7 @@
     },
     "Underclassmen Opportunities (LuisaE)": {
       "last_count": 137,
-      "last_ok": "2026-09-19T02:26:33+00:00",
+      "last_ok": "2026-09-19T07:41:39+00:00",
       "seen": [
         "8vcfellowships",
         "abercrombiefitchsophomoresummit",
