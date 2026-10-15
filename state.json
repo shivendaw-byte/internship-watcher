@@ -1,5 +1,5 @@
 {
-  "last_email": "2026-10-15T07:54:52+00:00",
+  "last_email": "2026-10-15T16:36:30+00:00",
   "seen_fingerprints": [
     "adobeinternshipisnowopen",
     "amazonamazonroboticshardwaredevelopmentengineerinterncoop",
@@ -122,6 +122,7 @@
     "federalreservesysteminternsystemit",
     "federalreservesysteminternundergraduateinternalauditmajors",
     "federalreservesystemplanninganddesignintern",
+    "federalreservesystemprojectmanagementengineeringconstructioncoop",
     "federalreservesystemregionalexecutiveintern",
     "federalreservesystemresearchintern",
     "federalreservesystemscsadvancedanalyticsintern",
@@ -219,6 +220,7 @@
     "usajobsfederalofficeoftheclerkofthecourtinternship",
     "usajobsfederaloperationsbranchselfhelpcenterinternship",
     "usajobsfederalreligiousservicesstudenttrainee",
+    "usajobsfederalsemesterofservicestudentvolunteer",
     "usajobsfederalspecialoperationsdivisionchildcarecenterinternship",
     "usajobsfederalspecialoperationsonboardingtraininginternship",
     "usajobsfederalstudentcooperativeofficeofinvestigations",
@@ -260,7 +262,7 @@
   "sources": {
     "APM List (PM internships)": {
       "last_count": 14,
-      "last_ok": "2026-10-15T13:52:04+00:00",
+      "last_ok": "2026-10-15T16:36:28+00:00",
       "seen": [
         "adobeinternshipopen",
         "amazoninternshipopen",
@@ -1353,8 +1355,8 @@
       ]
     },
     "Amazon": {
-      "last_count": 348,
-      "last_ok": "2026-10-15T13:51:15+00:00",
+      "last_count": 344,
+      "last_ok": "2026-10-15T16:35:37+00:00",
       "seen": [
         "10387501",
         "10391774",
@@ -3153,6 +3155,10 @@
         "10579384",
         "10579435",
         "10579585",
+        "10579960",
+        "10579961",
+        "10580018",
+        "10580035",
         "3071340",
         "3088741",
         "3104589",
@@ -3169,7 +3175,7 @@
     },
     "BlackRock": {
       "last_count": 311,
-      "last_ok": "2026-10-15T13:51:59+00:00",
+      "last_ok": "2026-10-15T16:36:23+00:00",
       "seen": [
         "R241791",
         "R250983",
@@ -3721,13 +3727,15 @@
         "R266855",
         "R266864",
         "R266874",
+        "R266878",
+        "R266879",
         "R266880",
         "R266883"
       ]
     },
     "Capital One": {
-      "last_count": 1971,
-      "last_ok": "2026-10-15T13:51:09+00:00",
+      "last_count": 1961,
+      "last_ok": "2026-10-15T16:35:29+00:00",
       "seen": [
         "R1000000",
         "R1000004",
@@ -5246,6 +5254,8 @@
         "R1003228",
         "R1003230",
         "R1003236",
+        "R1003238",
+        "R1003239",
         "R1003241",
         "R1003243",
         "R1003244",
@@ -5302,6 +5312,7 @@
         "R1003383",
         "R1003387",
         "R1003395",
+        "R1003396",
         "R1003398",
         "R1003400",
         "R1003409",
@@ -5336,6 +5347,7 @@
         "R1003496",
         "R1003497",
         "R1003498",
+        "R1003500",
         "R1003502",
         "R1003503",
         "R1003508",
@@ -5389,12 +5401,17 @@
         "R1003746",
         "R1003748",
         "R1003754",
+        "R1003756",
         "R1003757",
         "R1003758",
         "R1003767",
         "R1003771",
         "R1003774",
+        "R1003781",
         "R1003792",
+        "R1003796",
+        "R1003802",
+        "R1003829",
         "R205993",
         "R206938",
         "R210103",
@@ -8121,8 +8138,8 @@
       ]
     },
     "EY / EY-Parthenon": {
-      "last_count": 265,
-      "last_ok": "2026-10-15T13:50:39+00:00",
+      "last_count": 264,
+      "last_ok": "2026-10-15T16:35:02+00:00",
       "seen": [
         "1002856701",
         "1005882301",
@@ -14870,6 +14887,11 @@
         "1447879533",
         "1447950533",
         "1447961433",
+        "1448144833",
+        "1448145733",
+        "1448149533",
+        "1448151033",
+        "1448175733",
         "695560401",
         "696384101",
         "696385901",
@@ -14980,8 +15002,8 @@
       ]
     },
     "Federal Reserve System": {
-      "last_count": 163,
-      "last_ok": "2026-10-15T13:51:23+00:00",
+      "last_count": 165,
+      "last_ok": "2026-10-15T16:35:45+00:00",
       "seen": [
         "R-0000029562",
         "R-0000030430",
@@ -15332,13 +15354,15 @@
         "R-0000033712",
         "R-0000033718",
         "R-0000033720",
+        "R-0000033732",
         "R-0000033738",
+        "R-0000033755",
         "R-0000033756"
       ]
     },
     "Google": {
       "last_count": 21,
-      "last_ok": "2026-10-15T13:52:02+00:00",
+      "last_ok": "2026-10-15T16:36:26+00:00",
       "seen": [
         "100460871561421510",
         "100648618540573382",
@@ -15389,7 +15413,7 @@
     },
     "IMF": {
       "last_count": 16,
-      "last_ok": "2026-10-15T13:52:01+00:00",
+      "last_ok": "2026-10-15T16:36:25+00:00",
       "seen": [
         "26-R8965",
         "26-R8967",
@@ -15429,7 +15453,7 @@
     },
     "Mastercard": {
       "last_count": 1125,
-      "last_ok": "2026-10-15T13:49:52+00:00",
+      "last_ok": "2026-10-15T16:34:15+00:00",
       "seen": [
         "R-207875",
         "R-208485",
@@ -15794,6 +15818,7 @@
         "R-277017",
         "R-277073",
         "R-277093",
+        "R-277123",
         "R-277150",
         "R-277151",
         "R-277161",
@@ -17076,6 +17101,7 @@
         "R-287487",
         "R-287490",
         "R-287491",
+        "R-287495",
         "R-287496",
         "R-287499",
         "R-287501",
@@ -18412,6 +18438,7 @@
         "R-292798",
         "R-292799",
         "R-292801",
+        "R-292802",
         "R-292803",
         "R-292805",
         "R-292808",
@@ -18468,6 +18495,7 @@
         "R-293198",
         "R-293203",
         "R-293209",
+        "R-293240",
         "R-293246",
         "R-293248",
         "R-293250",
@@ -18484,6 +18512,7 @@
         "R-293369",
         "R-293375",
         "R-293388",
+        "R-293409",
         "R-293430",
         "R-293439",
         "R-293450",
@@ -18507,6 +18536,7 @@
         "R-293605",
         "R-293609",
         "R-293658",
+        "R-293662",
         "R-293669",
         "R-293672",
         "R-293690",
@@ -24206,7 +24236,7 @@
     },
     "Summer 2027 Internships (vanshb03)": {
       "last_count": 190,
-      "last_ok": "2026-10-15T13:52:03+00:00",
+      "last_ok": "2026-10-15T16:36:27+00:00",
       "seen": [
         "abundantsoftwareengineeringinternresearchfocused",
         "akunacapitalhardwareengineerintern",
@@ -24411,8 +24441,8 @@
       ]
     },
     "T. Rowe Price": {
-      "last_count": 142,
-      "last_ok": "2026-10-15T13:51:52+00:00",
+      "last_count": 139,
+      "last_ok": "2026-10-15T16:36:14+00:00",
       "seen": [
         "76537",
         "78144",
@@ -24608,14 +24638,15 @@
         "83820",
         "83849",
         "83966",
+        "83973",
         "83986",
         "84011",
         "84033"
       ]
     },
     "USAJOBS (federal)": {
-      "last_count": 361,
-      "last_ok": "2026-10-15T13:51:25+00:00",
+      "last_count": 363,
+      "last_ok": "2026-10-15T16:35:47+00:00",
       "seen": [
         "846709100",
         "846709200",
@@ -26333,12 +26364,17 @@
         "888829500",
         "888840300",
         "888855800",
-        "888857800"
+        "888857800",
+        "888881400",
+        "888908900",
+        "888909600",
+        "888909900",
+        "888913800"
       ]
     },
     "Underclassmen Internships (zapplyjobs)": {
       "last_count": 46,
-      "last_ok": "2026-10-15T13:52:03+00:00",
+      "last_ok": "2026-10-15T16:36:27+00:00",
       "seen": [
         "8vcfellowship",
         "abbqualityengineer",
@@ -26953,7 +26989,7 @@
     },
     "Underclassmen Opportunities (Cruz-Lopez)": {
       "last_count": 78,
-      "last_ok": "2026-10-15T13:52:02+00:00",
+      "last_ok": "2026-10-15T16:36:26+00:00",
       "seen": [
         "21stcenturyscholars",
         "aauwaauwlocalbranchundergraduatescholarshipsallmajorsdeadlinerollingbylocalbranc",
@@ -27212,7 +27248,7 @@
     },
     "Underclassmen Opportunities (LuisaE)": {
       "last_count": 137,
-      "last_ok": "2026-10-15T13:52:03+00:00",
+      "last_ok": "2026-10-15T16:36:26+00:00",
       "seen": [
         "8vcfellowships",
         "abercrombiefitchsophomoresummit",
@@ -27354,8 +27390,8 @@
       ]
     },
     "Vanguard": {
-      "last_count": 354,
-      "last_ok": "2026-10-15T13:51:43+00:00",
+      "last_count": 360,
+      "last_ok": "2026-10-15T16:36:07+00:00",
       "seen": [
         "164647",
         "167238",
@@ -27841,6 +27877,7 @@
         "181974",
         "181987",
         "181989",
+        "181993",
         "181994",
         "181997",
         "182001",
@@ -27930,6 +27967,7 @@
         "182292",
         "182294",
         "182308",
+        "182309",
         "182332",
         "182336",
         "182339",
@@ -27975,6 +28013,7 @@
         "182521",
         "182537",
         "182538",
+        "182540",
         "182542",
         "182573",
         "182582",
@@ -28037,11 +28076,13 @@
         "182907",
         "182915",
         "182916",
+        "182919",
         "182928",
         "182929",
         "182937",
         "182941",
         "182950",
+        "182953",
         "182968",
         "182971",
         "182974",
@@ -28071,13 +28112,16 @@
         "183114",
         "183115",
         "183126",
+        "183133",
+        "183167",
         "183189",
-        "183208"
+        "183208",
+        "183280"
       ]
     },
     "Visa": {
-      "last_count": 827,
-      "last_ok": "2026-10-15T13:50:30+00:00",
+      "last_count": 831,
+      "last_ok": "2026-10-15T16:34:52+00:00",
       "seen": [
         "/job/IN---Remote---IND/Data-Scientist---Visa-Consulting---Analytics_REF081808W",
         "REF059465W",
@@ -29790,6 +29834,7 @@
         "REF088932W",
         "REF088934W",
         "REF088936W",
+        "REF088937W",
         "REF088938W",
         "REF088939W",
         "REF088941W",
@@ -29818,6 +29863,7 @@
         "REF089001W",
         "REF089004W",
         "REF089008W",
+        "REF089009W",
         "REF089011W",
         "REF089012W",
         "REF089013W",
@@ -29948,6 +29994,7 @@
         "REF089314W",
         "REF089318W",
         "REF089321W",
+        "REF089328W",
         "REF089334W",
         "REF089343W",
         "REF089346W",
@@ -29966,7 +30013,9 @@
         "REF089378W",
         "REF089381W",
         "REF089387W",
+        "REF089389W",
         "REF089393W",
+        "REF089396W",
         "REF089400W",
         "REF089411W",
         "REF089412W",
@@ -29977,7 +30026,11 @@
         "REF089426W",
         "REF089455W",
         "REF089460W",
+        "REF089472W",
+        "REF089473W",
+        "REF089474W",
         "REF089475W",
+        "REF089476W",
         "REF089498W",
         "REF089499W",
         "REF089500W",
