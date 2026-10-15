@@ -1,5 +1,5 @@
 {
-  "last_email": "2026-10-15T02:33:23+00:00",
+  "last_email": "2026-10-15T07:54:52+00:00",
   "seen_fingerprints": [
     "adobeinternshipisnowopen",
     "amazonamazonroboticshardwaredevelopmentengineerinterncoop",
@@ -47,6 +47,7 @@
     "citadelcitadelsecuritiesdiscoverusdeadlinemarch5",
     "citadelsecuritiesignitewomenstradingprogramdeadlineoctober16",
     "coinbaseinternshipisnowopen",
+    "deltadentalofiowadataanalysisinterninsureyourfutureinsuranceriskmanage",
     "electronicartseainternshipisnowopen",
     "eyeyparthenonaccountinginternship",
     "eyeyparthenonadministrativeinternhcmcoffice",
@@ -176,6 +177,8 @@
     "nvidiaignitesoftwareengineeringdeadlineoctober18",
     "sapstarbusinessfocuspaidmultiyearrotationsfirstsecondyearfocusattypica",
     "sapstartechnicalfocuspaidmultiyearrotationsfirstsecondyearfocusattypic",
+    "sistersoncollpforgecareerexplorationprogramfirstyearaccountingdeadline",
+    "sistersoncollpsteelleadershipprogramsophomoreaccountingdeadlinerolling",
     "stanforduniversitypublichumanitieshumanitiesresearchintensivedeadlinen",
     "stifelemergingleaderswebinardeadlineoctober14",
     "susquehannadiscoverycapitalmarketsdeadlinenotpublished",
@@ -206,6 +209,7 @@
     "usajobsfederalhonorlawgraduateprogramlegalinternattorney",
     "usajobsfederalinformationtechnologyintern",
     "usajobsfederalintern",
+    "usajobsfederalinternationalmilitarystudentofficer",
     "usajobsfederallawinterns",
     "usajobsfederallibraryofcongressintern",
     "usajobsfederalmanagementintern",
@@ -247,12 +251,16 @@
     "visasophomoreinternshipprogramsoftwareengineerinternfostercity",
     "visasophomoreinternshipprogramsoftwareengineerinternhighlandsranch",
     "visavisaleadershipassociateprogramnewcollegegraduaterotationalprogram",
-    "weissassetmanagementunderclassmenfellowshipjanuarydeadlineoctober16at5"
+    "weissassetmanagementunderclassmenfellowshipjanuarydeadlineoctober16at5",
+    "wellmarkbluecrossandblueshieldhealthservicesoperationssystemsinternshi",
+    "wellmarkbluecrossandblueshieldhumanresourcesinternshipinsureyourfuture",
+    "wellmarkbluecrossandblueshieldoperationsbusinesssupportinternshipinsur",
+    "wellmarkbluecrossandblueshieldoperationsinternshipinsureyourfutureoper"
   ],
   "sources": {
     "APM List (PM internships)": {
       "last_count": 14,
-      "last_ok": "2026-10-15T02:33:20+00:00",
+      "last_ok": "2026-10-15T07:54:49+00:00",
       "seen": [
         "adobeinternshipopen",
         "amazoninternshipopen",
@@ -1345,8 +1353,8 @@
       ]
     },
     "Amazon": {
-      "last_count": 351,
-      "last_ok": "2026-10-15T02:32:20+00:00",
+      "last_count": 348,
+      "last_ok": "2026-10-15T07:54:04+00:00",
       "seen": [
         "10387501",
         "10391774",
@@ -3144,6 +3152,7 @@
         "10579383",
         "10579384",
         "10579435",
+        "10579585",
         "3071340",
         "3088741",
         "3104589",
@@ -3160,7 +3169,7 @@
     },
     "BlackRock": {
       "last_count": 308,
-      "last_ok": "2026-10-15T02:33:16+00:00",
+      "last_ok": "2026-10-15T07:54:44+00:00",
       "seen": [
         "R241791",
         "R250983",
@@ -3702,6 +3711,7 @@
         "R266801",
         "R266802",
         "R266804",
+        "R266806",
         "R266820",
         "R266823",
         "R266831",
@@ -3712,8 +3722,8 @@
       ]
     },
     "Capital One": {
-      "last_count": 1970,
-      "last_ok": "2026-10-15T02:32:13+00:00",
+      "last_count": 1969,
+      "last_ok": "2026-10-15T07:53:56+00:00",
       "seen": [
         "R1000000",
         "R1000004",
@@ -8102,8 +8112,8 @@
       ]
     },
     "EY / EY-Parthenon": {
-      "last_count": 267,
-      "last_ok": "2026-10-15T02:31:46+00:00",
+      "last_count": 266,
+      "last_ok": "2026-10-15T07:53:28+00:00",
       "seen": [
         "1002856701",
         "1005882301",
@@ -14847,6 +14857,8 @@
         "1447843733",
         "1447846333",
         "1447848033",
+        "1447871733",
+        "1447879533",
         "695560401",
         "696384101",
         "696385901",
@@ -14957,8 +14969,8 @@
       ]
     },
     "Federal Reserve System": {
-      "last_count": 165,
-      "last_ok": "2026-10-15T02:32:28+00:00",
+      "last_count": 163,
+      "last_ok": "2026-10-15T07:54:11+00:00",
       "seen": [
         "R-0000029562",
         "R-0000030430",
@@ -15315,7 +15327,7 @@
     },
     "Google": {
       "last_count": 21,
-      "last_ok": "2026-10-15T02:33:18+00:00",
+      "last_ok": "2026-10-15T07:54:47+00:00",
       "seen": [
         "100460871561421510",
         "100648618540573382",
@@ -15366,7 +15378,7 @@
     },
     "IMF": {
       "last_count": 16,
-      "last_ok": "2026-10-15T02:33:17+00:00",
+      "last_ok": "2026-10-15T07:54:46+00:00",
       "seen": [
         "26-R8965",
         "26-R8967",
@@ -15405,8 +15417,8 @@
       ]
     },
     "Mastercard": {
-      "last_count": 1109,
-      "last_ok": "2026-10-15T02:30:59+00:00",
+      "last_count": 1115,
+      "last_ok": "2026-10-15T07:52:43+00:00",
       "seen": [
         "R-207875",
         "R-208485",
@@ -15642,6 +15654,7 @@
         "R-275272",
         "R-275286",
         "R-275300",
+        "R-275320",
         "R-275330",
         "R-275331",
         "R-275334",
@@ -18086,6 +18099,7 @@
         "R-291414",
         "R-291416",
         "R-291417",
+        "R-291420",
         "R-291440",
         "R-291447",
         "R-291448",
@@ -18276,6 +18290,7 @@
         "R-292290",
         "R-292294",
         "R-292298",
+        "R-292299",
         "R-292301",
         "R-292305",
         "R-292306",
@@ -18300,6 +18315,7 @@
         "R-292421",
         "R-292423",
         "R-292425",
+        "R-292431",
         "R-292432",
         "R-292433",
         "R-292435",
@@ -18318,6 +18334,7 @@
         "R-292491",
         "R-292494",
         "R-292501",
+        "R-292502",
         "R-292511",
         "R-292513",
         "R-292514",
@@ -18345,6 +18362,7 @@
         "R-292652",
         "R-292653",
         "R-292665",
+        "R-292670",
         "R-292675",
         "R-292684",
         "R-292698",
@@ -18418,7 +18436,9 @@
         "R-293096",
         "R-293097",
         "R-293101",
+        "R-293102",
         "R-293103",
+        "R-293119",
         "R-293133",
         "R-293160",
         "R-293169",
@@ -18446,6 +18466,7 @@
         "R-293375",
         "R-293388",
         "R-293430",
+        "R-293439",
         "R-293450",
         "R-293451",
         "R-293452",
@@ -24162,7 +24183,7 @@
     },
     "Summer 2027 Internships (vanshb03)": {
       "last_count": 190,
-      "last_ok": "2026-10-15T02:33:20+00:00",
+      "last_ok": "2026-10-15T07:54:48+00:00",
       "seen": [
         "abundantsoftwareengineeringinternresearchfocused",
         "akunacapitalhardwareengineerintern",
@@ -24368,7 +24389,7 @@
     },
     "T. Rowe Price": {
       "last_count": 142,
-      "last_ok": "2026-10-15T02:33:10+00:00",
+      "last_ok": "2026-10-15T07:54:38+00:00",
       "seen": [
         "76537",
         "78144",
@@ -24570,8 +24591,8 @@
       ]
     },
     "USAJOBS (federal)": {
-      "last_count": 361,
-      "last_ok": "2026-10-15T02:32:29+00:00",
+      "last_count": 360,
+      "last_ok": "2026-10-15T07:54:12+00:00",
       "seen": [
         "846709100",
         "846709200",
@@ -26202,6 +26223,7 @@
         "888273000",
         "888273300",
         "888274800",
+        "888279300",
         "888280000",
         "888284100",
         "888289100",
@@ -26210,6 +26232,7 @@
         "888292000",
         "888292300",
         "888304500",
+        "888312800",
         "888313200",
         "888317500",
         "888317900",
@@ -26233,6 +26256,7 @@
         "888470500",
         "888472700",
         "888472900",
+        "888475400",
         "888477700",
         "888480600",
         "888483300",
@@ -26242,6 +26266,7 @@
         "888500300",
         "888503600",
         "888507600",
+        "888510100",
         "888512300",
         "888514800",
         "888516000",
@@ -26262,19 +26287,31 @@
         "888623000",
         "888637400",
         "888637600",
+        "888640000",
+        "888648000",
         "888648700",
+        "888649400",
+        "888654000",
+        "888662100",
+        "888666400",
         "888668400",
         "888670900",
         "888677000",
+        "888684100",
         "888684700",
         "888685100",
+        "888695400",
         "888698700",
+        "888718000",
+        "888758100",
+        "888758200",
+        "888763800",
         "888775700"
       ]
     },
     "Underclassmen Internships (zapplyjobs)": {
       "last_count": 46,
-      "last_ok": "2026-10-15T02:33:20+00:00",
+      "last_ok": "2026-10-15T07:54:48+00:00",
       "seen": [
         "8vcfellowship",
         "abbqualityengineer",
@@ -26888,8 +26925,8 @@
       ]
     },
     "Underclassmen Opportunities (Cruz-Lopez)": {
-      "last_count": 63,
-      "last_ok": "2026-10-15T02:33:19+00:00",
+      "last_count": 78,
+      "last_ok": "2026-10-15T07:54:47+00:00",
       "seen": [
         "21stcenturyscholars",
         "aauwaauwlocalbranchundergraduatescholarshipsallmajorsdeadlinerollingbylocalbranc",
@@ -26941,21 +26978,26 @@
         "databricks",
         "databricksdatabricksstudentfellowsprogramdeadlinechecksite",
         "dctuitionassistancegrantdctag",
+        "deltadentalofiowadataanalysisinterninsureyourfuturesummer2027insuranceriskmanage",
+        "durhamuniversitylaidlawleadershipandresearchprogramme2027cohortdeadlinejanuary30",
         "elevenlabs",
         "elevenlabselevenlabsambassadorprogramdeadlinerolling",
         "etchedsupercomputinginternbachelorstrackeligiblenoclasscutoffdeadlinerolling",
+        "evershedssutherlandfirstyearlawsecondyearnonlawvirtualopenday2027deadlinemarch22",
         "excelsiorscholarship",
         "feministopportunitiesnowfonfunding2026deadlinechecksite",
         "figma",
         "fiveringslink2027softwaredevelopmentintensiveprogramdeadlinenodeadlinepublisheda",
         "gatesfoundationthegatesscholarshiplowincomeminorityhsseniors",
         "gatewayengineersfreshmaninternshipsummer2027completefreshmanyearbeforesummerretu",
+        "gibsondunnlondonfirstyearinsightdaysinpersonvirtual2027deadlinefebruary122027tim",
         "girlswhoinvestgwischolarsprogram2027deadlineoct152026prioritysep152026",
         "girlswhoinvestgwischolarsprogram2027deadlineoctober1520261159pmlocaltime",
         "girlswhoml",
         "girlswhomlthinkingaboutthinking2026ambassadorprogrammedeadlinechecksite",
         "github",
         "githubcampusexpertdeadlineannualwindowapplicationsopeneachjulynextjuly2027",
+        "goldenapplefoundationgoldenapplescholarscollegefreshmansophomoretrack202627appli",
         "google",
         "googlegooglestudentinfluencerprogram2026deadlinechecksite",
         "googlestudentresearcherbsmsfall2026deadlinenov272026rollingmaycloseearlier",
@@ -27055,6 +27097,7 @@
         "possefoundationpossescholarshipnominationbasedpartnercities",
         "princesspolly",
         "princesspollycollegeambassadordeadlinerolling",
+        "princetonuniversityofficeofundergraduateresearchrematchresearchmentorshipacademi",
         "pwc",
         "pwcpwcaiexternshipsdeadlinerolling",
         "pwcukwomeninbusinessactuarialservicesspring2027deadlinenodeadlinepublishedapplic",
@@ -27078,6 +27121,10 @@
         "servicenowcampusleadersdeadlinerolling",
         "shpe",
         "shpe2026shpenationalconventiondeadlinechecksiteeventoct28312026",
+        "sistersoncollpforgecareerexplorationprogramfirstyearaccounting2027deadlinerollin",
+        "sistersoncollpsteelsummerleadershipprogramsophomoreaccounting2027deadlinerolling",
+        "slaughterandmayspringforwardprogramme2027deadlinejanuary62027at1159pmgmt",
+        "slaughterandmayspringopendays2027deadlinejanuary62027at1159pmgmt",
         "societyofwomenengineersswewe26annualconferencenov572026",
         "sofi",
         "soroptimistliveyourdreamawardsdeadlinenov152026",
@@ -27103,6 +27150,7 @@
         "thehomedepotthehomedepotexternshipsmultipletracksdeadlinevariesbyexternshipcheck",
         "therockefelleruniversitycunyhuntercollegehunterrockeduscholars2027deadlinejan420",
         "topstayloropportunityprogram",
+        "tourocollegeofpharmacytourouniversityrxploresummeracademyfirstandsecondyearcolle",
         "tuitionassistanceprogramtap",
         "uber",
         "uncffidelityinvestmentsfidelityscholarsbachelorsdegreeprogramincoming20272028fre",
@@ -27122,6 +27170,10 @@
         "walmartsatyablends",
         "washingtoncollegegrantwagrant",
         "weissassetmanagementunderclassmenfellowshipjanuary2027deadlineoctober162026at500",
+        "wellmarkbluecrossandblueshieldhealthservicesoperationssystemsinternshipinsureyou",
+        "wellmarkbluecrossandblueshieldhumanresourcesinternshipinsureyourfuturesummer2027",
+        "wellmarkbluecrossandblueshieldoperationsbusinesssupportinternshipinsureyourfutur",
+        "wellmarkbluecrossandblueshieldoperationsinternshipinsureyourfuturesummer2027oper",
         "wisconsinhighereducationgrantwheg",
         "womenhack",
         "womenhackwomenintechcareerfairdeadlinevariesperevent",
@@ -27133,7 +27185,7 @@
     },
     "Underclassmen Opportunities (LuisaE)": {
       "last_count": 137,
-      "last_ok": "2026-10-15T02:33:19+00:00",
+      "last_ok": "2026-10-15T07:54:48+00:00",
       "seen": [
         "8vcfellowships",
         "abercrombiefitchsophomoresummit",
@@ -27275,8 +27327,8 @@
       ]
     },
     "Vanguard": {
-      "last_count": 352,
-      "last_ok": "2026-10-15T02:32:51+00:00",
+      "last_count": 351,
+      "last_ok": "2026-10-15T07:54:30+00:00",
       "seen": [
         "164647",
         "167238",
@@ -27967,6 +28019,7 @@
         "182971",
         "182974",
         "182980",
+        "182982",
         "182992",
         "182994",
         "182995",
@@ -27996,8 +28049,8 @@
       ]
     },
     "Visa": {
-      "last_count": 828,
-      "last_ok": "2026-10-15T02:31:37+00:00",
+      "last_count": 826,
+      "last_ok": "2026-10-15T07:53:19+00:00",
       "seen": [
         "/job/IN---Remote---IND/Data-Scientist---Visa-Consulting---Analytics_REF081808W",
         "REF059465W",
@@ -29848,6 +29901,7 @@
         "REF089279W",
         "REF089281W",
         "REF089282W",
+        "REF089285W",
         "REF089287W",
         "REF089288W",
         "REF089289W",
@@ -29883,10 +29937,14 @@
         "REF089393W",
         "REF089400W",
         "REF089412W",
+        "REF089417W",
         "REF089420W",
         "REF089422W",
         "REF089426W",
+        "REF089455W",
+        "REF089475W",
         "REF089498W",
+        "REF089500W",
         "REF089505W",
         "REF93870J"
       ]
