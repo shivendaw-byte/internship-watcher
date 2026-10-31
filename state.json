@@ -1,5 +1,5 @@
 {
-  "last_email": "2026-10-31T16:37:00+00:00",
+  "last_email": "2026-10-31T20:51:27+00:00",
   "seen_fingerprints": [
     "42dotfoundationmodelsintern",
     "7elevenaianalystaiautomationspecialistintern",
@@ -417,6 +417,7 @@
     "dvtradingdatacenterengineerintern",
     "dvtradingfuturesoptionstradinganalystintern",
     "eatonsoftwarequalityassuranceengineeringintern",
+    "economypolymerschemicalsaibusinesssystemsautomationintern",
     "ehcdatamanagementintern",
     "ehcitsecurityintern",
     "electionsystemssoftwaredevopsintern",
@@ -660,6 +661,7 @@
     "googleuserexperienceresearchinternms",
     "greatamericaninsurancegroupclouddataplatformintern",
     "growtherapysoftwareengineerintern",
+    "gtienergydatascienceintern",
     "guidepointsecurityaidatascienceinterngpsu",
     "guidepointsecurityapplicationsecurityintern",
     "guidepointsecuritycloudinfrastructureintern",
@@ -961,7 +963,14 @@
     "newellbrandssalesaianalyticsdeveloperintern",
     "newyorkmetsdatascienceintern",
     "nianticspatialsoftwareengineerinternnativesdkmobileplatforms",
+    "nintendosoftwareengineerinternaudio",
+    "nintendosoftwareengineerinternconnectivity",
+    "nintendosoftwareengineerinterncpudebugger",
+    "nintendosoftwareengineerinterncpuprofiler",
+    "nintendosoftwareengineerinterndevops",
     "nintendosoftwareengineerinterngraphics",
+    "nintendosoftwareengineerinternperformancetools",
+    "nintendosoftwareengineerinternplatformsecurity",
     "nissanaiagentarchitectintern",
     "nissanaiautonomousdrivingverificationvalidationintern",
     "nissanaidataanalyticsintern",
@@ -1227,6 +1236,7 @@
     "stifeltechnologyproductdevelopmentdeveloperintern",
     "strdataanalystintern",
     "strykerdataanalyticsintern",
+    "studentsplusstartupsvroompowersoftwareengineeringintern",
     "subtotalsoftwareengineerintern",
     "sunlifedatascienceintern",
     "susquehannadiscoverycapitalmarketsdeadlinenotpublished",
@@ -1409,6 +1419,7 @@
     "veteransunitedhomeloanssoftwareengineerintern",
     "vigetprojectproductmanagerintern",
     "vigetsoftwaredeveloperintern",
+    "virginiatechappliedresearchcorporationresearchinternappliedaisoftwared",
     "visaassociateproductmanagerintern",
     "visaassociateproductmanagernewcollegegraduaterotationalprogram",
     "visaassociatesalesdevelopmentprogramnewcollegegraduate",
@@ -1493,7 +1504,7 @@
   "sources": {
     "APM List (PM internships)": {
       "last_count": 14,
-      "last_ok": "2026-10-31T16:36:59+00:00",
+      "last_ok": "2026-10-31T20:51:25+00:00",
       "seen": [
         "adobeinternshipopen",
         "amazoninternshipopen",
@@ -2589,7 +2600,7 @@
     },
     "Amazon": {
       "last_count": 386,
-      "last_ok": "2026-10-31T16:36:18+00:00",
+      "last_ok": "2026-10-31T20:50:45+00:00",
       "seen": [
         "10387501",
         "10391774",
@@ -4804,7 +4815,7 @@
     },
     "BlackRock": {
       "last_count": 245,
-      "last_ok": "2026-10-31T16:36:55+00:00",
+      "last_ok": "2026-10-31T20:51:22+00:00",
       "seen": [
         "R241791",
         "R250983",
@@ -5446,7 +5457,7 @@
     },
     "Capital One": {
       "last_count": 2000,
-      "last_ok": "2026-10-31T16:36:11+00:00",
+      "last_ok": "2026-10-31T20:50:39+00:00",
       "seen": [
         "R1000000",
         "R1000004",
@@ -10342,7 +10353,7 @@
     },
     "EY / EY-Parthenon": {
       "last_count": 259,
-      "last_ok": "2026-10-31T16:35:43+00:00",
+      "last_ok": "2026-10-31T20:50:12+00:00",
       "seen": [
         "1002856701",
         "1005882301",
@@ -18107,7 +18118,7 @@
     },
     "Federal Reserve System": {
       "last_count": 149,
-      "last_ok": "2026-10-31T16:36:24+00:00",
+      "last_ok": "2026-10-31T20:50:52+00:00",
       "seen": [
         "R-0000029562",
         "R-0000030430",
@@ -18533,7 +18544,7 @@
     },
     "Google": {
       "last_count": 20,
-      "last_ok": "2026-10-31T16:36:58+00:00",
+      "last_ok": "2026-10-31T20:51:24+00:00",
       "seen": [
         "100460871561421510",
         "100648618540573382",
@@ -18584,7 +18595,7 @@
     },
     "IMF": {
       "last_count": 16,
-      "last_ok": "2026-10-31T16:36:57+00:00",
+      "last_ok": "2026-10-31T20:51:23+00:00",
       "seen": [
         "26-R8965",
         "26-R8967",
@@ -18636,8 +18647,8 @@
       ]
     },
     "Mastercard": {
-      "last_count": 1020,
-      "last_ok": "2026-10-31T16:35:01+00:00",
+      "last_count": 1015,
+      "last_ok": "2026-10-31T20:49:31+00:00",
       "seen": [
         "R-207875",
         "R-208485",
@@ -27808,8 +27819,8 @@
       ]
     },
     "Summer 2027 Internships (vanshb03)": {
-      "last_count": 1175,
-      "last_ok": "2026-10-31T16:36:59+00:00",
+      "last_count": 1186,
+      "last_ok": "2026-10-31T20:51:25+00:00",
       "seen": [
         "42dotfoundationmodelsintern",
         "7elevenaianalystaiautomationspecialistintern",
@@ -28263,6 +28274,7 @@
         "dvtradingfuturesoptionstradinganalystintern",
         "eatoncdeveloperinternresearchdevelopmentengineering",
         "eatonsoftwarequalityassuranceengineeringintern",
+        "economypolymerschemicalsaibusinesssystemsautomationintern",
         "ehcdatamanagementintern",
         "ehcitsecurityintern",
         "electionsystemssoftwaredevopsintern",
@@ -28393,6 +28405,7 @@
         "gravitonquantitativeresearcherintern",
         "greatamericaninsurancegroupclouddataplatformintern",
         "growtherapysoftwareengineerintern",
+        "gtienergydatascienceintern",
         "guidepointsecurityaidatascienceinterngpsu",
         "guidepointsecurityapplicationsecurityintern",
         "guidepointsecuritycloudinfrastructureintern",
@@ -28748,7 +28761,14 @@
         "newyorkmetsdatascienceintern",
         "nianticspatialsoftwareengineerinternnativesdkmobileplatforms",
         "nightwingsoftwarehardwareengineeringintern",
+        "nintendosoftwareengineerinternaudio",
+        "nintendosoftwareengineerinternconnectivity",
+        "nintendosoftwareengineerinterncpudebugger",
+        "nintendosoftwareengineerinterncpuprofiler",
+        "nintendosoftwareengineerinterndevops",
         "nintendosoftwareengineerinterngraphics",
+        "nintendosoftwareengineerinternperformancetools",
+        "nintendosoftwareengineerinternplatformsecurity",
         "nissanaiagentarchitectintern",
         "nissanaiautonomousdrivingverificationvalidationintern",
         "nissanaidataanalyticsintern",
@@ -29077,6 +29097,7 @@
         "stokespacesoftwareengineerintern",
         "strdataanalystintern",
         "strykerdataanalyticsintern",
+        "studentsplusstartupsvroompowersoftwareengineeringintern",
         "subtotalsoftwareengineerintern",
         "sunlifedatascienceintern",
         "susquehannainternationalgroupmachinelearningengineeringintern",
@@ -29240,6 +29261,7 @@
         "veteransunitedhomeloanssoftwareengineerintern",
         "vigetprojectproductmanagerintern",
         "vigetsoftwaredeveloperintern",
+        "virginiatechappliedresearchcorporationresearchinternappliedaisoftwaredevelopment",
         "virtufinancialfrontenduserexperienceintern",
         "virtufinancialsoftwareengineerintern",
         "virtuquantitativetradingintern",
@@ -29295,7 +29317,7 @@
     },
     "T. Rowe Price": {
       "last_count": 131,
-      "last_ok": "2026-10-31T16:36:51+00:00",
+      "last_ok": "2026-10-31T20:51:17+00:00",
       "seen": [
         "76537",
         "78144",
@@ -29522,7 +29544,7 @@
     },
     "USAJOBS (federal)": {
       "last_count": 404,
-      "last_ok": "2026-10-31T16:36:25+00:00",
+      "last_ok": "2026-10-31T20:50:53+00:00",
       "seen": [
         "846709100",
         "846709200",
@@ -31641,7 +31663,7 @@
     },
     "Underclassmen Internships (zapplyjobs)": {
       "last_count": 46,
-      "last_ok": "2026-10-31T16:36:58+00:00",
+      "last_ok": "2026-10-31T20:51:25+00:00",
       "seen": [
         "8vcfellowship",
         "abbqualityengineer",
@@ -32256,7 +32278,7 @@
     },
     "Underclassmen Opportunities (Cruz-Lopez)": {
       "last_count": 78,
-      "last_ok": "2026-10-31T16:36:58+00:00",
+      "last_ok": "2026-10-31T20:51:24+00:00",
       "seen": [
         "21stcenturyscholars",
         "aauwaauwlocalbranchundergraduatescholarshipsallmajorsdeadlinerollingbylocalbranc",
@@ -32515,7 +32537,7 @@
     },
     "Underclassmen Opportunities (LuisaE)": {
       "last_count": 137,
-      "last_ok": "2026-10-31T16:36:58+00:00",
+      "last_ok": "2026-10-31T20:51:25+00:00",
       "seen": [
         "8vcfellowships",
         "abercrombiefitchsophomoresummit",
@@ -32658,7 +32680,7 @@
     },
     "Vanguard": {
       "last_count": 341,
-      "last_ok": "2026-10-31T16:36:43+00:00",
+      "last_ok": "2026-10-31T20:51:10+00:00",
       "seen": [
         "164647",
         "166007",
@@ -33511,8 +33533,8 @@
       ]
     },
     "Visa": {
-      "last_count": 837,
-      "last_ok": "2026-10-31T16:35:36+00:00",
+      "last_count": 836,
+      "last_ok": "2026-10-31T20:50:04+00:00",
       "seen": [
         "/job/IN---Remote---IND/Data-Scientist---Visa-Consulting---Analytics_REF081808W",
         "REF059465W",
