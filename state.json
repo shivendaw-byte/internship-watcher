@@ -1,5 +1,5 @@
 {
-  "last_email": "2026-10-31T01:46:54+00:00",
+  "last_email": "2026-10-31T03:28:50+00:00",
   "seen_fingerprints": [
     "42dotfoundationmodelsintern",
     "7elevenaianalystaiautomationspecialistintern",
@@ -222,6 +222,9 @@
     "barclayschiefclientofficeinternclientdataengineeringgroup",
     "barkbacksoftwareintern",
     "barnesthornburginformationsecurityintern",
+    "belidatascienceintern",
+    "belisoftwareengineerintern",
+    "benchmarkspacesystemssoftwareengineeringintern",
     "berkshirehathawayenergyinterndatasystems",
     "berkshirehathawayenergysoftwareengineeringintern",
     "biogenintegratedinsightsanalyticscoopnephrology",
@@ -663,6 +666,7 @@
     "happyrobotproductoperationsengineerintern",
     "harmonicsoftwareengineerintern",
     "hasbroitsoftwareintern",
+    "hcsccybersecurityoperationsintern",
     "hcscfinanceapplicationdeveloperintern",
     "hcscfinancedataanalyticsdeveloperintern",
     "hcscproductengineerintern",
@@ -863,6 +867,8 @@
     "mastercardplatformengineeringintern",
     "mastercardproductmanagementinternstlouismo",
     "mastercardproductmanagementinternunitedstates",
+    "mativcybersecurityintern",
+    "mativdatascienceandbusinessanalyticsintern",
     "mayoclinicaimlinternradiationoncology",
     "mckessonsoftwareengineerintern",
     "medpacepythondeveloperintern",
@@ -954,6 +960,7 @@
     "newellbrandssalesaianalyticsdeveloperintern",
     "newyorkmetsdatascienceintern",
     "nianticspatialsoftwareengineerinternnativesdkmobileplatforms",
+    "nintendosoftwareengineerinterngraphics",
     "nissanaiagentarchitectintern",
     "nissanaiautonomousdrivingverificationvalidationintern",
     "nissanaidataanalyticsintern",
@@ -971,6 +978,7 @@
     "northropgrummancomputerengineerintern",
     "northropgrummancybersoftwareengineerintern",
     "northropgrummancybersystemsengineerintern",
+    "northropgrummandatascientistinternproductsupport",
     "northropgrummanengineerinternproductsupport",
     "northropgrummansoftwareengineeringintern",
     "northropgrummansoftwareengineerintern",
@@ -1007,6 +1015,7 @@
     "opensesamesecurityanalystintern",
     "oshkoshautonomyactivesafetyengineerintern",
     "oshkoshcybersecurityintern",
+    "ottoengineeringembeddedsoftwareinterncommunications",
     "paccaraftersalesdataanalystintern",
     "paccarapplicationdeveloperintern",
     "paccardataengineerintern",
@@ -1153,6 +1162,9 @@
     "seagatetechnologyrecordingmediardinternaidatascience",
     "seagatetechnologysoftwareanddataanalyticsdevelopmentinternafm",
     "sentineltechnologiessocintern",
+    "sephoraaiautomationinternwmsdcsystems",
+    "sephoraaidistributionanalyticsintern",
+    "sephoraaiplatforminfrastructureinterntechnology",
     "servicenowassociatesoftwareengineerinternaiengineering",
     "sherwinwilliamsrddatasciencecoop",
     "sherwinwilliamsrdproductsystemsintern",
@@ -1220,6 +1232,7 @@
     "susquehannainternationalgroupsellsideresearchrotationalprogramintern",
     "swbcintegrationanalystintern",
     "symboticrobotmanipulationintern",
+    "syntiantdevopsmachinelearninginfrastructureintern",
     "tarrantregionalwaterdistrictenergyintern",
     "taylorenablementdatainsightsintern",
     "tencentdatascienceintern",
@@ -1274,6 +1287,7 @@
     "tmobilesoftwareengineerinterncloudsecurity",
     "togetheraihardwaresecurityengineerintern",
     "togetherairesearchinternfrontierspeculativedecoding",
+    "toshibainternationalcorporationfirmwareengineerintern",
     "toyotadatascienceinterntfs",
     "toyotaresearchinstitutehumanawareinteractionsandlearningintern",
     "toyotaresearchinstituteroboticsinterntrustworthylearningunderuncertain",
@@ -1374,6 +1388,7 @@
     "veeamsoftwarepolicyengineeringintern",
     "veoliafieldengineeringintern",
     "veoliaoperationsengineeringintern",
+    "veritiongroupaiassociateinternequitylongshort",
     "verizoncommunicationscallroutingoptimizationengineeringinternverizonco",
     "verizoncommunicationsdatascienceinternverizonconsumergroup",
     "vermeerembeddedsoftwareengineerintern",
@@ -1467,7 +1482,7 @@
   "sources": {
     "APM List (PM internships)": {
       "last_count": 14,
-      "last_ok": "2026-10-31T01:46:53+00:00",
+      "last_ok": "2026-10-31T03:28:46+00:00",
       "seen": [
         "adobeinternshipopen",
         "amazoninternshipopen",
@@ -2563,7 +2578,7 @@
     },
     "Amazon": {
       "last_count": 385,
-      "last_ok": "2026-10-31T01:46:08+00:00",
+      "last_ok": "2026-10-31T03:27:59+00:00",
       "seen": [
         "10387501",
         "10391774",
@@ -4776,7 +4791,7 @@
     },
     "BlackRock": {
       "last_count": 255,
-      "last_ok": "2026-10-31T01:46:48+00:00",
+      "last_ok": "2026-10-31T03:28:41+00:00",
       "seen": [
         "R241791",
         "R250983",
@@ -5418,7 +5433,7 @@
     },
     "Capital One": {
       "last_count": 2000,
-      "last_ok": "2026-10-31T01:46:01+00:00",
+      "last_ok": "2026-10-31T03:27:52+00:00",
       "seen": [
         "R1000000",
         "R1000004",
@@ -10312,8 +10327,8 @@
       ]
     },
     "EY / EY-Parthenon": {
-      "last_count": 268,
-      "last_ok": "2026-10-31T01:45:37+00:00",
+      "last_count": 267,
+      "last_ok": "2026-10-31T03:27:26+00:00",
       "seen": [
         "1002856701",
         "1005882301",
@@ -10503,6 +10518,7 @@
         "1209817601",
         "1210317901",
         "1210934501",
+        "1211081101",
         "1212009401",
         "1212083901",
         "1212100101",
@@ -11100,6 +11116,7 @@
         "1291034801",
         "1291105501",
         "1291234001",
+        "1291402601",
         "1291645201",
         "1291922901",
         "1291941401",
@@ -11203,6 +11220,7 @@
         "1370537033",
         "1370595833",
         "1370703233",
+        "1370817133",
         "1370823833",
         "1370835033",
         "1371003833",
@@ -11294,6 +11312,7 @@
         "1376058433",
         "1376058533",
         "1376110433",
+        "1376138433",
         "1376187133",
         "1376271833",
         "1376437933",
@@ -11530,6 +11549,7 @@
         "1384201333",
         "1384234633",
         "1384236833",
+        "1384292433",
         "1384338333",
         "1384341533",
         "1384411433",
@@ -11541,6 +11561,7 @@
         "1384558933",
         "1384607533",
         "1384607633",
+        "1384653033",
         "1384720233",
         "1384739533",
         "1384742333",
@@ -12105,6 +12126,7 @@
         "1399137733",
         "1399142433",
         "1399146033",
+        "1399156133",
         "1399188033",
         "1399261933",
         "1399284133",
@@ -12405,6 +12427,7 @@
         "1405327533",
         "1405332033",
         "1405332533",
+        "1405333433",
         "1405336833",
         "1405337433",
         "1405351133",
@@ -12539,6 +12562,7 @@
         "1407139033",
         "1407186733",
         "1407188333",
+        "1407189933",
         "1407190133",
         "1407240033",
         "1407247633",
@@ -12998,6 +13022,7 @@
         "1412229233",
         "1412238633",
         "1412245433",
+        "1412251733",
         "1412254533",
         "1412255333",
         "1412255833",
@@ -14557,6 +14582,7 @@
         "1425013633",
         "1425019933",
         "1425021033",
+        "1425021133",
         "1425050933",
         "1425066733",
         "1425071533",
@@ -17299,13 +17325,24 @@
         "1443547333",
         "1443548933",
         "1443616033",
+        "1443741733",
+        "1443859133",
+        "1443890833",
+        "1443899933",
+        "1443920033",
+        "1443933033",
         "1443941233",
         "1443945933",
+        "1443956133",
         "1443965433",
         "1443966533",
         "1443967633",
         "1443968533",
         "1443969833",
+        "1443986533",
+        "1443986833",
+        "1443998033",
+        "1444011133",
         "1444057533",
         "1444057633",
         "1444058033",
@@ -17315,6 +17352,7 @@
         "1444060733",
         "1444061333",
         "1444063233",
+        "1444063533",
         "1444068333",
         "1444134633",
         "1444137233",
@@ -18049,7 +18087,7 @@
     },
     "Federal Reserve System": {
       "last_count": 167,
-      "last_ok": "2026-10-31T01:46:15+00:00",
+      "last_ok": "2026-10-31T03:28:07+00:00",
       "seen": [
         "R-0000029562",
         "R-0000030430",
@@ -18475,7 +18513,7 @@
     },
     "Google": {
       "last_count": 20,
-      "last_ok": "2026-10-31T01:46:50+00:00",
+      "last_ok": "2026-10-31T03:28:43+00:00",
       "seen": [
         "100460871561421510",
         "100648618540573382",
@@ -18526,7 +18564,7 @@
     },
     "IMF": {
       "last_count": 17,
-      "last_ok": "2026-10-31T01:46:49+00:00",
+      "last_ok": "2026-10-31T03:28:42+00:00",
       "seen": [
         "26-R8965",
         "26-R8967",
@@ -18578,8 +18616,8 @@
       ]
     },
     "Mastercard": {
-      "last_count": 1027,
-      "last_ok": "2026-10-31T01:44:50+00:00",
+      "last_count": 1026,
+      "last_ok": "2026-10-31T03:26:44+00:00",
       "seen": [
         "R-207875",
         "R-208485",
@@ -27750,8 +27788,8 @@
       ]
     },
     "Summer 2027 Internships (vanshb03)": {
-      "last_count": 1179,
-      "last_ok": "2026-10-31T01:46:52+00:00",
+      "last_count": 1187,
+      "last_ok": "2026-10-31T03:28:44+00:00",
       "seen": [
         "42dotfoundationmodelsintern",
         "7elevenaianalystaiautomationspecialistintern",
@@ -27978,7 +28016,10 @@
         "barclayschiefclientofficeinternclientdataengineeringgroup",
         "barkbacksoftwareintern",
         "barnesthornburginformationsecurityintern",
+        "belidatascienceintern",
+        "belisoftwareengineerintern",
         "belvederetradingquantitativetradingintern",
+        "benchmarkspacesystemssoftwareengineeringintern",
         "berkshirehathawayenergyinterndatasystems",
         "berkshirehathawayenergysoftwareengineeringintern",
         "biogenintegratedinsightsanalyticscoopnephrology",
@@ -28339,6 +28380,7 @@
         "harmonicsoftwareengineerintern",
         "hasbroitsoftwareintern",
         "hcosoftwaredevelopmentintern",
+        "hcsccybersecurityoperationsintern",
         "hcscfinanceapplicationdeveloperintern",
         "hcscfinancedataanalyticsdeveloperintern",
         "hcscproductengineerintern",
@@ -28574,6 +28616,8 @@
         "marvellsiliconvalidationintern",
         "maryfreebedrehabilitationhospitalitintern",
         "mastercardplatformengineeringintern",
+        "mativcybersecurityintern",
+        "mativdatascienceandbusinessanalyticsintern",
         "mayoclinicaimlinternradiationoncology",
         "mckessonsoftwareengineerintern",
         "medpacepythondeveloperintern",
@@ -28683,6 +28727,7 @@
         "newyorkmetsdatascienceintern",
         "nianticspatialsoftwareengineerinternnativesdkmobileplatforms",
         "nightwingsoftwarehardwareengineeringintern",
+        "nintendosoftwareengineerinterngraphics",
         "nissanaiagentarchitectintern",
         "nissanaiautonomousdrivingverificationvalidationintern",
         "nissanaidataanalyticsintern",
@@ -28700,6 +28745,7 @@
         "northropgrummancomputerengineerintern",
         "northropgrummancybersoftwareengineerintern",
         "northropgrummancybersystemsengineerintern",
+        "northropgrummandatascientistinternproductsupport",
         "northropgrummanengineerinternproductsupport",
         "northropgrummansoftwareengineeringintern",
         "northropgrummansoftwareengineerintern",
@@ -28738,6 +28784,7 @@
         "optiversoftwareengineerintern",
         "oshkoshautonomyactivesafetyengineerintern",
         "oshkoshcybersecurityintern",
+        "ottoengineeringembeddedsoftwareinterncommunications",
         "paccaraftersalesdataanalystintern",
         "paccarapplicationdeveloperintern",
         "paccardataengineerintern",
@@ -28940,6 +28987,9 @@
         "semtechdigitalicdesignintern",
         "semtechfirmwareintern",
         "sentineltechnologiessocintern",
+        "sephoraaiautomationinternwmsdcsystems",
+        "sephoraaidistributionanalyticsintern",
+        "sephoraaiplatforminfrastructureinterntechnology",
         "servicenowassociatesoftwareengineerinternaiengineering",
         "sherwinwilliamsrddatasciencecoop",
         "sherwinwilliamsrdproductsystemsintern",
@@ -29011,6 +29061,7 @@
         "swbcintegrationanalystintern",
         "symboticrobotmanipulationintern",
         "synopsystechnicalengineerintern",
+        "syntiantdevopsmachinelearninginfrastructureintern",
         "tarrantregionalwaterdistrictenergyintern",
         "taylorenablementdatainsightsintern",
         "teledynetechnologiesincorporatedsoftwareengineerintern",
@@ -29101,6 +29152,7 @@
         "tmobilesoftwareengineerinterncloudsecurity",
         "togetheraihardwaresecurityengineerintern",
         "togetherairesearchinternfrontierspeculativedecoding",
+        "toshibainternationalcorporationfirmwareengineerintern",
         "towerresearchcapitalmachinelearningintern",
         "towerresearchcapitalsoftwaredeveloperintern",
         "towerresearchquantitativedeveloperintern",
@@ -29145,6 +29197,7 @@
         "veedaaisoftwareengineeringintern",
         "veoliafieldengineeringintern",
         "veoliaoperationsengineeringintern",
+        "veritiongroupaiassociateinternequitylongshort",
         "verizoncommunicationscallroutingoptimizationengineeringinternverizonconsumergrou",
         "verizoncommunicationsdatascienceinternverizonconsumergroup",
         "vermeerembeddedsoftwareengineerintern",
@@ -29211,7 +29264,7 @@
     },
     "T. Rowe Price": {
       "last_count": 131,
-      "last_ok": "2026-10-31T01:46:43+00:00",
+      "last_ok": "2026-10-31T03:28:36+00:00",
       "seen": [
         "76537",
         "78144",
@@ -29438,7 +29491,7 @@
     },
     "USAJOBS (federal)": {
       "last_count": 409,
-      "last_ok": "2026-10-31T01:46:18+00:00",
+      "last_ok": "2026-10-31T03:28:09+00:00",
       "seen": [
         "846709100",
         "846709200",
@@ -31535,7 +31588,7 @@
     },
     "Underclassmen Internships (zapplyjobs)": {
       "last_count": 46,
-      "last_ok": "2026-10-31T01:46:52+00:00",
+      "last_ok": "2026-10-31T03:28:44+00:00",
       "seen": [
         "8vcfellowship",
         "abbqualityengineer",
@@ -32150,7 +32203,7 @@
     },
     "Underclassmen Opportunities (Cruz-Lopez)": {
       "last_count": 78,
-      "last_ok": "2026-10-31T01:46:51+00:00",
+      "last_ok": "2026-10-31T03:28:43+00:00",
       "seen": [
         "21stcenturyscholars",
         "aauwaauwlocalbranchundergraduatescholarshipsallmajorsdeadlinerollingbylocalbranc",
@@ -32409,7 +32462,7 @@
     },
     "Underclassmen Opportunities (LuisaE)": {
       "last_count": 137,
-      "last_ok": "2026-10-31T01:46:51+00:00",
+      "last_ok": "2026-10-31T03:28:44+00:00",
       "seen": [
         "8vcfellowships",
         "abercrombiefitchsophomoresummit",
@@ -32552,7 +32605,7 @@
     },
     "Vanguard": {
       "last_count": 351,
-      "last_ok": "2026-10-31T01:46:36+00:00",
+      "last_ok": "2026-10-31T03:28:28+00:00",
       "seen": [
         "164647",
         "166007",
@@ -33406,7 +33459,7 @@
     },
     "Visa": {
       "last_count": 847,
-      "last_ok": "2026-10-31T01:45:27+00:00",
+      "last_ok": "2026-10-31T03:27:17+00:00",
       "seen": [
         "/job/IN---Remote---IND/Data-Scientist---Visa-Consulting---Analytics_REF081808W",
         "REF059465W",
