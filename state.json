@@ -1,5 +1,5 @@
 {
-  "last_email": "2026-11-07T21:17:26+00:00",
+  "last_email": "2026-11-08T03:36:43+00:00",
   "seen_fingerprints": [
     "1stsourceinformationsecurityintern",
     "42dotfoundationmodelsintern",
@@ -481,6 +481,7 @@
     "compeerfinancialinfrastructureengineeringintern",
     "concordadvicedatascientistintern",
     "conductoraisoftwareengineerintern",
+    "coniferhealthsolutionsbideveloperintern",
     "connectprepdataanalystintern",
     "constellationbrandsaiautomationengineeringintern",
     "constellationbrandsaienablementintern",
@@ -846,6 +847,7 @@
     "generaldynamicsmissionsystemsinceecomputerengineerintern",
     "generaldynamicsmissionsystemsincengineerinternelectricalorfirmware",
     "generaldynamicsmissionsystemsincsoftwaretestengineeringinternspaceande",
+    "generaldynamicsmissionsystemssoftwareengineeringintern",
     "generaldynamicsmissionsystemssoftwareengineerintern",
     "generaldynamicsmissionsystemssoftwareengineerinterncryptoandcrossdomai",
     "generaldynamicsmissionsystemssoftwareengineerinterncryptocrossdomainso",
@@ -920,6 +922,7 @@
     "greatamericafinancialservicesqualityassuranceanalystintern",
     "greatamericafinancialservicessoftwareengineerintern",
     "greatamericaninsurancegroupclouddataplatformintern",
+    "group1automotiveitintern",
     "growtherapysoftwareengineerintern",
     "gtienergydatascienceintern",
     "guardianlifeaimachinelearninginterndigitaltechnology",
@@ -1183,6 +1186,7 @@
     "littlecaesarsenterprisescyberitintern",
     "littlecaesarsenterprisesdeveloperitintern",
     "littlecaesarsenterprisesqaitintern",
+    "llbeanbusinessanalystdataanalystintern",
     "llbeanqualityassuranceanalystintern",
     "llbeansoftwaredeveloperintern",
     "llnlcriticalinfrastructureanalysisinterncyberandcriticalinfrastructure",
@@ -1545,6 +1549,7 @@
     "raftcompanywebsitedataengineeringintern",
     "raftcompanywebsitedevopsengineeringintern",
     "raftcompanywebsitefullstackengineeringintern",
+    "rambusdigitaldesignintern",
     "rangesoftwareengineeringintern",
     "raveaerospacesoftwareengineeringintern",
     "realmsoftwareengineerintern",
@@ -1591,6 +1596,8 @@
     "riviansoftwareengineeringintern",
     "robertboschventurecapitalairesearchinternwirelessfoundationmodels",
     "robertboschventurecapitalsoftwareengineeringcoop",
+    "rockefellercapitalmanagementanalystinterncoreplatforms",
+    "rockefellercapitalmanagementanalystinterninformationsecurity",
     "rocketcompaniesmarketingaccountingoritintern",
     "rocklandtrustbusinessintelligenceintern",
     "rockwellautomationaisoftwareengineerintern",
@@ -1664,6 +1671,7 @@
     "scientechresearchcapitalquantitativedeveloperintern",
     "scmquantitativeresearchanalystintern",
     "scoutaiaiengineerinternfuryteam",
+    "sdsuresearchfoundationundergraduatestudentinternportcontaminationproje",
     "seagatetechnologyembeddedsoftwareengineerintern",
     "seagatetechnologymachinelearningforcorporatestrategyintern",
     "seagatetechnologyrecordingmediardinternaidatascience",
@@ -1951,6 +1959,7 @@
     "ulsolutionsdatascienceintern",
     "uncffidelityinvestmentsfidelityscholarsbachelorsdegreeprogram",
     "unitedparcelserviceupsinformationsecurityintern",
+    "unitedwholesalemortgagetechnologyinternprogram",
     "unitymachinelearningengineerintern",
     "universalhealthservicessoftwareengineerinterndataanalytics",
     "universitycorporationforatmosphericresearchsiparcsundergraduatestudent",
@@ -2111,6 +2120,7 @@
     "wellmarksoftwareengineerinternaiplatformteam",
     "wellmarksoftwareengineerinterntechnologyhealthplan",
     "westbendinsurancedatascientistintern",
+    "westbendinsurancedatasolutionengineerintern",
     "westbendinsuranceitsoftwareengineerintern",
     "westernalliancebancorporationplatformengineeringintern",
     "westernmagneticssoftwareengineerintern",
@@ -2160,7 +2170,7 @@
   "sources": {
     "APM List (PM internships)": {
       "last_count": 16,
-      "last_ok": "2026-11-07T21:17:24+00:00",
+      "last_ok": "2026-11-08T03:36:42+00:00",
       "seen": [
         "adobeinternshipopen",
         "amazoninternshipopen",
@@ -3259,7 +3269,7 @@
     },
     "Amazon": {
       "last_count": 418,
-      "last_ok": "2026-11-07T21:16:44+00:00",
+      "last_ok": "2026-11-08T03:36:02+00:00",
       "seen": [
         "10387501",
         "10391774",
@@ -5650,8 +5660,8 @@
       ]
     },
     "BlackRock": {
-      "last_count": 275,
-      "last_ok": "2026-11-07T21:17:20+00:00",
+      "last_count": 274,
+      "last_ok": "2026-11-08T03:36:37+00:00",
       "seen": [
         "R241791",
         "R250983",
@@ -6324,7 +6334,7 @@
     },
     "Capital One": {
       "last_count": 2000,
-      "last_ok": "2026-11-07T21:16:37+00:00",
+      "last_ok": "2026-11-08T03:35:55+00:00",
       "seen": [
         "R1000000",
         "R1000004",
@@ -11421,8 +11431,8 @@
       ]
     },
     "EY / EY-Parthenon": {
-      "last_count": 273,
-      "last_ok": "2026-11-07T21:16:12+00:00",
+      "last_count": 286,
+      "last_ok": "2026-11-08T03:35:29+00:00",
       "seen": [
         "1002856701",
         "1005882301",
@@ -11646,6 +11656,7 @@
         "1215686501",
         "1215693501",
         "1215717401",
+        "1216083701",
         "1216304801",
         "1216304901",
         "1216446801",
@@ -11716,8 +11727,11 @@
         "1225090701",
         "1225246501",
         "1225975501",
+        "1226232701",
         "1226242501",
         "1226282101",
+        "1226285501",
+        "1226314101",
         "1226315201",
         "1226332801",
         "1226432301",
@@ -11782,6 +11796,7 @@
         "1236038301",
         "1236186101",
         "1236302101",
+        "1236430201",
         "1236443401",
         "1236490801",
         "1236527901",
@@ -12652,6 +12667,7 @@
         "1384201333",
         "1384234633",
         "1384236833",
+        "1384280933",
         "1384292433",
         "1384338333",
         "1384341533",
@@ -18744,6 +18760,7 @@
         "1445398933",
         "1445404333",
         "1445406833",
+        "1445466633",
         "1445479933",
         "1445553533",
         "1445554233",
@@ -18838,6 +18855,17 @@
         "1446255633",
         "1446258233",
         "1446278033",
+        "1446283633",
+        "1446283733",
+        "1446287433",
+        "1446287633",
+        "1446288733",
+        "1446288933",
+        "1446289233",
+        "1446291733",
+        "1446292433",
+        "1446292533",
+        "1446292733",
         "1446315133",
         "1446315333",
         "1446315433",
@@ -19585,7 +19613,7 @@
     },
     "Federal Reserve System": {
       "last_count": 180,
-      "last_ok": "2026-11-07T21:16:51+00:00",
+      "last_ok": "2026-11-08T03:36:09+00:00",
       "seen": [
         "R-0000029562",
         "R-0000030430",
@@ -20067,7 +20095,7 @@
     },
     "Google": {
       "last_count": 20,
-      "last_ok": "2026-11-07T21:17:22+00:00",
+      "last_ok": "2026-11-08T03:36:40+00:00",
       "seen": [
         "100460871561421510",
         "100648618540573382",
@@ -20118,7 +20146,7 @@
     },
     "IMF": {
       "last_count": 16,
-      "last_ok": "2026-11-07T21:17:21+00:00",
+      "last_ok": "2026-11-08T03:36:39+00:00",
       "seen": [
         "26-R8965",
         "26-R8967",
@@ -20174,8 +20202,8 @@
       ]
     },
     "Mastercard": {
-      "last_count": 941,
-      "last_ok": "2026-11-07T21:15:30+00:00",
+      "last_count": 940,
+      "last_ok": "2026-11-08T03:34:50+00:00",
       "seen": [
         "R-207875",
         "R-208485",
@@ -29419,8 +29447,8 @@
       ]
     },
     "Summer 2027 Internships (vanshb03)": {
-      "last_count": 1647,
-      "last_ok": "2026-11-07T21:17:24+00:00",
+      "last_count": 1657,
+      "last_ok": "2026-11-08T03:36:41+00:00",
       "seen": [
         "1stsourceinformationsecurityintern",
         "42dotfoundationmodelsintern",
@@ -29922,6 +29950,7 @@
         "compeerfinancialinfrastructureengineeringintern",
         "concordadvicedatascientistintern",
         "conductoraisoftwareengineerintern",
+        "coniferhealthsolutionsbideveloperintern",
         "connectprepdataanalystintern",
         "constellationbrandsaiautomationengineeringintern",
         "constellationbrandsaienablementintern",
@@ -30186,6 +30215,7 @@
         "generaldynamicsmissionsystemsinceecomputerengineerintern",
         "generaldynamicsmissionsystemsincengineerinternelectricalorfirmware",
         "generaldynamicsmissionsystemsincsoftwaretestengineeringinternspaceandembeddedcry",
+        "generaldynamicsmissionsystemssoftwareengineeringintern",
         "generaldynamicsmissionsystemssoftwareengineerintern",
         "generaldynamicsmissionsystemssoftwareengineerinterncryptoandcrossdomainsolutions",
         "generaldynamicsmissionsystemssoftwareengineerinterncryptocrossdomainsolutions",
@@ -30247,6 +30277,7 @@
         "greatamericafinancialservicesqualityassuranceanalystintern",
         "greatamericafinancialservicessoftwareengineerintern",
         "greatamericaninsurancegroupclouddataplatformintern",
+        "group1automotiveitintern",
         "growtherapysoftwareengineerintern",
         "gtienergydatascienceintern",
         "guardianlifeaimachinelearninginterndigitaltechnology",
@@ -30543,6 +30574,7 @@
         "littlecaesarsenterprisescyberitintern",
         "littlecaesarsenterprisesdeveloperitintern",
         "littlecaesarsenterprisesqaitintern",
+        "llbeanbusinessanalystdataanalystintern",
         "llbeanqualityassuranceanalystintern",
         "llbeansoftwaredeveloperintern",
         "llnlcriticalinfrastructureanalysisinterncyberandcriticalinfrastructuresummerinst",
@@ -30986,6 +31018,7 @@
         "raftcompanywebsitedataengineeringintern",
         "raftcompanywebsitedevopsengineeringintern",
         "raftcompanywebsitefullstackengineeringintern",
+        "rambusdigitaldesignintern",
         "rangesoftwareengineeringintern",
         "raveaerospacesoftwareengineeringintern",
         "raytheonsoftwaredevelopmentintern",
@@ -31037,6 +31070,8 @@
         "robertboschventurecapitalairesearchinternwirelessfoundationmodels",
         "robertboschventurecapitalsoftwareengineeringcoop",
         "robloxsoftwareengineerintern",
+        "rockefellercapitalmanagementanalystinterncoreplatforms",
+        "rockefellercapitalmanagementanalystinterninformationsecurity",
         "rocketcompaniesmarketingaccountingoritintern",
         "rocklandtrustbusinessintelligencebiintern",
         "rockwellautomationaisoftwareengineerintern",
@@ -31113,6 +31148,7 @@
         "scientechresearchcapitalquantitativedeveloperintern",
         "scmquantitativeresearchanalystintern",
         "scoutaiaiengineerinternfuryteam",
+        "sdsuresearchfoundationundergraduatestudentinternportcontaminationproject",
         "seagatetechnologyembeddedsoftwareengineerintern",
         "seagatetechnologymachinelearningforcorporatestrategyintern",
         "seagatetechnologyrecordingmediardinternaidatascience",
@@ -31448,6 +31484,7 @@
         "ulsolutionscybersecurityintern",
         "ulsolutionsdatascienceintern",
         "unitedparcelserviceupsinformationsecurityintern",
+        "unitedwholesalemortgagetechnologyinternprogram",
         "unitymachinelearningengineerintern",
         "universalhealthservicessoftwareengineerinterndataanalytics",
         "universitycorporationforatmosphericresearchsiparcsundergraduatestudentintern",
@@ -31515,6 +31552,7 @@
         "wellmarksoftwareengineerinternaiplatformteam",
         "wellmarksoftwareengineerinterntechnologyhealthplan",
         "westbendinsurancedatascientistintern",
+        "westbendinsurancedatasolutionengineerintern",
         "westbendinsuranceitsoftwareengineerintern",
         "westernalliancebancorporationplatformengineeringintern",
         "westernmagneticssoftwareengineerintern",
@@ -31565,7 +31603,7 @@
     },
     "T. Rowe Price": {
       "last_count": 135,
-      "last_ok": "2026-11-07T21:17:15+00:00",
+      "last_ok": "2026-11-08T03:36:33+00:00",
       "seen": [
         "76537",
         "78144",
@@ -31812,7 +31850,7 @@
     },
     "USAJOBS (federal)": {
       "last_count": 379,
-      "last_ok": "2026-11-07T21:16:52+00:00",
+      "last_ok": "2026-11-08T03:36:10+00:00",
       "seen": [
         "846709100",
         "846709200",
@@ -34063,7 +34101,7 @@
     },
     "Underclassmen Internships (zapplyjobs)": {
       "last_count": 46,
-      "last_ok": "2026-11-07T21:17:23+00:00",
+      "last_ok": "2026-11-08T03:36:41+00:00",
       "seen": [
         "8vcfellowship",
         "abbqualityengineer",
@@ -34678,7 +34716,7 @@
     },
     "Underclassmen Opportunities (Cruz-Lopez)": {
       "last_count": 78,
-      "last_ok": "2026-11-07T21:17:23+00:00",
+      "last_ok": "2026-11-08T03:36:41+00:00",
       "seen": [
         "21stcenturyscholars",
         "aauwaauwlocalbranchundergraduatescholarshipsallmajorsdeadlinerollingbylocalbranc",
@@ -34937,7 +34975,7 @@
     },
     "Underclassmen Opportunities (LuisaE)": {
       "last_count": 137,
-      "last_ok": "2026-11-07T21:17:23+00:00",
+      "last_ok": "2026-11-08T03:36:41+00:00",
       "seen": [
         "8vcfellowships",
         "abercrombiefitchsophomoresummit",
@@ -35080,7 +35118,7 @@
     },
     "Vanguard": {
       "last_count": 336,
-      "last_ok": "2026-11-07T21:17:07+00:00",
+      "last_ok": "2026-11-08T03:36:26+00:00",
       "seen": [
         "164647",
         "166007",
@@ -36008,7 +36046,7 @@
     },
     "Visa": {
       "last_count": 827,
-      "last_ok": "2026-11-07T21:16:03+00:00",
+      "last_ok": "2026-11-08T03:35:22+00:00",
       "seen": [
         "/job/IN---Remote---IND/Data-Scientist---Visa-Consulting---Analytics_REF081808W",
         "REF059465W",
