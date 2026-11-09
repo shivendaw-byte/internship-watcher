@@ -1,5 +1,5 @@
 {
-  "last_email": "2026-11-08T21:32:30+00:00",
+  "last_email": "2026-11-09T03:51:33+00:00",
   "seen_fingerprints": [
     "1stsourceinformationsecurityintern",
     "42dotfoundationmodelsintern",
@@ -1052,6 +1052,7 @@
     "insteadsoftwareengineeringintern",
     "insuletcorporationdevopsengineerintern",
     "integratesoftwareengineeringintern",
+    "integratesoftwareengineerintern",
     "interclypsejuniorfullstacksoftwareengineerintern",
     "intercontinentalexchangeagenticaidatascienceintern",
     "intercontinentalexchangecybersecurityarchitectintern",
@@ -1101,6 +1102,7 @@
     "jmfamilyenterprisesoffensivesecurityintern",
     "jmfamilyenterprisessoftwareanalystintern",
     "jmfamilyenterprisessoftwareengineerintern",
+    "johndeereprocessautomationinterndataandanalytics",
     "johndeereproductengineeringstudentintern",
     "johndeeresoftwareengineeringinterntechnology",
     "johndeeresoftwareengineerintern",
@@ -1345,6 +1347,7 @@
     "nationalinterstateinsurancedataapplicationdevelopmentintern",
     "nationalinterstateinsurancedataautomationintern",
     "nationalinterstateinsurancedataengineeringintern",
+    "nationalinterstateinsurancedatascientistintern",
     "nationalinterstateinsurancedevopsdeveloperintern",
     "nationalinterstateinsuranceemergingtechnologyintern",
     "nationalinterstateinsuranceextremeprogrammingengineerintern",
@@ -1802,6 +1805,7 @@
     "sycamorememberoftechnicalstaffinterninfrastructure",
     "symboticrobotmanipulationintern",
     "syntiantdevopsmachinelearninginfrastructureintern",
+    "systemsplanningandanalysisdataengineeringanalyticstoolsintern",
     "systemsplanningandanalysisdataengineerintern",
     "talossoftwareengineerinterndealer",
     "talossoftwareengineerinternrfq",
@@ -2186,7 +2190,7 @@
   "sources": {
     "APM List (PM internships)": {
       "last_count": 16,
-      "last_ok": "2026-11-08T21:32:27+00:00",
+      "last_ok": "2026-11-09T03:51:31+00:00",
       "seen": [
         "adobeinternshipopen",
         "amazoninternshipopen",
@@ -3285,7 +3289,7 @@
     },
     "Amazon": {
       "last_count": 418,
-      "last_ok": "2026-11-08T21:31:46+00:00",
+      "last_ok": "2026-11-09T03:50:49+00:00",
       "seen": [
         "10387501",
         "10391774",
@@ -5677,8 +5681,8 @@
       ]
     },
     "BlackRock": {
-      "last_count": 274,
-      "last_ok": "2026-11-08T21:32:23+00:00",
+      "last_count": 273,
+      "last_ok": "2026-11-09T03:51:27+00:00",
       "seen": [
         "R241791",
         "R250983",
@@ -6351,7 +6355,7 @@
     },
     "Capital One": {
       "last_count": 2000,
-      "last_ok": "2026-11-08T21:31:40+00:00",
+      "last_ok": "2026-11-09T03:50:43+00:00",
       "seen": [
         "R1000000",
         "R1000004",
@@ -11448,8 +11452,8 @@
       ]
     },
     "EY / EY-Parthenon": {
-      "last_count": 284,
-      "last_ok": "2026-11-08T21:31:13+00:00",
+      "last_count": 289,
+      "last_ok": "2026-11-09T03:50:23+00:00",
       "seen": [
         "1002856701",
         "1005882301",
@@ -11465,6 +11469,7 @@
         "1047189901",
         "1048900201",
         "1049237901",
+        "1049652001",
         "1049928401",
         "1049940701",
         "1056873701",
@@ -11502,6 +11507,7 @@
         "1098780201",
         "1098787601",
         "1098928501",
+        "1104197001",
         "1105031701",
         "1105045101",
         "1107522301",
@@ -11616,12 +11622,14 @@
         "1203603901",
         "1203604001",
         "1203697601",
+        "1205931101",
         "1206003701",
         "1206207201",
         "1206304501",
         "1206352001",
         "1206362801",
         "1206455101",
+        "1206805001",
         "1206953301",
         "1207339401",
         "1207583001",
@@ -11824,6 +11832,7 @@
         "1237557401",
         "1237678401",
         "1237701101",
+        "1237938701",
         "1238129301",
         "1238175701",
         "1238240001",
@@ -12730,6 +12739,7 @@
         "1385361933",
         "1385363333",
         "1385364333",
+        "1385364633",
         "1385370933",
         "1385372333",
         "1385372933",
@@ -19526,9 +19536,13 @@
         "697392301",
         "697394801",
         "697395001",
+        "697890301",
         "698357101",
+        "698359201",
         "698360201",
+        "698759801",
         "698759901",
+        "698813101",
         "698816401",
         "698835801",
         "698951201",
@@ -19539,6 +19553,7 @@
         "699369801",
         "699418801",
         "699444401",
+        "699823601",
         "700302201",
         "700303301",
         "701091701",
@@ -19548,6 +19563,7 @@
         "703954701",
         "704805901",
         "704808701",
+        "709307701",
         "710508201",
         "711383101",
         "714065001",
@@ -19604,6 +19620,7 @@
         "870803201",
         "874132501",
         "886033301",
+        "888661501",
         "890363601",
         "895284501",
         "922946601",
@@ -19614,6 +19631,7 @@
         "941036901",
         "941049001",
         "949509801",
+        "950881601",
         "955057601",
         "955282601",
         "956858801",
@@ -19621,6 +19639,7 @@
         "957975801",
         "957976601",
         "963244701",
+        "967270501",
         "972753901",
         "979771701",
         "982445701",
@@ -19631,7 +19650,7 @@
     },
     "Federal Reserve System": {
       "last_count": 180,
-      "last_ok": "2026-11-08T21:31:53+00:00",
+      "last_ok": "2026-11-09T03:50:55+00:00",
       "seen": [
         "R-0000029562",
         "R-0000030430",
@@ -20113,7 +20132,7 @@
     },
     "Google": {
       "last_count": 20,
-      "last_ok": "2026-11-08T21:32:26+00:00",
+      "last_ok": "2026-11-09T03:51:30+00:00",
       "seen": [
         "100460871561421510",
         "100648618540573382",
@@ -20164,7 +20183,7 @@
     },
     "IMF": {
       "last_count": 16,
-      "last_ok": "2026-11-08T21:32:25+00:00",
+      "last_ok": "2026-11-09T03:51:28+00:00",
       "seen": [
         "26-R8965",
         "26-R8967",
@@ -20220,8 +20239,8 @@
       ]
     },
     "Mastercard": {
-      "last_count": 935,
-      "last_ok": "2026-11-08T21:30:31+00:00",
+      "last_count": 932,
+      "last_ok": "2026-11-09T03:49:38+00:00",
       "seen": [
         "R-207875",
         "R-208485",
@@ -29465,8 +29484,8 @@
       ]
     },
     "Summer 2027 Internships (vanshb03)": {
-      "last_count": 1674,
-      "last_ok": "2026-11-08T21:32:27+00:00",
+      "last_count": 1679,
+      "last_ok": "2026-11-09T03:51:31+00:00",
       "seen": [
         "1stsourceinformationsecurityintern",
         "42dotfoundationmodelsintern",
@@ -30436,6 +30455,7 @@
         "insteadsoftwareengineeringintern",
         "insuletcorporationdevopsengineerintern",
         "integratesoftwareengineeringintern",
+        "integratesoftwareengineerintern",
         "intelcompilerengineeringintern",
         "interclypsejuniorfullstacksoftwareengineerintern",
         "intercontinentalexchangeagenticaidatascienceintern",
@@ -30498,6 +30518,7 @@
         "jmfamilyenterprisesoffensivesecurityintern",
         "jmfamilyenterprisessoftwareanalystintern",
         "jmfamilyenterprisessoftwareengineerintern",
+        "johndeereprocessautomationinterndataandanalytics",
         "johndeereproductengineeringstudentintern",
         "johndeeresoftwareengineeringinterntechnology",
         "johndeeresoftwareengineerintern",
@@ -30769,6 +30790,7 @@
         "nationalinterstateinsurancedataapplicationdevelopmentintern",
         "nationalinterstateinsurancedataautomationintern",
         "nationalinterstateinsurancedataengineeringintern",
+        "nationalinterstateinsurancedatascientistintern",
         "nationalinterstateinsurancedevopsdeveloperintern",
         "nationalinterstateinsuranceemergingtechnologyintern",
         "nationalinterstateinsuranceextremeprogrammingengineerintern",
@@ -31225,6 +31247,7 @@
         "simonpropertygroupfrontenddeveloperintern",
         "simonpropertygroupprojectdeliveryintern",
         "simventionssoftwaredevelopmentintern",
+        "sitimeasicdigitalverificationengineerintern",
         "skhynixmemorysolutionasicdesignintern",
         "skydioautonomyengineerintern",
         "skydioautonomyengineerinternautonomyinfrastructuresystemsandtools",
@@ -31302,6 +31325,7 @@
         "symboticrobotmanipulationintern",
         "synopsystechnicalengineerintern",
         "syntiantdevopsmachinelearninginfrastructureintern",
+        "systemsplanningandanalysisdataengineeringanalyticstoolsintern",
         "systemsplanningandanalysisdataengineerintern",
         "talossoftwareengineerinterndealer",
         "talossoftwareengineerinternrfq",
@@ -31637,7 +31661,7 @@
     },
     "T. Rowe Price": {
       "last_count": 135,
-      "last_ok": "2026-11-08T21:32:18+00:00",
+      "last_ok": "2026-11-09T03:51:22+00:00",
       "seen": [
         "76537",
         "78144",
@@ -31884,7 +31908,7 @@
     },
     "USAJOBS (federal)": {
       "last_count": 378,
-      "last_ok": "2026-11-08T21:31:54+00:00",
+      "last_ok": "2026-11-09T03:50:58+00:00",
       "seen": [
         "846709100",
         "846709200",
@@ -34136,7 +34160,7 @@
     },
     "Underclassmen Internships (zapplyjobs)": {
       "last_count": 46,
-      "last_ok": "2026-11-08T21:32:27+00:00",
+      "last_ok": "2026-11-09T03:51:30+00:00",
       "seen": [
         "8vcfellowship",
         "abbqualityengineer",
@@ -34751,7 +34775,7 @@
     },
     "Underclassmen Opportunities (Cruz-Lopez)": {
       "last_count": 78,
-      "last_ok": "2026-11-08T21:32:26+00:00",
+      "last_ok": "2026-11-09T03:51:30+00:00",
       "seen": [
         "21stcenturyscholars",
         "aauwaauwlocalbranchundergraduatescholarshipsallmajorsdeadlinerollingbylocalbranc",
@@ -35010,7 +35034,7 @@
     },
     "Underclassmen Opportunities (LuisaE)": {
       "last_count": 137,
-      "last_ok": "2026-11-08T21:32:27+00:00",
+      "last_ok": "2026-11-09T03:51:30+00:00",
       "seen": [
         "8vcfellowships",
         "abercrombiefitchsophomoresummit",
@@ -35152,8 +35176,8 @@
       ]
     },
     "Vanguard": {
-      "last_count": 332,
-      "last_ok": "2026-11-08T21:32:11+00:00",
+      "last_count": 328,
+      "last_ok": "2026-11-09T03:51:14+00:00",
       "seen": [
         "164647",
         "166007",
@@ -36081,7 +36105,7 @@
     },
     "Visa": {
       "last_count": 827,
-      "last_ok": "2026-11-08T21:31:05+00:00",
+      "last_ok": "2026-11-09T03:50:09+00:00",
       "seen": [
         "/job/IN---Remote---IND/Data-Scientist---Visa-Consulting---Analytics_REF081808W",
         "REF059465W",
@@ -38310,6 +38334,7 @@
         "REF090204W",
         "REF090206W",
         "REF090240W",
+        "REF090253W",
         "REF090263W",
         "REF93870J"
       ]
