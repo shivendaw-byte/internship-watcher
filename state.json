@@ -1,5 +1,5 @@
 {
-  "last_email": "2026-11-14T00:27:01+00:00",
+  "last_email": "2026-11-14T04:14:23+00:00",
   "seen_fingerprints": [
     "1stsourceinformationsecurityintern",
     "42dotfoundationmodelsintern",
@@ -113,7 +113,9 @@
     "amazoncustomeracquisitionrepresentativeintern",
     "amazoncustomersolutionsmanagerinternawsi",
     "amazondatabaseengineerintern",
+    "amazondatacenterinfrastructureengineerinterneast",
     "amazondatacenterinfrastructureengineerinternmidwestsoutheast",
+    "amazondatacenterinfrastructureengineerinternwestcoast",
     "amazondataengineerinternship",
     "amazondevelopmentcenterusincb02databaseengineerintern",
     "amazonearlycareerexperienceprogrammanageramazonuniversitytalentacquisi",
@@ -1339,6 +1341,9 @@
     "junipernetworkshpcaisystemadminhwswserviceengineerintern",
     "junipernetworksinfrastructuredeploymentautomationintern",
     "k1aiintern",
+    "kbrwyleservicescomputerscienceinterndefenseintel",
+    "kbrwyleservicesimageprocessingsoftwareengineerintern",
+    "kbrwyleservicessoftwareengineeringinterndefenseintel",
     "keenfinitysoftwareengineeringintern",
     "ketjendatascienceintern",
     "keybanccapitalmarketsinvestmentbankingsophomoreseriesdeadlineoctober30",
@@ -1637,6 +1642,8 @@
     "nebowebdevelopmentintern",
     "nelnetitsoftwareengineerintern",
     "netappsoftwareengineerintern",
+    "netappsoftwareengineerinterncloud",
+    "netappsoftwareengineerinternsystems",
     "netflixsoftwareengineerintern",
     "netsmartsecurityanalystintern",
     "neubergerbermanquantitativeanalystintern",
@@ -1649,6 +1656,7 @@
     "newyorklifeinsuranceibmideveloperintern",
     "newyorkmetsdatascienceintern",
     "nexsoftwareengineerinternsportsfitnessgamedevelopment",
+    "nexteraenergysoftwareengineeringinterntechnical",
     "nexusonedataengineeringintern",
     "nianticspatialsoftwareengineerinternnativesdkmobileplatforms",
     "nintendobusinessintelligenceintern",
@@ -2623,7 +2631,7 @@
   "sources": {
     "APM List (PM internships)": {
       "last_count": 14,
-      "last_ok": "2026-11-14T00:26:58+00:00",
+      "last_ok": "2026-11-14T04:14:20+00:00",
       "seen": [
         "adobeinternshipopen",
         "amazoninternshipopen",
@@ -3722,7 +3730,7 @@
     },
     "Amazon": {
       "last_count": 424,
-      "last_ok": "2026-11-14T00:26:51+00:00",
+      "last_ok": "2026-11-14T04:14:15+00:00",
       "seen": [
         "10387501",
         "10391774",
@@ -6284,6 +6292,9 @@
         "10605042",
         "10605044",
         "10605105",
+        "10605132",
+        "10605141",
+        "10605142",
         "3071340",
         "3088741",
         "3104589",
@@ -7003,7 +7014,7 @@
     },
     "Capital One": {
       "last_count": 2000,
-      "last_ok": "2026-11-14T00:26:43+00:00",
+      "last_ok": "2026-11-14T04:14:09+00:00",
       "seen": [
         "R1000000",
         "R1000004",
@@ -12270,8 +12281,8 @@
       ]
     },
     "EY / EY-Parthenon": {
-      "last_count": 266,
-      "last_ok": "2026-11-13T19:23:48+00:00",
+      "last_count": 262,
+      "last_ok": "2026-11-14T04:13:48+00:00",
       "seen": [
         "1002856701",
         "1005882301",
@@ -13010,6 +13021,7 @@
         "1286190201",
         "1286202901",
         "1286292101",
+        "1286332401",
         "1286441401",
         "1286470201",
         "1286470301",
@@ -18498,6 +18510,7 @@
         "1437482033",
         "1437482733",
         "1437483233",
+        "1437483533",
         "1437483933",
         "1437484233",
         "1437485033",
@@ -18515,6 +18528,7 @@
         "1437557333",
         "1437575033",
         "1437580833",
+        "1437586033",
         "1437586733",
         "1437588733",
         "1437591333",
@@ -18551,6 +18565,7 @@
         "1437754933",
         "1437757233",
         "1437758133",
+        "1437758933",
         "1437760233",
         "1437760633",
         "1437761033",
@@ -19962,21 +19977,30 @@
         "1447922033",
         "1447950533",
         "1447961433",
+        "1447966933",
         "1447974233",
         "1447994233",
+        "1448012433",
         "1448023133",
+        "1448043333",
         "1448044833",
+        "1448047533",
+        "1448051533",
         "1448059633",
         "1448064133",
+        "1448083433",
+        "1448099233",
         "1448112833",
         "1448122733",
         "1448144833",
         "1448145733",
         "1448149533",
+        "1448150333",
         "1448151033",
         "1448162233",
         "1448175733",
         "1448183733",
+        "1448200433",
         "1448212233",
         "1448212833",
         "1448221233",
@@ -19987,6 +20011,8 @@
         "1448244633",
         "1448249333",
         "1448254733",
+        "1448257933",
+        "1448258633",
         "1448381633",
         "1448412233",
         "1448441033",
@@ -20538,6 +20564,8 @@
         "1457259333",
         "1457306333",
         "1457306433",
+        "1457367133",
+        "1457367733",
         "695560401",
         "696384101",
         "696385901",
@@ -21158,7 +21186,7 @@
     },
     "Google": {
       "last_count": 20,
-      "last_ok": "2026-11-14T00:26:56+00:00",
+      "last_ok": "2026-11-14T04:14:18+00:00",
       "seen": [
         "100460871561421510",
         "100648618540573382",
@@ -30540,8 +30568,8 @@
       ]
     },
     "Summer 2027 Internships (vanshb03)": {
-      "last_count": 1843,
-      "last_ok": "2026-11-14T00:26:58+00:00",
+      "last_count": 1848,
+      "last_ok": "2026-11-14T04:14:20+00:00",
       "seen": [
         "1stsourceinformationsecurityintern",
         "42dotfoundationmodelsintern",
@@ -31820,6 +31848,9 @@
         "junipernetworksinfrastructuredeploymentautomationintern",
         "k1aiintern",
         "kastlesoftwareengineerintern",
+        "kbrwyleservicescomputerscienceinterndefenseinteldi",
+        "kbrwyleservicesimageprocessingsoftwareengineerintern",
+        "kbrwyleservicessoftwareengineeringinterndefenseinteldi",
         "keenfinitysoftwareengineeringintern",
         "kensingtonanalyticsintern",
         "kensingtonbidataanalystintern",
@@ -32142,6 +32173,8 @@
         "nebowebdevelopmentintern",
         "nelnetitsoftwareengineerintern",
         "netappsoftwareengineerintern",
+        "netappsoftwareengineerinterncloud",
+        "netappsoftwareengineerinternsystems",
         "netflixsoftwareengineerintern",
         "netsmartsecurityanalystintern",
         "netsmartsoftwareengineerintern",
@@ -32155,6 +32188,7 @@
         "newyorklifeinsuranceibmideveloperintern",
         "newyorkmetsdatascienceintern",
         "nexsoftwareengineerinternsportsfitnessgamedevelopment",
+        "nexteraenergysoftwareengineeringinterntechnical",
         "nexusonedataengineeringintern",
         "nianticspatialsoftwareengineerinternnativesdkmobileplatforms",
         "nightwingsoftwarehardwareengineeringintern",
@@ -33399,7 +33433,7 @@
     },
     "USAJOBS (federal)": {
       "last_count": 382,
-      "last_ok": "2026-11-14T00:26:53+00:00",
+      "last_ok": "2026-11-14T04:14:17+00:00",
       "seen": [
         "846709100",
         "846709200",
@@ -35761,7 +35795,7 @@
     },
     "Underclassmen Internships (zapplyjobs)": {
       "last_count": 46,
-      "last_ok": "2026-11-14T00:26:57+00:00",
+      "last_ok": "2026-11-14T04:14:19+00:00",
       "seen": [
         "8vcfellowship",
         "abbqualityengineer",
@@ -36376,7 +36410,7 @@
     },
     "Underclassmen Opportunities (Cruz-Lopez)": {
       "last_count": 78,
-      "last_ok": "2026-11-14T00:26:56+00:00",
+      "last_ok": "2026-11-14T04:14:19+00:00",
       "seen": [
         "21stcenturyscholars",
         "aauwaauwlocalbranchundergraduatescholarshipsallmajorsdeadlinerollingbylocalbranc",
@@ -36635,7 +36669,7 @@
     },
     "Underclassmen Opportunities (LuisaE)": {
       "last_count": 137,
-      "last_ok": "2026-11-14T00:26:57+00:00",
+      "last_ok": "2026-11-14T04:14:19+00:00",
       "seen": [
         "8vcfellowships",
         "abercrombiefitchsophomoresummit",
