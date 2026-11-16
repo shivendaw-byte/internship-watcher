@@ -1,5 +1,5 @@
 {
-  "last_email": "2026-11-16T04:00:19+00:00",
+  "last_email": "2026-11-16T14:22:42+00:00",
   "seen_fingerprints": [
     "1stsourceinformationsecurityintern",
     "42dotfoundationmodelsintern",
@@ -1187,6 +1187,7 @@
     "hrblocksoftwareengineeringinternembark",
     "hubinternationalaiengineeringintern",
     "hubinternationalsecurityarchitectintern",
+    "hudsonrivertradingdatascientistintern",
     "hudsonrivertradingfpgaverificationanddeveloperintern",
     "hudsonrivertradingwittiwomenintradingtechnologysecondyearfocusgraduati",
     "humbleroboticsembeddedsoftwareengineerintern",
@@ -1751,6 +1752,7 @@
     "oceaneeringrovsoftwareintern",
     "oceaneeringsoftwareinternc",
     "octantbiosoftwareengineeringintern",
+    "octauradataengineerintern",
     "odysaviationroboticsembeddedsystemsintern",
     "oneamericafinancialcybersecurityintern",
     "onepotresearchinternmachinelearning",
@@ -2421,6 +2423,7 @@
     "usajobsfederalhonorlawgraduateprogramlegalinternattorney",
     "usajobsfederalhousecreativeservicesintern",
     "usajobsfederalhousehumancapitalofficeintern",
+    "usajobsfederalhumancapitalorganizatioanldevelopmentprogramspec",
     "usajobsfederalinformationtechnologyintern",
     "usajobsfederalintern",
     "usajobsfederalinternationalmilitarystudentofficer",
@@ -2449,6 +2452,7 @@
     "usajobsfederalstudentinternsoilconservation",
     "usajobsfederalstudentresearchassistant",
     "usajobsfederalstudenttrainee",
+    "usajobsfederalstudenttraineeadministrative",
     "usajobsfederalstudenttraineeadministrativeofficemanagement",
     "usajobsfederalstudenttraineecesintern",
     "usajobsfederalstudenttraineecontinuingpathwaysintern",
@@ -2647,7 +2651,7 @@
   "sources": {
     "APM List (PM internships)": {
       "last_count": 14,
-      "last_ok": "2026-11-16T04:00:15+00:00",
+      "last_ok": "2026-11-16T14:22:41+00:00",
       "seen": [
         "adobeinternshipopen",
         "amazoninternshipopen",
@@ -3745,8 +3749,8 @@
       ]
     },
     "Amazon": {
-      "last_count": 425,
-      "last_ok": "2026-11-16T03:59:30+00:00",
+      "last_count": 422,
+      "last_ok": "2026-11-16T14:22:04+00:00",
       "seen": [
         "10387501",
         "10391774",
@@ -6150,6 +6154,7 @@
         "10599139",
         "10599140",
         "10599141",
+        "10599162",
         "10599231",
         "10599298",
         "10599299",
@@ -12315,8 +12320,8 @@
       ]
     },
     "EY / EY-Parthenon": {
-      "last_count": 262,
-      "last_ok": "2026-11-16T03:59:17+00:00",
+      "last_count": 266,
+      "last_ok": "2026-11-16T14:21:41+00:00",
       "seen": [
         "1002856701",
         "1005882301",
@@ -12741,6 +12746,7 @@
         "1246685401",
         "1246690701",
         "1246694201",
+        "1247178301",
         "1247756301",
         "1248036301",
         "1248110201",
@@ -12771,6 +12777,7 @@
         "1251575301",
         "1251615201",
         "1251863001",
+        "1252066601",
         "1252379301",
         "1252379401",
         "1252453101",
@@ -20092,6 +20099,9 @@
         "1448746833",
         "1448750033",
         "1448750333",
+        "1448751033",
+        "1448753433",
+        "1448753633",
         "1448763633",
         "1448779733",
         "1448784333",
@@ -21219,8 +21229,8 @@
       ]
     },
     "Google": {
-      "last_count": 20,
-      "last_ok": "2026-11-16T04:00:13+00:00",
+      "last_count": 19,
+      "last_ok": "2026-11-16T14:22:38+00:00",
       "seen": [
         "100460871561421510",
         "100648618540573382",
@@ -30603,8 +30613,8 @@
       ]
     },
     "Summer 2027 Internships (vanshb03)": {
-      "last_count": 1847,
-      "last_ok": "2026-11-16T04:00:14+00:00",
+      "last_count": 1838,
+      "last_ok": "2026-11-16T14:22:40+00:00",
       "seen": [
         "1stsourceinformationsecurityintern",
         "42dotfoundationmodelsintern",
@@ -31704,6 +31714,7 @@
         "hrblocksoftwareengineeringinternembark",
         "hubinternationalaiengineeringintern",
         "hubinternationalsecurityarchitectintern",
+        "hudsonrivertradingdatascientistintern",
         "hudsonrivertradingfpgaverificationanddeveloperintern",
         "hudsonrivertradingintern",
         "hudsonrivertradingsoftwareengineerintern",
@@ -32319,6 +32330,7 @@
         "oceaneeringrovsoftwareintern",
         "oceaneeringsoftwareinternc",
         "octantbiosoftwareengineeringintern",
+        "octauradataengineerintern",
         "odysaviationroboticsembeddedsystemsintern",
         "oldmissionsoftwareengineerintern",
         "oneamericafinancialcybersecurityintern",
@@ -33485,8 +33497,8 @@
       ]
     },
     "USAJOBS (federal)": {
-      "last_count": 375,
-      "last_ok": "2026-11-16T03:59:42+00:00",
+      "last_count": 378,
+      "last_ok": "2026-11-16T14:22:12+00:00",
       "seen": [
         "846709100",
         "846709200",
@@ -35771,6 +35783,7 @@
         "892104000",
         "892106200",
         "892106700",
+        "892106800",
         "892112100",
         "892137600",
         "892138200",
@@ -35783,11 +35796,13 @@
         "892193200",
         "892211000",
         "892213300",
+        "892217900",
         "892231800",
         "892231900",
         "892232000",
         "892239300",
         "892243500",
+        "892251200",
         "892255700",
         "892255800",
         "892267700",
@@ -35812,12 +35827,16 @@
         "892408900",
         "892413200",
         "892413400",
+        "892416300",
         "892421300",
+        "892422400",
         "892427700",
         "892429200",
         "892444100",
         "892446500",
         "892447600",
+        "892457500",
+        "892460000",
         "892479300",
         "892486600",
         "892494600",
@@ -35825,6 +35844,7 @@
         "892509100",
         "892530400",
         "892531400",
+        "892535800",
         "892539500",
         "892541100",
         "892546400",
@@ -35832,29 +35852,46 @@
         "892577800",
         "892580100",
         "892580700",
+        "892600100",
         "892603400",
         "892628400",
         "892636900",
         "892661700",
         "892684300",
+        "892685300",
         "892685800",
         "892691100",
         "892710500",
         "892732500",
         "892741100",
+        "892741600",
         "892745700",
         "892759700",
+        "892762100",
+        "892791300",
+        "892791800",
+        "892807500",
         "892808300",
+        "892819500",
+        "892819800",
         "892834200",
+        "892836800",
+        "892841300",
+        "892847500",
+        "892855000",
+        "892860900",
+        "892862900",
         "892879000",
         "892881000",
         "892881400",
-        "892886000"
+        "892886000",
+        "892946600",
+        "892954100"
       ]
     },
     "Underclassmen Internships (zapplyjobs)": {
       "last_count": 46,
-      "last_ok": "2026-11-16T04:00:14+00:00",
+      "last_ok": "2026-11-16T14:22:40+00:00",
       "seen": [
         "8vcfellowship",
         "abbqualityengineer",
@@ -36469,7 +36506,7 @@
     },
     "Underclassmen Opportunities (Cruz-Lopez)": {
       "last_count": 78,
-      "last_ok": "2026-11-16T04:00:13+00:00",
+      "last_ok": "2026-11-16T14:22:39+00:00",
       "seen": [
         "21stcenturyscholars",
         "aauwaauwlocalbranchundergraduatescholarshipsallmajorsdeadlinerollingbylocalbranc",
@@ -36728,7 +36765,7 @@
     },
     "Underclassmen Opportunities (LuisaE)": {
       "last_count": 137,
-      "last_ok": "2026-11-16T04:00:14+00:00",
+      "last_ok": "2026-11-16T14:22:39+00:00",
       "seen": [
         "8vcfellowships",
         "abercrombiefitchsophomoresummit",
