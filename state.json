@@ -1,5 +1,5 @@
 {
-  "last_email": "2026-11-17T04:22:35+00:00",
+  "last_email": "2026-11-17T05:51:14+00:00",
   "seen_fingerprints": [
     "1stsourceinformationsecurityintern",
     "42dotfoundationmodelsintern",
@@ -189,6 +189,7 @@
     "amplifyproductmanagementintern",
     "amplifysoftwareengineerintern",
     "analogdevicesinformationtechnologyintern",
+    "analogdevicessoftwareengineeringinternmedicaldevicehealthcareintegrati",
     "anavationcomputerscienceintern",
     "andurilfirmwareengineerintern",
     "andurilsystemsengineerintern",
@@ -2684,7 +2685,7 @@
   "sources": {
     "APM List (PM internships)": {
       "last_count": 14,
-      "last_ok": "2026-11-17T04:22:33+00:00",
+      "last_ok": "2026-11-17T05:51:13+00:00",
       "seen": [
         "adobeinternshipopen",
         "amazoninternshipopen",
@@ -3783,7 +3784,7 @@
     },
     "Amazon": {
       "last_count": 427,
-      "last_ok": "2026-11-17T04:21:59+00:00",
+      "last_ok": "2026-11-17T05:50:38+00:00",
       "seen": [
         "10387501",
         "10391774",
@@ -12389,7 +12390,7 @@
     },
     "EY / EY-Parthenon": {
       "last_count": 266,
-      "last_ok": "2026-11-17T04:21:46+00:00",
+      "last_ok": "2026-11-17T05:50:27+00:00",
       "seen": [
         "1002856701",
         "1005882301",
@@ -21298,7 +21299,7 @@
     },
     "Google": {
       "last_count": 19,
-      "last_ok": "2026-11-17T04:22:32+00:00",
+      "last_ok": "2026-11-17T05:51:11+00:00",
       "seen": [
         "100460871561421510",
         "100648618540573382",
@@ -30682,7 +30683,7 @@
     },
     "Summer 2027 Internships (vanshb03)": {
       "last_count": 1841,
-      "last_ok": "2026-11-17T04:22:33+00:00",
+      "last_ok": "2026-11-17T05:51:12+00:00",
       "seen": [
         "1stsourceinformationsecurityintern",
         "42dotfoundationmodelsintern",
@@ -30858,6 +30859,7 @@
         "amplifysoftwareengineerintern",
         "analogdevicesembeddedsoftwareengineerintern",
         "analogdevicesinformationtechnologyintern",
+        "analogdevicessoftwareengineeringinternmedicaldevicehealthcareintegration",
         "anavationcomputerscienceintern",
         "andurilfirmwareengineerintern",
         "andurilsoftwareengineerintern",
@@ -33601,8 +33603,8 @@
       ]
     },
     "USAJOBS (federal)": {
-      "last_count": 383,
-      "last_ok": "2026-11-17T04:22:06+00:00",
+      "last_count": 373,
+      "last_ok": "2026-11-17T05:50:45+00:00",
       "seen": [
         "846709100",
         "846709200",
@@ -35920,6 +35922,7 @@
         "892338000",
         "892341500",
         "892341600",
+        "892346200",
         "892376400",
         "892378900",
         "892388100",
@@ -35958,6 +35961,7 @@
         "892580700",
         "892600100",
         "892603400",
+        "892625000",
         "892628400",
         "892636900",
         "892661700",
@@ -35991,19 +35995,28 @@
         "892886000",
         "892946600",
         "892954100",
+        "892962600",
         "892970800",
+        "892971100",
+        "892972900",
+        "892992100",
+        "893023200",
         "893034400",
         "893035000",
+        "893035800",
         "893039300",
         "893042500",
+        "893058400",
+        "893069100",
         "893069300",
         "893070300",
-        "893097000"
+        "893097000",
+        "893108200"
       ]
     },
     "Underclassmen Internships (zapplyjobs)": {
       "last_count": 46,
-      "last_ok": "2026-11-17T04:22:32+00:00",
+      "last_ok": "2026-11-17T05:51:12+00:00",
       "seen": [
         "8vcfellowship",
         "abbqualityengineer",
@@ -36618,7 +36631,7 @@
     },
     "Underclassmen Opportunities (Cruz-Lopez)": {
       "last_count": 78,
-      "last_ok": "2026-11-17T04:22:32+00:00",
+      "last_ok": "2026-11-17T05:51:11+00:00",
       "seen": [
         "21stcenturyscholars",
         "aauwaauwlocalbranchundergraduatescholarshipsallmajorsdeadlinerollingbylocalbranc",
@@ -36877,7 +36890,7 @@
     },
     "Underclassmen Opportunities (LuisaE)": {
       "last_count": 137,
-      "last_ok": "2026-11-17T04:22:32+00:00",
+      "last_ok": "2026-11-17T05:51:12+00:00",
       "seen": [
         "8vcfellowships",
         "abercrombiefitchsophomoresummit",
