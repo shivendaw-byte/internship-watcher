@@ -1,5 +1,5 @@
 {
-  "last_email": "2026-11-18T14:52:18+00:00",
+  "last_email": "2026-11-18T20:10:48+00:00",
   "seen_fingerprints": [
     "1stsourceinformationsecurityintern",
     "42dotfoundationmodelsintern",
@@ -420,6 +420,7 @@
     "brazesoftwareengineeringintern",
     "breadfinancialsoftwareengineeringintern",
     "brexsoftwareengineerintern",
+    "bristolmyerssquibbundergraddatascienceintern",
     "broadridgetechnologyintern",
     "brookhavenlabdataengineeringstudentassistantintern",
     "bytedanceagentevaluationevolutionmachinelearningengineerinternamlarkus",
@@ -814,6 +815,7 @@
     "eyeyparthenonearlycareersattractionprojectmanagereygds",
     "eyeyparthenonearlycareersattractionprojectmanagersupervisingeygds",
     "eyeyparthenonearlycareersrecruitersupervisingassociatechicago",
+    "eyeyparthenonearlycareersrecruitmentcoordinator1",
     "eyeyparthenonearlycareerstalentrecruitingcoordinatorphiladelphiapa",
     "eyeyparthenonexpressionofinterestundergraduateassuranceinternshipguern",
     "eyeyparthenonexpressionofinterestundergraduateassuranceinternshipjerse",
@@ -842,6 +844,7 @@
     "eyeyparthenonprojectfinancelegalinternmilano",
     "eyeyparthenonstagiaireauditindustriesfvriergenve",
     "eyeyparthenonstagiaireauditindustriesoctobregenve",
+    "eyeyparthenonstudentexperiencecoordinator",
     "eyeyparthenontaxinternorstudentworkercuracao",
     "eyeyparthenontaxpasintern",
     "eyeyparthenontransferpricingintern",
@@ -1630,6 +1633,7 @@
     "motorolafpgadesignengineeringintern",
     "motorolasoftwareengineeringintern",
     "motorolasolutionsembeddedswengineeringintern",
+    "motorolasolutionsrficdesignengineerintern",
     "motorolasolutionssoftwareengineerinterncybersecurityservices",
     "msasafetysoftwareengineerinternproductdevelopment",
     "mtbanktechnologyinternsoftwareengineeringenterpriseapiservicesdevelopm",
@@ -2577,6 +2581,7 @@
     "viasatdigitalandprogrammablelogicengineerintern",
     "viasatsoftwareengineerintern",
     "viavisolutionsdigitalhardwareengineeringintern",
+    "viavisolutionsroboticsintern",
     "vigetprojectproductmanagerintern",
     "vigetsoftwaredeveloperintern",
     "virginiatechappliedresearchcorporationresearchinternappliedaisoftwared",
@@ -2720,7 +2725,7 @@
   "sources": {
     "APM List (PM internships)": {
       "last_count": 14,
-      "last_ok": "2026-11-18T14:52:16+00:00",
+      "last_ok": "2026-11-18T20:10:45+00:00",
       "seen": [
         "adobeinternshipopen",
         "amazoninternshipopen",
@@ -3818,8 +3823,8 @@
       ]
     },
     "Amazon": {
-      "last_count": 435,
-      "last_ok": "2026-11-18T14:51:37+00:00",
+      "last_count": 434,
+      "last_ok": "2026-11-18T20:10:08+00:00",
       "seen": [
         "10387501",
         "10391774",
@@ -6125,6 +6130,7 @@
         "10595931",
         "10595960",
         "10595981",
+        "10596008",
         "10596041",
         "10596078",
         "10596177",
@@ -6132,11 +6138,13 @@
         "10596393",
         "10596493",
         "10596536",
+        "10596537",
         "10596538",
         "10596539",
         "10596540",
         "10596546",
         "10596547",
+        "10596626",
         "10596640",
         "10596654",
         "10596657",
@@ -6451,6 +6459,7 @@
         "10607522",
         "10607536",
         "10607548",
+        "10607584",
         "10607586",
         "10607624",
         "10607627",
@@ -6458,7 +6467,15 @@
         "10607665",
         "10607712",
         "10607713",
+        "10607741",
         "10607948",
+        "10607953",
+        "10608182",
+        "10608212",
+        "10608214",
+        "10608273",
+        "10608278",
+        "10608480",
         "3071340",
         "3088741",
         "3104589",
@@ -12457,7 +12474,7 @@
     },
     "EY / EY-Parthenon": {
       "last_count": 264,
-      "last_ok": "2026-11-18T14:51:22+00:00",
+      "last_ok": "2026-11-18T20:09:54+00:00",
       "seen": [
         "1002856701",
         "1005882301",
@@ -20323,9 +20340,12 @@
         "1449160933",
         "1449196533",
         "1449196933",
+        "1449227333",
         "1449230533",
         "1449233133",
         "1449249833",
+        "1449262633",
+        "1449264633",
         "1449357233",
         "1449402333",
         "1449441333",
@@ -20846,6 +20866,12 @@
         "1458463933",
         "1458474433",
         "1458519633",
+        "1458550433",
+        "1458570633",
+        "1458570933",
+        "1458586833",
+        "1458597633",
+        "1458611033",
         "695560401",
         "696384101",
         "696385901",
@@ -21466,7 +21492,7 @@
     },
     "Google": {
       "last_count": 19,
-      "last_ok": "2026-11-18T14:52:13+00:00",
+      "last_ok": "2026-11-18T20:10:42+00:00",
       "seen": [
         "100460871561421510",
         "100648618540573382",
@@ -21516,13 +21542,17 @@
       ]
     },
     "IMF": {
-      "last_count": 13,
-      "last_ok": "2026-11-16T04:00:12+00:00",
+      "last_count": 17,
+      "last_ok": "2026-11-18T20:10:41+00:00",
       "seen": [
+        "26-R10002",
         "26-R10005",
         "26-R10006",
         "26-R10010",
         "26-R10017",
+        "26-R10024",
+        "26-R10026",
+        "26-R10028",
         "26-R8965",
         "26-R8967",
         "26-R9464",
@@ -21566,6 +21596,7 @@
         "26-R9942",
         "26-R9945",
         "26-R9952",
+        "26-R9955",
         "26-R9959",
         "26-R9964",
         "26-R9965",
@@ -30849,8 +30880,8 @@
       ]
     },
     "Summer 2027 Internships (vanshb03)": {
-      "last_count": 1852,
-      "last_ok": "2026-11-18T14:52:16+00:00",
+      "last_count": 1842,
+      "last_ok": "2026-11-18T20:10:44+00:00",
       "seen": [
         "1stsourceinformationsecurityintern",
         "42dotfoundationmodelsintern",
@@ -31284,6 +31315,7 @@
         "brazesoftwareengineeringintern",
         "breadfinancialsoftwareengineeringintern",
         "brexsoftwareengineerintern",
+        "bristolmyerssquibbundergraddatascienceintern",
         "broadridgetechnologyintern",
         "brookhavenlabdataengineeringstudentassistantintern",
         "bytedanceagentevaluationevolutionmachinelearningengineerinternamlarkus",
@@ -32440,6 +32472,7 @@
         "motorolafpgadesignengineeringintern",
         "motorolasoftwareengineeringintern",
         "motorolasolutionsembeddedswengineeringintern",
+        "motorolasolutionsrficdesignengineerintern",
         "motorolasolutionssoftwareengineerinterncybersecurityservices",
         "msasafetysoftwareengineerinternproductdevelopment",
         "mtbanktechnologyinternsoftwareengineeringenterpriseapiservicesdevelopmentteam",
@@ -32975,6 +33008,7 @@
         "schweitzerengineeringlaboratoriessoftwareengineerintern",
         "scientechresearchcapitalquantitativedeveloperintern",
         "scmquantitativeresearchanalystintern",
+        "scotiabankglobalanalyticfinancialengineeringgafecoopglobalbankingandmarkets",
         "scoutaiaiengineerinternfuryteam",
         "scoutmotorsincdigitalproductsintern",
         "scoutmotorsincitintern",
@@ -33440,6 +33474,7 @@
         "viasatdigitalandprogrammablelogicengineerintern",
         "viasatsoftwareengineerintern",
         "viavisolutionsdigitalhardwareengineeringintern",
+        "viavisolutionsroboticsintern",
         "vigetprojectproductmanagerintern",
         "vigetsoftwaredeveloperintern",
         "virginiatechappliedresearchcorporationresearchinternappliedaisoftwaredevelopment",
@@ -33810,7 +33845,7 @@
     },
     "USAJOBS (federal)": {
       "last_count": 370,
-      "last_ok": "2026-11-18T14:51:47+00:00",
+      "last_ok": "2026-11-18T20:10:16+00:00",
       "seen": [
         "846709100",
         "846709200",
@@ -36272,12 +36307,19 @@
         "893326800",
         "893329300",
         "893333900",
-        "893341800"
+        "893341800",
+        "893358800",
+        "893382500",
+        "893382800",
+        "893384300",
+        "893412700",
+        "893427700",
+        "893434900"
       ]
     },
     "Underclassmen Internships (zapplyjobs)": {
       "last_count": 46,
-      "last_ok": "2026-11-18T14:52:16+00:00",
+      "last_ok": "2026-11-18T20:10:43+00:00",
       "seen": [
         "8vcfellowship",
         "abbqualityengineer",
@@ -36892,7 +36934,7 @@
     },
     "Underclassmen Opportunities (Cruz-Lopez)": {
       "last_count": 78,
-      "last_ok": "2026-11-18T14:52:14+00:00",
+      "last_ok": "2026-11-18T20:10:43+00:00",
       "seen": [
         "21stcenturyscholars",
         "aauwaauwlocalbranchundergraduatescholarshipsallmajorsdeadlinerollingbylocalbranc",
@@ -37151,7 +37193,7 @@
     },
     "Underclassmen Opportunities (LuisaE)": {
       "last_count": 137,
-      "last_ok": "2026-11-18T14:52:15+00:00",
+      "last_ok": "2026-11-18T20:10:43+00:00",
       "seen": [
         "8vcfellowships",
         "abercrombiefitchsophomoresummit",
