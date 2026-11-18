@@ -1,5 +1,5 @@
 {
-  "last_email": "2026-11-18T05:18:10+00:00",
+  "last_email": "2026-11-18T14:52:18+00:00",
   "seen_fingerprints": [
     "1stsourceinformationsecurityintern",
     "42dotfoundationmodelsintern",
@@ -64,6 +64,7 @@
     "afterquerysoftwareengineeringintern",
     "agcoembeddedsoftwareengineerintern",
     "aidashsoftwareengineeringinternbackend",
+    "airbnbsoftwareengineeringintern",
     "airbustooltechnologyanddevelopmentengineeringintern",
     "akunacapitalentrylevelsoftwareengineerinternc",
     "alaskaairgroupvrdevelopmentintern",
@@ -1710,6 +1711,7 @@
     "nexteraenergysoftwareengineeringinterntechnical",
     "nexusonedataengineeringintern",
     "nianticspatialsoftwareengineerinternnativesdkmobileplatforms",
+    "nightwingvulnerabilityresearcherintern",
     "nintendobusinessintelligenceintern",
     "nintendoitsoftwareengineerintern",
     "nintendosoftwareengineerinternaudio",
@@ -2193,6 +2195,7 @@
     "spacedynamicslaboratoryaienabledrequirementsengineeringintern",
     "spacedynamicslaboratoryfpgaelectricalengineerinterncivilcommercialspac",
     "spacedynamicslaboratorysoftwareengineerintern",
+    "spglobalmachinelearningengineerintern",
     "springswindowfashionsaiinterninformationtechnology",
     "springswindowfashionssoftwareengineeringintern",
     "springswindowfashionstextileengineeringanalyticssoftwareintern",
@@ -2209,6 +2212,7 @@
     "stateaffairssoftwareengineerintern",
     "stateofmarylandquantitativeanalystintern",
     "stateofwisconsininvestmentboarddataanalyticsengineeringintern",
+    "stateofwisconsininvestmentboardinformationsecurityintern",
     "statestreetdatascientistintern",
     "stealthstartupcommunityembeddedfirmwareandcontrolsengineerintern",
     "steeldynamicsinformationsecurityintern",
@@ -2716,7 +2720,7 @@
   "sources": {
     "APM List (PM internships)": {
       "last_count": 14,
-      "last_ok": "2026-11-18T05:18:09+00:00",
+      "last_ok": "2026-11-18T14:52:16+00:00",
       "seen": [
         "adobeinternshipopen",
         "amazoninternshipopen",
@@ -3814,8 +3818,8 @@
       ]
     },
     "Amazon": {
-      "last_count": 437,
-      "last_ok": "2026-11-18T05:17:28+00:00",
+      "last_count": 435,
+      "last_ok": "2026-11-18T14:51:37+00:00",
       "seen": [
         "10387501",
         "10391774",
@@ -6454,6 +6458,7 @@
         "10607665",
         "10607712",
         "10607713",
+        "10607948",
         "3071340",
         "3088741",
         "3104589",
@@ -12451,8 +12456,8 @@
       ]
     },
     "EY / EY-Parthenon": {
-      "last_count": 263,
-      "last_ok": "2026-11-18T05:17:15+00:00",
+      "last_count": 264,
+      "last_ok": "2026-11-18T14:51:22+00:00",
       "seen": [
         "1002856701",
         "1005882301",
@@ -18989,6 +18994,7 @@
         "1439534733",
         "1439572933",
         "1439578033",
+        "1439580533",
         "1439585633",
         "1439588833",
         "1439593833",
@@ -20832,6 +20838,14 @@
         "1458145633",
         "1458207733",
         "1458228433",
+        "1458270533",
+        "1458294933",
+        "1458306633",
+        "1458355733",
+        "1458400233",
+        "1458463933",
+        "1458474433",
+        "1458519633",
         "695560401",
         "696384101",
         "696385901",
@@ -21452,7 +21466,7 @@
     },
     "Google": {
       "last_count": 19,
-      "last_ok": "2026-11-18T05:18:07+00:00",
+      "last_ok": "2026-11-18T14:52:13+00:00",
       "seen": [
         "100460871561421510",
         "100648618540573382",
@@ -30835,8 +30849,8 @@
       ]
     },
     "Summer 2027 Internships (vanshb03)": {
-      "last_count": 1849,
-      "last_ok": "2026-11-18T05:18:09+00:00",
+      "last_count": 1852,
+      "last_ok": "2026-11-18T14:52:16+00:00",
       "seen": [
         "1stsourceinformationsecurityintern",
         "42dotfoundationmodelsintern",
@@ -30903,6 +30917,7 @@
         "agcoembeddedsoftwareengineerintern",
         "aidashsoftwareengineeringinternbackend",
         "aimdefencecomputervisionengineeringintern",
+        "airbnbsoftwareengineeringintern",
         "airbustooltechnologyanddevelopmentengineeringintern",
         "akunacapitalentrylevelsoftwareengineerinternc",
         "akunacapitalhardwareengineerintern",
@@ -32512,6 +32527,7 @@
         "nexusonedataengineeringintern",
         "nianticspatialsoftwareengineerinternnativesdkmobileplatforms",
         "nightwingsoftwarehardwareengineeringintern",
+        "nightwingvulnerabilityresearcherintern",
         "nintendobusinessintelligenceintern",
         "nintendoitsoftwareengineerintern",
         "nintendosoftwareengineerinternaudio",
@@ -33075,6 +33091,7 @@
         "spacedynamicslaboratoryaienabledrequirementsengineeringintern",
         "spacedynamicslaboratoryfpgaelectricalengineerinterncivilcommercialspace",
         "spacedynamicslaboratorysoftwareengineerintern",
+        "spglobalmachinelearningengineerintern",
         "springswindowfashionsaiinterninformationtechnology",
         "springswindowfashionssoftwareengineeringintern",
         "springswindowfashionstextileengineeringanalyticssoftwareintern",
@@ -33091,6 +33108,7 @@
         "stateaffairssoftwareengineerintern",
         "stateofmarylandquantitativeanalystintern",
         "stateofwisconsininvestmentboarddataanalyticsengineeringintern",
+        "stateofwisconsininvestmentboardinformationsecurityintern",
         "statestreetdatascientistintern",
         "stealthstartupcommunityembeddedfirmwareandcontrolsengineerintern",
         "steeldynamicsinformationsecurityintern",
@@ -33791,8 +33809,8 @@
       ]
     },
     "USAJOBS (federal)": {
-      "last_count": 368,
-      "last_ok": "2026-11-18T05:17:35+00:00",
+      "last_count": 370,
+      "last_ok": "2026-11-18T14:51:47+00:00",
       "seen": [
         "846709100",
         "846709200",
@@ -36249,12 +36267,17 @@
         "893268400",
         "893275100",
         "893283100",
-        "893283300"
+        "893283300",
+        "893320500",
+        "893326800",
+        "893329300",
+        "893333900",
+        "893341800"
       ]
     },
     "Underclassmen Internships (zapplyjobs)": {
       "last_count": 46,
-      "last_ok": "2026-11-18T05:18:08+00:00",
+      "last_ok": "2026-11-18T14:52:16+00:00",
       "seen": [
         "8vcfellowship",
         "abbqualityengineer",
@@ -36869,7 +36892,7 @@
     },
     "Underclassmen Opportunities (Cruz-Lopez)": {
       "last_count": 78,
-      "last_ok": "2026-11-18T05:18:08+00:00",
+      "last_ok": "2026-11-18T14:52:14+00:00",
       "seen": [
         "21stcenturyscholars",
         "aauwaauwlocalbranchundergraduatescholarshipsallmajorsdeadlinerollingbylocalbranc",
@@ -37128,7 +37151,7 @@
     },
     "Underclassmen Opportunities (LuisaE)": {
       "last_count": 137,
-      "last_ok": "2026-11-18T05:18:08+00:00",
+      "last_ok": "2026-11-18T14:52:15+00:00",
       "seen": [
         "8vcfellowships",
         "abercrombiefitchsophomoresummit",
