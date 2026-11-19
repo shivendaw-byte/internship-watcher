@@ -1,5 +1,5 @@
 {
-  "last_email": "2026-11-19T05:13:14+00:00",
+  "last_email": "2026-11-19T14:58:32+00:00",
   "seen_fingerprints": [
     "1stsourceinformationsecurityintern",
     "42dotfoundationmodelsintern",
@@ -1004,6 +1004,7 @@
     "garminfpgaengineerintern",
     "garmininternationalitdevopsadministratorintern",
     "garminitdevopsadministratorintern",
+    "garminsoftwareengineeringintern",
     "garminsoftwareengineerintern",
     "garminsoftwareengineerinternrealtimeaviationdata",
     "gaussmanagementresearchengineeringwebapplicationdeveloperintern",
@@ -2737,7 +2738,7 @@
   "sources": {
     "APM List (PM internships)": {
       "last_count": 14,
-      "last_ok": "2026-11-19T05:13:09+00:00",
+      "last_ok": "2026-11-19T14:58:30+00:00",
       "seen": [
         "adobeinternshipopen",
         "amazoninternshipopen",
@@ -3835,8 +3836,8 @@
       ]
     },
     "Amazon": {
-      "last_count": 444,
-      "last_ok": "2026-11-19T05:12:34+00:00",
+      "last_count": 440,
+      "last_ok": "2026-11-19T14:57:54+00:00",
       "seen": [
         "10387501",
         "10391774",
@@ -6241,6 +6242,7 @@
         "10598904",
         "10598905",
         "10598928",
+        "10598937",
         "10598939",
         "10599044",
         "10599070",
@@ -6511,6 +6513,7 @@
         "10608866",
         "10608873",
         "10609074",
+        "10609099",
         "3071340",
         "3088741",
         "3104589",
@@ -12509,7 +12512,7 @@
     },
     "EY / EY-Parthenon": {
       "last_count": 268,
-      "last_ok": "2026-11-19T05:12:21+00:00",
+      "last_ok": "2026-11-19T14:57:41+00:00",
       "seen": [
         "1002856701",
         "1005882301",
@@ -13471,6 +13474,7 @@
         "1373418333",
         "1373475633",
         "1373712633",
+        "1373757133",
         "1373867933",
         "1373878833",
         "1373955133",
@@ -13842,6 +13846,7 @@
         "1386417133",
         "1386417333",
         "1386421233",
+        "1386427333",
         "1386477933",
         "1386499233",
         "1386605433",
@@ -14198,6 +14203,7 @@
         "1395836633",
         "1395838533",
         "1395859533",
+        "1395885733",
         "1395921833",
         "1395948533",
         "1395955333",
@@ -20446,8 +20452,10 @@
         "1449653633",
         "1449654133",
         "1449654533",
+        "1449654933",
         "1449655133",
         "1449655633",
+        "1449656033",
         "1449656333",
         "1449660033",
         "1449664033",
@@ -20462,6 +20470,7 @@
         "1449697133",
         "1449697233",
         "1449699433",
+        "1449703733",
         "1449706333",
         "1449712533",
         "1449714833",
@@ -20480,15 +20489,18 @@
         "1449778233",
         "1449780533",
         "1449782233",
+        "1449788833",
         "1449792033",
         "1449794033",
         "1449799233",
+        "1449801533",
         "1449803633",
         "1449808833",
         "1449818033",
         "1449820033",
         "1449826133",
         "1449826333",
+        "1449826533",
         "1449833433",
         "1449861133",
         "1449863033",
@@ -21001,6 +21013,19 @@
         "1458631033",
         "1458641633",
         "1458654433",
+        "1458691133",
+        "1458730733",
+        "1458730933",
+        "1458733633",
+        "1458741133",
+        "1458774833",
+        "1458775033",
+        "1458775633",
+        "1458833333",
+        "1458837733",
+        "1458857933",
+        "1458904033",
+        "1458920933",
         "695560401",
         "696384101",
         "696385901",
@@ -21621,7 +21646,7 @@
     },
     "Google": {
       "last_count": 19,
-      "last_ok": "2026-11-19T05:13:07+00:00",
+      "last_ok": "2026-11-19T14:58:27+00:00",
       "seen": [
         "100460871561421510",
         "100648618540573382",
@@ -31009,8 +31034,8 @@
       ]
     },
     "Summer 2027 Internships (vanshb03)": {
-      "last_count": 1841,
-      "last_ok": "2026-11-19T05:13:09+00:00",
+      "last_count": 1836,
+      "last_ok": "2026-11-19T14:58:29+00:00",
       "seen": [
         "1stsourceinformationsecurityintern",
         "42dotfoundationmodelsintern",
@@ -31933,6 +31958,7 @@
         "garminfpgaengineerintern",
         "garmininternationalitdevopsadministratorintern",
         "garminitdevopsadministratorintern",
+        "garminsoftwareengineeringintern",
         "garminsoftwareengineerintern",
         "garminsoftwareengineerinternrealtimeaviationdata",
         "gaussmanagementresearchengineeringwebapplicationdeveloperintern",
@@ -33989,7 +34015,7 @@
     },
     "USAJOBS (federal)": {
       "last_count": 370,
-      "last_ok": "2026-11-19T05:12:41+00:00",
+      "last_ok": "2026-11-19T14:58:02+00:00",
       "seen": [
         "846709100",
         "846709200",
@@ -36474,12 +36500,15 @@
         "893469600",
         "893479200",
         "893484100",
-        "893494200"
+        "893494200",
+        "893500700",
+        "893502200",
+        "893523800"
       ]
     },
     "Underclassmen Internships (zapplyjobs)": {
       "last_count": 46,
-      "last_ok": "2026-11-19T05:13:08+00:00",
+      "last_ok": "2026-11-19T14:58:28+00:00",
       "seen": [
         "8vcfellowship",
         "abbqualityengineer",
@@ -37094,7 +37123,7 @@
     },
     "Underclassmen Opportunities (Cruz-Lopez)": {
       "last_count": 78,
-      "last_ok": "2026-11-19T05:13:07+00:00",
+      "last_ok": "2026-11-19T14:58:28+00:00",
       "seen": [
         "21stcenturyscholars",
         "aauwaauwlocalbranchundergraduatescholarshipsallmajorsdeadlinerollingbylocalbranc",
@@ -37353,7 +37382,7 @@
     },
     "Underclassmen Opportunities (LuisaE)": {
       "last_count": 137,
-      "last_ok": "2026-11-19T05:13:08+00:00",
+      "last_ok": "2026-11-19T14:58:28+00:00",
       "seen": [
         "8vcfellowships",
         "abercrombiefitchsophomoresummit",
