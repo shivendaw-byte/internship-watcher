@@ -1,5 +1,5 @@
 {
-  "last_email": "2026-11-21T04:56:43+00:00",
+  "last_email": "2026-11-21T13:57:18+00:00",
   "seen_fingerprints": [
     "1stsourceinformationsecurityintern",
     "42dotfoundationmodelsintern",
@@ -15,6 +15,7 @@
     "abundantresearchinternfellow",
     "acehardwarecorporationitassociatesoftwareengineerintern",
     "acronaviationsoftwareengineerintern",
+    "activisionblizzarddataplatformengineeringintern",
     "activisionblizzardgamesystemsengineeringintern",
     "activisionblizzardsoftwareengineeringintern",
     "acuityfinanceaiengineeringintern",
@@ -1885,6 +1886,7 @@
     "nvidiasparselinearalgebralibrariesintern",
     "nvidiasystemssoftwareengineeringintern",
     "nvidiasystemssoftwareinternaerialphy",
+    "nvidiatechnicalmarketingengineeringinterndigitalbiologyandscientificco",
     "nxphwswsystemandapplicationengineerintern",
     "obsidianentertainmentgameplayengineerintern",
     "occdataintern",
@@ -2118,6 +2120,7 @@
     "rockwellautomationfirmwareengineerintern",
     "rockwellautomationhardwaredevelopmentengineerintern",
     "rockwellautomationinformationtechnologyintern",
+    "rockwellautomationismcybersecurityandaiintern",
     "rockwellautomationsoftwaredeveloperengineeringintern",
     "rockwoolgroupassociateproductmanagementintern",
     "rodriguezservicessoftwareengineerintern",
@@ -2873,7 +2876,7 @@
   "sources": {
     "APM List (PM internships)": {
       "last_count": 14,
-      "last_ok": "2026-11-21T04:56:41+00:00",
+      "last_ok": "2026-11-21T13:57:15+00:00",
       "seen": [
         "adobeinternshipopen",
         "amazoninternshipopen",
@@ -3971,8 +3974,8 @@
       ]
     },
     "Amazon": {
-      "last_count": 451,
-      "last_ok": "2026-11-21T04:55:45+00:00",
+      "last_count": 449,
+      "last_ok": "2026-11-21T13:56:29+00:00",
       "seen": [
         "10387501",
         "10391774",
@@ -12709,7 +12712,7 @@
     },
     "EY / EY-Parthenon": {
       "last_count": 274,
-      "last_ok": "2026-11-21T04:55:31+00:00",
+      "last_ok": "2026-11-21T13:56:16+00:00",
       "seen": [
         "1002856701",
         "1005882301",
@@ -22020,7 +22023,7 @@
     },
     "Google": {
       "last_count": 19,
-      "last_ok": "2026-11-21T04:56:38+00:00",
+      "last_ok": "2026-11-21T13:57:13+00:00",
       "seen": [
         "100460871561421510",
         "100648618540573382",
@@ -31411,8 +31414,8 @@
       ]
     },
     "Summer 2027 Internships (vanshb03)": {
-      "last_count": 1898,
-      "last_ok": "2026-11-21T04:56:40+00:00",
+      "last_count": 1901,
+      "last_ok": "2026-11-21T13:57:15+00:00",
       "seen": [
         "1stsourceinformationsecurityintern",
         "42dotfoundationmodelsintern",
@@ -31429,6 +31432,7 @@
         "abundantsoftwareengineeringinternresearchfocused",
         "acehardwarecorporationitassociatesoftwareengineerintern",
         "acronaviationsoftwareengineerintern",
+        "activisionblizzarddataplatformengineeringintern",
         "activisionblizzardgamesystemsengineeringintern",
         "activisionblizzardsoftwareengineeringintern",
         "acuityfinanceaiengineeringintern",
@@ -31930,6 +31934,7 @@
         "campingworldaisecurityintern",
         "campingworldjunioraiengineeringintern",
         "campingworldsoftwareengineerintern",
+        "canadiansolardataengineeringintern",
         "capitalderecherchetowermachinelearningintern",
         "capitalderecherchetowersoftwaredeveloperintern",
         "capitalgroupglobaltechnologyassociateintern",
@@ -33262,6 +33267,7 @@
         "nvidiasparselinearalgebralibrariesintern",
         "nvidiasystemssoftwareengineeringintern",
         "nvidiasystemssoftwareinternaerialphy",
+        "nvidiatechnicalmarketingengineeringinterndigitalbiologyandscientificcomputing",
         "nxphwswsystemandapplicationengineerintern",
         "obsidianentertainmentgameplayengineerintern",
         "occdataintern",
@@ -33567,6 +33573,7 @@
         "rockwellautomationfirmwareengineerintern",
         "rockwellautomationhardwaredevelopmentengineerintern",
         "rockwellautomationinformationtechnologyintern",
+        "rockwellautomationismcybersecurityandaiintern",
         "rockwellautomationsoftwaredeveloperengineeringintern",
         "rockwoolgroupassociateproductmanagementintern",
         "rodriguezservicessoftwareengineerintern",
@@ -34542,8 +34549,8 @@
       ]
     },
     "USAJOBS (federal)": {
-      "last_count": 374,
-      "last_ok": "2026-11-21T04:56:00+00:00",
+      "last_count": 372,
+      "last_ok": "2026-11-21T13:56:48+00:00",
       "seen": [
         "846709100",
         "846709200",
@@ -36818,6 +36825,7 @@
         "891987700",
         "891991400",
         "891995100",
+        "891996000",
         "891996500",
         "891997500",
         "892002000",
@@ -36858,6 +36866,7 @@
         "892193200",
         "892211000",
         "892213300",
+        "892215900",
         "892216900",
         "892217900",
         "892231800",
@@ -36876,6 +36885,7 @@
         "892310300",
         "892319300",
         "892319400",
+        "892324500",
         "892325000",
         "892338000",
         "892341500",
@@ -36910,6 +36920,7 @@
         "892486600",
         "892494600",
         "892495500",
+        "892503200",
         "892509100",
         "892530400",
         "892531400",
@@ -37062,7 +37073,10 @@
         "893731200",
         "893731900",
         "893740600",
+        "893740900",
         "893741300",
+        "893741400",
+        "893762100",
         "893788400",
         "893800700",
         "893807600",
@@ -37070,12 +37084,13 @@
         "893828600",
         "893830000",
         "893832600",
-        "893844000"
+        "893844000",
+        "893864400"
       ]
     },
     "Underclassmen Internships (zapplyjobs)": {
       "last_count": 46,
-      "last_ok": "2026-11-21T04:56:39+00:00",
+      "last_ok": "2026-11-21T13:57:14+00:00",
       "seen": [
         "8vcfellowship",
         "abbqualityengineer",
@@ -37690,7 +37705,7 @@
     },
     "Underclassmen Opportunities (Cruz-Lopez)": {
       "last_count": 78,
-      "last_ok": "2026-11-21T04:56:39+00:00",
+      "last_ok": "2026-11-21T13:57:14+00:00",
       "seen": [
         "21stcenturyscholars",
         "aauwaauwlocalbranchundergraduatescholarshipsallmajorsdeadlinerollingbylocalbranc",
@@ -37949,7 +37964,7 @@
     },
     "Underclassmen Opportunities (LuisaE)": {
       "last_count": 137,
-      "last_ok": "2026-11-21T04:56:39+00:00",
+      "last_ok": "2026-11-21T13:57:14+00:00",
       "seen": [
         "8vcfellowships",
         "abercrombiefitchsophomoresummit",
