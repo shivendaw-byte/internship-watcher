@@ -1,5 +1,5 @@
 {
-  "last_email": "2026-11-22T04:15:55+00:00",
+  "last_email": "2026-11-22T13:50:35+00:00",
   "seen_fingerprints": [
     "1stsourceinformationsecurityintern",
     "42dotfoundationmodelsintern",
@@ -1799,6 +1799,7 @@
     "nelnetdataanalyticsintern",
     "nelnetitsoftwareengineerintern",
     "nerostechnologiesautonomyintern",
+    "nerostechnologiesfirmwareembeddedsoftwareengineerintern",
     "netappdataanalystintern",
     "netappsoftwareengineerintern",
     "netappsoftwareengineerinterncloud",
@@ -2884,7 +2885,7 @@
   "sources": {
     "APM List (PM internships)": {
       "last_count": 14,
-      "last_ok": "2026-11-22T04:15:51+00:00",
+      "last_ok": "2026-11-22T13:50:32+00:00",
       "seen": [
         "adobeinternshipopen",
         "amazoninternshipopen",
@@ -3982,8 +3983,8 @@
       ]
     },
     "Amazon": {
-      "last_count": 449,
-      "last_ok": "2026-11-22T04:15:13+00:00",
+      "last_count": 447,
+      "last_ok": "2026-11-22T13:50:01+00:00",
       "seen": [
         "10387501",
         "10391774",
@@ -12720,7 +12721,7 @@
     },
     "EY / EY-Parthenon": {
       "last_count": 272,
-      "last_ok": "2026-11-22T04:14:59+00:00",
+      "last_ok": "2026-11-22T13:49:48+00:00",
       "seen": [
         "1002856701",
         "1005882301",
@@ -21434,6 +21435,8 @@
         "1459496433",
         "1459496533",
         "1459501633",
+        "1459511133",
+        "1459511233",
         "695560401",
         "696384101",
         "696385901",
@@ -22055,7 +22058,7 @@
     },
     "Google": {
       "last_count": 19,
-      "last_ok": "2026-11-22T04:15:49+00:00",
+      "last_ok": "2026-11-22T13:50:31+00:00",
       "seen": [
         "100460871561421510",
         "100648618540573382",
@@ -22106,7 +22109,7 @@
     },
     "IMF": {
       "last_count": 17,
-      "last_ok": "2026-11-22T04:15:48+00:00",
+      "last_ok": "2026-11-22T13:50:30+00:00",
       "seen": [
         "26-R10002",
         "26-R10005",
@@ -31453,8 +31456,8 @@
       ]
     },
     "Summer 2027 Internships (vanshb03)": {
-      "last_count": 1903,
-      "last_ok": "2026-11-22T04:15:51+00:00",
+      "last_count": 1904,
+      "last_ok": "2026-11-22T13:50:32+00:00",
       "seen": [
         "1stsourceinformationsecurityintern",
         "42dotfoundationmodelsintern",
@@ -33215,6 +33218,7 @@
         "nelnetdataanalyticsintern",
         "nelnetitsoftwareengineerintern",
         "nerostechnologiesautonomyintern",
+        "nerostechnologiesfirmwareembeddedsoftwareengineerintern",
         "netappdataanalystintern",
         "netappsoftwareengineerintern",
         "netappsoftwareengineerinterncloud",
@@ -34594,8 +34598,8 @@
       ]
     },
     "USAJOBS (federal)": {
-      "last_count": 372,
-      "last_ok": "2026-11-22T04:15:21+00:00",
+      "last_count": 371,
+      "last_ok": "2026-11-22T13:50:09+00:00",
       "seen": [
         "846709100",
         "846709200",
@@ -36975,6 +36979,7 @@
         "892546400",
         "892574800",
         "892577600",
+        "892577700",
         "892577800",
         "892580100",
         "892580700",
@@ -37135,7 +37140,7 @@
     },
     "Underclassmen Internships (zapplyjobs)": {
       "last_count": 46,
-      "last_ok": "2026-11-22T04:15:50+00:00",
+      "last_ok": "2026-11-22T13:50:31+00:00",
       "seen": [
         "8vcfellowship",
         "abbqualityengineer",
@@ -37750,7 +37755,7 @@
     },
     "Underclassmen Opportunities (Cruz-Lopez)": {
       "last_count": 78,
-      "last_ok": "2026-11-22T04:15:49+00:00",
+      "last_ok": "2026-11-22T13:50:31+00:00",
       "seen": [
         "21stcenturyscholars",
         "aauwaauwlocalbranchundergraduatescholarshipsallmajorsdeadlinerollingbylocalbranc",
@@ -38009,7 +38014,7 @@
     },
     "Underclassmen Opportunities (LuisaE)": {
       "last_count": 137,
-      "last_ok": "2026-11-22T04:15:50+00:00",
+      "last_ok": "2026-11-22T13:50:31+00:00",
       "seen": [
         "8vcfellowships",
         "abercrombiefitchsophomoresummit",
