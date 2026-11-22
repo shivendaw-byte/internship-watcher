@@ -1,5 +1,5 @@
 {
-  "last_email": "2026-11-21T18:30:18+00:00",
+  "last_email": "2026-11-22T00:50:34+00:00",
   "seen_fingerprints": [
     "1stsourceinformationsecurityintern",
     "42dotfoundationmodelsintern",
@@ -35,6 +35,7 @@
     "adtdataanalyticsaiintern",
     "adthardwareengineeringconnecteddevicesintern",
     "adttechnologyengineeringintern",
+    "advanceautopartsdatascienceintern",
     "aechelontechnologyjuniorsoftwareengineerintern",
     "aechelontechnologyjuniorsoftwareengineerinternrtk",
     "aerospacecorporationcloudsolutionsengineerinternsitereliability",
@@ -900,6 +901,7 @@
     "fab2fabsoftwareengineeringintern",
     "fab2infrastructuresoftwareengineeringintern",
     "fab2rustsoftwareengineeringinternchipdesigntools",
+    "fabridevopsitcybersecurityintern",
     "farmersmutualhailaiintern",
     "farmersmutualhailapplicationadministratorintern",
     "farmersmutualhaildataarchitectintern",
@@ -2840,6 +2842,7 @@
     "workivamachinelearningengineeringintern",
     "workshopsoftwareengineerintern",
     "worldengineairesearchinternroboticsdatarealtosim",
+    "worthingtonenterprisesaiintern",
     "wrberkleysoftwaredeveloperinternnet",
     "wtwdataanalystintern",
     "wtwriskanalyticscoreintern",
@@ -2879,7 +2882,7 @@
   "sources": {
     "APM List (PM internships)": {
       "last_count": 14,
-      "last_ok": "2026-11-21T18:30:15+00:00",
+      "last_ok": "2026-11-22T00:50:30+00:00",
       "seen": [
         "adobeinternshipopen",
         "amazoninternshipopen",
@@ -3978,7 +3981,7 @@
     },
     "Amazon": {
       "last_count": 449,
-      "last_ok": "2026-11-21T18:29:40+00:00",
+      "last_ok": "2026-11-22T00:49:29+00:00",
       "seen": [
         "10387501",
         "10391774",
@@ -12714,8 +12717,8 @@
       ]
     },
     "EY / EY-Parthenon": {
-      "last_count": 275,
-      "last_ok": "2026-11-21T18:29:27+00:00",
+      "last_count": 272,
+      "last_ok": "2026-11-22T00:49:12+00:00",
       "seen": [
         "1002856701",
         "1005882301",
@@ -20878,7 +20881,10 @@
         "1450683733",
         "1450684533",
         "1450694733",
+        "1450698033",
+        "1450775033",
         "1450779333",
+        "1450783133",
         "1450824333",
         "1450826133",
         "1450840433",
@@ -21419,6 +21425,7 @@
         "1459496333",
         "1459496433",
         "1459496533",
+        "1459501633",
         "695560401",
         "696384101",
         "696385901",
@@ -22040,7 +22047,7 @@
     },
     "Google": {
       "last_count": 19,
-      "last_ok": "2026-11-21T18:30:13+00:00",
+      "last_ok": "2026-11-22T00:50:29+00:00",
       "seen": [
         "100460871561421510",
         "100648618540573382",
@@ -31431,8 +31438,8 @@
       ]
     },
     "Summer 2027 Internships (vanshb03)": {
-      "last_count": 1902,
-      "last_ok": "2026-11-21T18:30:15+00:00",
+      "last_count": 1905,
+      "last_ok": "2026-11-22T00:50:30+00:00",
       "seen": [
         "1stsourceinformationsecurityintern",
         "42dotfoundationmodelsintern",
@@ -31469,6 +31476,7 @@
         "adtdataanalyticsaiintern",
         "adthardwareengineeringconnecteddevicesintern",
         "adttechnologyengineeringintern",
+        "advanceautopartsdatascienceintern",
         "aechelontechnologyjuniorsoftwareengineerintern",
         "aechelontechnologyjuniorsoftwareengineerinternrtk",
         "aerospacecorporationcloudsolutionsengineerinternsitereliability",
@@ -32348,6 +32356,7 @@
         "fab2fabsoftwareengineeringintern",
         "fab2infrastructuresoftwareengineeringintern",
         "fab2rustsoftwareengineeringinternchipdesigntools",
+        "fabridevopsitcybersecurityintern",
         "farmersmutualhailaiintern",
         "farmersmutualhailapplicationadministratorintern",
         "farmersmutualhaildataarchitectintern",
@@ -34253,6 +34262,7 @@
         "workshopsoftwareengineerintern",
         "workstreamfullstackengineerintern",
         "worldengineairesearchinternroboticsdatarealtosim",
+        "worthingtonenterprisesaiintern",
         "wrberkleysoftwaredeveloperinternnet",
         "wspsoftwaredeveloperintern",
         "wtwdataanalystintern",
@@ -34568,7 +34578,7 @@
     },
     "USAJOBS (federal)": {
       "last_count": 372,
-      "last_ok": "2026-11-21T18:29:50+00:00",
+      "last_ok": "2026-11-22T00:49:59+00:00",
       "seen": [
         "846709100",
         "846709200",
@@ -37108,7 +37118,7 @@
     },
     "Underclassmen Internships (zapplyjobs)": {
       "last_count": 46,
-      "last_ok": "2026-11-21T18:30:14+00:00",
+      "last_ok": "2026-11-22T00:50:29+00:00",
       "seen": [
         "8vcfellowship",
         "abbqualityengineer",
@@ -37723,7 +37733,7 @@
     },
     "Underclassmen Opportunities (Cruz-Lopez)": {
       "last_count": 78,
-      "last_ok": "2026-11-21T18:30:14+00:00",
+      "last_ok": "2026-11-22T00:50:29+00:00",
       "seen": [
         "21stcenturyscholars",
         "aauwaauwlocalbranchundergraduatescholarshipsallmajorsdeadlinerollingbylocalbranc",
@@ -37982,7 +37992,7 @@
     },
     "Underclassmen Opportunities (LuisaE)": {
       "last_count": 137,
-      "last_ok": "2026-11-21T18:30:14+00:00",
+      "last_ok": "2026-11-22T00:50:29+00:00",
       "seen": [
         "8vcfellowships",
         "abercrombiefitchsophomoresummit",
