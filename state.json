@@ -1,5 +1,5 @@
 {
-  "last_email": "2026-11-22T00:50:34+00:00",
+  "last_email": "2026-11-22T04:15:55+00:00",
   "seen_fingerprints": [
     "1stsourceinformationsecurityintern",
     "42dotfoundationmodelsintern",
@@ -1798,6 +1798,7 @@
     "nebowebdevelopmentintern",
     "nelnetdataanalyticsintern",
     "nelnetitsoftwareengineerintern",
+    "nerostechnologiesautonomyintern",
     "netappdataanalystintern",
     "netappsoftwareengineerintern",
     "netappsoftwareengineerinterncloud",
@@ -2823,6 +2824,7 @@
     "westinghouseelectriccompanysoftwareengineeringintern",
     "westmonroesoftwareengineeringconsultantinternaiconcentration",
     "wexsoftwareengineerintern",
+    "wgutechnicalintern",
     "whataburgerdatascientistintern",
     "whitecapsupplyholdingsinformationsecurityinterncorporate",
     "williamblairagenticaidevelopmentintern",
@@ -2882,7 +2884,7 @@
   "sources": {
     "APM List (PM internships)": {
       "last_count": 14,
-      "last_ok": "2026-11-22T00:50:30+00:00",
+      "last_ok": "2026-11-22T04:15:51+00:00",
       "seen": [
         "adobeinternshipopen",
         "amazoninternshipopen",
@@ -3981,7 +3983,7 @@
     },
     "Amazon": {
       "last_count": 449,
-      "last_ok": "2026-11-22T00:49:29+00:00",
+      "last_ok": "2026-11-22T04:15:13+00:00",
       "seen": [
         "10387501",
         "10391774",
@@ -12718,7 +12720,7 @@
     },
     "EY / EY-Parthenon": {
       "last_count": 272,
-      "last_ok": "2026-11-22T00:49:12+00:00",
+      "last_ok": "2026-11-22T04:14:59+00:00",
       "seen": [
         "1002856701",
         "1005882301",
@@ -19512,6 +19514,7 @@
         "1441207733",
         "1441210133",
         "1441213033",
+        "1441214233",
         "1441218833",
         "1441222333",
         "1441228233",
@@ -19520,6 +19523,7 @@
         "1441245133",
         "1441245533",
         "1441269433",
+        "1441277533",
         "1441303933",
         "1441306433",
         "1441336833",
@@ -19539,7 +19543,11 @@
         "1441549833",
         "1441556933",
         "1441557433",
+        "1441567033",
+        "1441579933",
         "1441581833",
+        "1441585333",
+        "1441585933",
         "1441588733",
         "1441594533",
         "1441635833",
@@ -22047,7 +22055,7 @@
     },
     "Google": {
       "last_count": 19,
-      "last_ok": "2026-11-22T00:50:29+00:00",
+      "last_ok": "2026-11-22T04:15:49+00:00",
       "seen": [
         "100460871561421510",
         "100648618540573382",
@@ -22098,7 +22106,7 @@
     },
     "IMF": {
       "last_count": 17,
-      "last_ok": "2026-11-21T18:30:12+00:00",
+      "last_ok": "2026-11-22T04:15:48+00:00",
       "seen": [
         "26-R10002",
         "26-R10005",
@@ -22167,8 +22175,8 @@
       ]
     },
     "Mastercard": {
-      "last_count": 837,
-      "last_ok": "2026-11-16T03:58:34+00:00",
+      "last_count": 719,
+      "last_ok": "2026-11-22T04:14:38+00:00",
       "seen": [
         "R-207875",
         "R-208485",
@@ -22702,6 +22710,7 @@
         "R-278780",
         "R-278781",
         "R-278786",
+        "R-278787",
         "R-278790",
         "R-278791",
         "R-278802",
@@ -25679,6 +25688,7 @@
         "R-294542",
         "R-294544",
         "R-294553",
+        "R-294555",
         "R-294556",
         "R-294561",
         "R-294570",
@@ -25715,6 +25725,7 @@
         "R-294730",
         "R-294745",
         "R-294771",
+        "R-294780",
         "R-294783",
         "R-294784",
         "R-294786",
@@ -25737,6 +25748,7 @@
         "R-295134",
         "R-295162",
         "R-295180",
+        "R-295215",
         "R-295224",
         "R-295248",
         "R-295257",
@@ -25744,11 +25756,14 @@
         "R-295260",
         "R-295300",
         "R-295349",
+        "R-295457",
         "R-295489",
         "R-295497",
         "R-295593",
         "R-295597",
-        "R-295683"
+        "R-295607",
+        "R-295683",
+        "R-295699"
       ]
     },
     "NVIDIA": {
@@ -31438,8 +31453,8 @@
       ]
     },
     "Summer 2027 Internships (vanshb03)": {
-      "last_count": 1905,
-      "last_ok": "2026-11-22T00:50:30+00:00",
+      "last_count": 1903,
+      "last_ok": "2026-11-22T04:15:51+00:00",
       "seen": [
         "1stsourceinformationsecurityintern",
         "42dotfoundationmodelsintern",
@@ -33199,6 +33214,7 @@
         "nebowebdevelopmentintern",
         "nelnetdataanalyticsintern",
         "nelnetitsoftwareengineerintern",
+        "nerostechnologiesautonomyintern",
         "netappdataanalystintern",
         "netappsoftwareengineerintern",
         "netappsoftwareengineerinterncloud",
@@ -34242,6 +34258,7 @@
         "westinghouseelectriccompanysoftwareengineeringintern",
         "westmonroesoftwareengineeringconsultantinternaiconcentration",
         "wexsoftwareengineerintern",
+        "wgutechnicalintern",
         "whataburgerdatascientistintern",
         "whitecapsupplyholdingsinformationsecurityinterncorporate",
         "williamblairagenticaidevelopmentintern",
@@ -34578,7 +34595,7 @@
     },
     "USAJOBS (federal)": {
       "last_count": 372,
-      "last_ok": "2026-11-22T00:49:59+00:00",
+      "last_ok": "2026-11-22T04:15:21+00:00",
       "seen": [
         "846709100",
         "846709200",
@@ -37118,7 +37135,7 @@
     },
     "Underclassmen Internships (zapplyjobs)": {
       "last_count": 46,
-      "last_ok": "2026-11-22T00:50:29+00:00",
+      "last_ok": "2026-11-22T04:15:50+00:00",
       "seen": [
         "8vcfellowship",
         "abbqualityengineer",
@@ -37733,7 +37750,7 @@
     },
     "Underclassmen Opportunities (Cruz-Lopez)": {
       "last_count": 78,
-      "last_ok": "2026-11-22T00:50:29+00:00",
+      "last_ok": "2026-11-22T04:15:49+00:00",
       "seen": [
         "21stcenturyscholars",
         "aauwaauwlocalbranchundergraduatescholarshipsallmajorsdeadlinerollingbylocalbranc",
@@ -37992,7 +38009,7 @@
     },
     "Underclassmen Opportunities (LuisaE)": {
       "last_count": 137,
-      "last_ok": "2026-11-22T00:50:29+00:00",
+      "last_ok": "2026-11-22T04:15:50+00:00",
       "seen": [
         "8vcfellowships",
         "abercrombiefitchsophomoresummit",
