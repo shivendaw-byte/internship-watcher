@@ -1,5 +1,5 @@
 {
-  "last_email": "2026-11-26T06:07:36+00:00",
+  "last_email": "2026-11-26T18:45:22+00:00",
   "seen_fingerprints": [
     "1stsourceinformationsecurityintern",
     "42dotfoundationmodelsintern",
@@ -1640,6 +1640,7 @@
     "llnldatascienceinstituteundergraduateintern",
     "llnlhpcclusterengineerintern",
     "llnlpredictivescienceacademicallianceprogramivstudentintern",
+    "lockheedmartinfpgaengineerinternsecurityfocus",
     "lockheedmartinsoftwaredevelopmentintern",
     "lockheedmartinsoftwareengineerintern",
     "logiqalquantumerrorcorrectionandarchitectureintern",
@@ -1916,6 +1917,8 @@
     "nexusonedataengineeringintern",
     "nianticspatialsoftwareengineerinternnativesdkmobileplatforms",
     "nightwingvulnerabilityresearcherintern",
+    "ninjaholdingsdatascienceintern",
+    "ninjaholdingssoftwareengineerintern",
     "nintendobusinessintelligenceintern",
     "nintendoitplatformengineerintern",
     "nintendoitsoftwareengineerintern",
@@ -3035,7 +3038,7 @@
   "sources": {
     "APM List (PM internships)": {
       "last_count": 14,
-      "last_ok": "2026-11-26T06:07:35+00:00",
+      "last_ok": "2026-11-26T18:45:20+00:00",
       "seen": [
         "adobeinternshipopen",
         "amazoninternshipopen",
@@ -4133,8 +4136,8 @@
       ]
     },
     "Amazon": {
-      "last_count": 458,
-      "last_ok": "2026-11-26T06:06:39+00:00",
+      "last_count": 453,
+      "last_ok": "2026-11-26T18:44:41+00:00",
       "seen": [
         "10387501",
         "10391774",
@@ -13294,7 +13297,7 @@
     },
     "EY / EY-Parthenon": {
       "last_count": 279,
-      "last_ok": "2026-11-26T06:06:26+00:00",
+      "last_ok": "2026-11-26T18:44:27+00:00",
       "seen": [
         "1002856701",
         "1005882301",
@@ -22176,6 +22179,7 @@
         "1460814533",
         "1460836933",
         "1460837933",
+        "1461078033",
         "695560401",
         "696384101",
         "696385901",
@@ -22825,7 +22829,7 @@
     },
     "Google": {
       "last_count": 19,
-      "last_ok": "2026-11-26T06:07:33+00:00",
+      "last_ok": "2026-11-26T18:45:18+00:00",
       "seen": [
         "100460871561421510",
         "100648618540573382",
@@ -32233,8 +32237,8 @@
       ]
     },
     "Summer 2027 Internships (vanshb03)": {
-      "last_count": 1933,
-      "last_ok": "2026-11-26T06:07:35+00:00",
+      "last_count": 1931,
+      "last_ok": "2026-11-26T18:45:20+00:00",
       "seen": [
         "1stsourceinformationsecurityintern",
         "42dotfoundationmodelsintern",
@@ -33803,6 +33807,7 @@
         "llnldatascienceinstituteundergraduateintern",
         "llnlhpcclusterengineerintern",
         "llnlpredictivescienceacademicallianceprogramivstudentintern",
+        "lockheedmartinfpgaengineerinternsecurityfocus",
         "lockheedmartinsoftwaredevelopmentintern",
         "lockheedmartinsoftwareengineerintern",
         "logiqalquantumerrorcorrectionandarchitectureintern",
@@ -34102,6 +34107,8 @@
         "nianticspatialsoftwareengineerinternnativesdkmobileplatforms",
         "nightwingsoftwarehardwareengineeringintern",
         "nightwingvulnerabilityresearcherintern",
+        "ninjaholdingsdatascienceintern",
+        "ninjaholdingssoftwareengineerintern",
         "nintendobusinessintelligenceintern",
         "nintendoitplatformengineerintern",
         "nintendoitsoftwareengineerintern",
@@ -35522,7 +35529,7 @@
     },
     "USAJOBS (federal)": {
       "last_count": 370,
-      "last_ok": "2026-11-26T06:06:48+00:00",
+      "last_ok": "2026-11-26T18:44:50+00:00",
       "seen": [
         "846709100",
         "846709200",
@@ -38148,12 +38155,13 @@
         "894333200",
         "894349300",
         "894369700",
-        "894381400"
+        "894381400",
+        "894396600"
       ]
     },
     "Underclassmen Internships (zapplyjobs)": {
       "last_count": 46,
-      "last_ok": "2026-11-26T06:07:34+00:00",
+      "last_ok": "2026-11-26T18:45:19+00:00",
       "seen": [
         "8vcfellowship",
         "abbqualityengineer",
@@ -38768,7 +38776,7 @@
     },
     "Underclassmen Opportunities (Cruz-Lopez)": {
       "last_count": 78,
-      "last_ok": "2026-11-26T06:07:34+00:00",
+      "last_ok": "2026-11-26T18:45:18+00:00",
       "seen": [
         "21stcenturyscholars",
         "aauwaauwlocalbranchundergraduatescholarshipsallmajorsdeadlinerollingbylocalbranc",
@@ -39027,7 +39035,7 @@
     },
     "Underclassmen Opportunities (LuisaE)": {
       "last_count": 137,
-      "last_ok": "2026-11-26T06:07:34+00:00",
+      "last_ok": "2026-11-26T18:45:19+00:00",
       "seen": [
         "8vcfellowships",
         "abercrombiefitchsophomoresummit",
