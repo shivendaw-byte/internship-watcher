@@ -1,5 +1,5 @@
 {
-  "last_email": "2026-11-26T03:43:53+00:00",
+  "last_email": "2026-11-26T06:07:36+00:00",
   "seen_fingerprints": [
     "1stsourceinformationsecurityintern",
     "42dotfoundationmodelsintern",
@@ -742,6 +742,7 @@
     "dairylandpowercooperativeenergydataanalystintern",
     "danahercorporationapplicationintegrationdeveloperintern",
     "danahercorporationccmdatagovernanceintern",
+    "danahercorporationitdataanalystintern",
     "danahercorporationitsecurityintern",
     "danahercorporationsoftwareengineeringintern",
     "danahercorporationsoftwareengineerintern",
@@ -841,6 +842,7 @@
     "electronicartssoftwareengineerintern",
     "elevancehealthdataanalyticsintern",
     "elevancehealthengineeringintern",
+    "elevancehealthundergraduateclinicalanalyticsintern",
     "elireaidatascienceconsultinginternknowledgegraphsenterprisedata",
     "emcinsurancecybersecurityintern",
     "emersonelectricsoftwareengineercoop",
@@ -2406,6 +2408,7 @@
     "sierraspacesoftwareengineeringintern",
     "sigiqaimachinelearninginternresident",
     "sigmacomputingsoftwareengineerintern",
+    "signetjewelerssoftwareengineeringinterndigitalcommerce",
     "silabsdesignengineeringintern",
     "simberoboticscomputervisionappliedaiintern",
     "simonpropertygroupdataengineeringintern",
@@ -3032,7 +3035,7 @@
   "sources": {
     "APM List (PM internships)": {
       "last_count": 14,
-      "last_ok": "2026-11-26T03:43:52+00:00",
+      "last_ok": "2026-11-26T06:07:35+00:00",
       "seen": [
         "adobeinternshipopen",
         "amazoninternshipopen",
@@ -4130,8 +4133,8 @@
       ]
     },
     "Amazon": {
-      "last_count": 456,
-      "last_ok": "2026-11-26T03:43:15+00:00",
+      "last_count": 458,
+      "last_ok": "2026-11-26T06:06:39+00:00",
       "seen": [
         "10387501",
         "10391774",
@@ -6957,6 +6960,9 @@
         "10614632",
         "10615061",
         "10615105",
+        "10615129",
+        "10615130",
+        "10615132",
         "3071340",
         "3088741",
         "3104589",
@@ -13287,8 +13293,8 @@
       ]
     },
     "EY / EY-Parthenon": {
-      "last_count": 280,
-      "last_ok": "2026-11-26T03:43:04+00:00",
+      "last_count": 279,
+      "last_ok": "2026-11-26T06:06:26+00:00",
       "seen": [
         "1002856701",
         "1005882301",
@@ -22819,7 +22825,7 @@
     },
     "Google": {
       "last_count": 19,
-      "last_ok": "2026-11-26T03:43:50+00:00",
+      "last_ok": "2026-11-26T06:07:33+00:00",
       "seen": [
         "100460871561421510",
         "100648618540573382",
@@ -32227,8 +32233,8 @@
       ]
     },
     "Summer 2027 Internships (vanshb03)": {
-      "last_count": 1931,
-      "last_ok": "2026-11-26T03:43:51+00:00",
+      "last_count": 1933,
+      "last_ok": "2026-11-26T06:07:35+00:00",
       "seen": [
         "1stsourceinformationsecurityintern",
         "42dotfoundationmodelsintern",
@@ -33003,6 +33009,7 @@
         "dairylandpowercooperativeenergydataanalystintern",
         "danahercorporationapplicationintegrationdeveloperintern",
         "danahercorporationccmdatagovernanceintern",
+        "danahercorporationitdataanalystintern",
         "danahercorporationitsecurityintern",
         "danahercorporationsoftwareengineeringintern",
         "danahercorporationsoftwareengineerintern",
@@ -33125,6 +33132,7 @@
         "elementfleetmanagementforwarddeployedengineerfdeintern",
         "elevancehealthdataanalyticsintern",
         "elevancehealthengineeringintern",
+        "elevancehealthundergraduateclinicalanalyticsintern",
         "elireaidatascienceconsultinginternknowledgegraphsenterprisedata",
         "emcinsurancecybersecurityintern",
         "emersonelectricsoftwareengineercoop",
@@ -34667,6 +34675,7 @@
         "sierraspacesoftwareengineeringintern",
         "sigiqaimachinelearninginternresident",
         "sigmacomputingsoftwareengineerintern",
+        "signetjewelerssoftwareengineeringinterndigitalcommerce",
         "silabsdesignengineeringintern",
         "simberoboticscomputervisionappliedaiintern",
         "simonpropertygroupdataengineeringintern",
@@ -35512,8 +35521,8 @@
       ]
     },
     "USAJOBS (federal)": {
-      "last_count": 373,
-      "last_ok": "2026-11-26T03:43:24+00:00",
+      "last_count": 370,
+      "last_ok": "2026-11-26T06:06:48+00:00",
       "seen": [
         "846709100",
         "846709200",
@@ -37908,7 +37917,10 @@
         "892626100",
         "892628400",
         "892636900",
+        "892652200",
+        "892657900",
         "892661700",
+        "892676800",
         "892684300",
         "892685300",
         "892685800",
@@ -37939,7 +37951,9 @@
         "892881400",
         "892882000",
         "892882300",
+        "892882900",
         "892886000",
+        "892892600",
         "892946600",
         "892952200",
         "892954100",
@@ -37976,6 +37990,7 @@
         "893157900",
         "893165400",
         "893175800",
+        "893192200",
         "893209600",
         "893220000",
         "893248900",
@@ -38117,14 +38132,17 @@
         "894168800",
         "894174100",
         "894176800",
+        "894180600",
         "894196500",
         "894230200",
+        "894237000",
         "894241300",
         "894244900",
         "894254100",
         "894258100",
         "894271500",
         "894271900",
+        "894277500",
         "894285600",
         "894293600",
         "894333200",
@@ -38135,7 +38153,7 @@
     },
     "Underclassmen Internships (zapplyjobs)": {
       "last_count": 46,
-      "last_ok": "2026-11-26T03:43:51+00:00",
+      "last_ok": "2026-11-26T06:07:34+00:00",
       "seen": [
         "8vcfellowship",
         "abbqualityengineer",
@@ -38750,7 +38768,7 @@
     },
     "Underclassmen Opportunities (Cruz-Lopez)": {
       "last_count": 78,
-      "last_ok": "2026-11-26T03:43:50+00:00",
+      "last_ok": "2026-11-26T06:07:34+00:00",
       "seen": [
         "21stcenturyscholars",
         "aauwaauwlocalbranchundergraduatescholarshipsallmajorsdeadlinerollingbylocalbranc",
@@ -39009,7 +39027,7 @@
     },
     "Underclassmen Opportunities (LuisaE)": {
       "last_count": 137,
-      "last_ok": "2026-11-26T03:43:51+00:00",
+      "last_ok": "2026-11-26T06:07:34+00:00",
       "seen": [
         "8vcfellowships",
         "abercrombiefitchsophomoresummit",
@@ -39152,7 +39170,7 @@
     },
     "Vanguard": {
       "last_count": 330,
-      "last_ok": "2026-11-25T06:16:56+00:00",
+      "last_ok": "2026-11-26T06:07:03+00:00",
       "seen": [
         "164647",
         "166007",
@@ -40023,6 +40041,7 @@
         "183302",
         "183303",
         "183326",
+        "183327",
         "183335",
         "183337",
         "183339",
@@ -40127,6 +40146,7 @@
         "183775",
         "183776",
         "183782",
+        "183804",
         "183805",
         "183813",
         "183815",
@@ -40165,6 +40185,7 @@
         "184012",
         "184013",
         "184016",
+        "184021",
         "184028",
         "184040",
         "184041",
@@ -40175,8 +40196,11 @@
         "184080",
         "184083",
         "184085",
+        "184088",
+        "184089",
         "184108",
         "184191",
+        "184225",
         "184353"
       ]
     },
