@@ -1,5 +1,5 @@
 {
-  "last_email": "2026-11-26T18:45:22+00:00",
+  "last_email": "2026-11-26T21:07:45+00:00",
   "seen_fingerprints": [
     "1stsourceinformationsecurityintern",
     "42dotfoundationmodelsintern",
@@ -237,6 +237,7 @@
     "appliedmaterialssoftwareengineerintern",
     "appliedresearchassociatessoftwareengineerintern",
     "appliedresearchassociatessoftwarequalityassuranceintern",
+    "aptimaincalljobsaiengineerintern",
     "aptimaincalljobssoftwareengineerintern",
     "aptivaiproductanalystintern",
     "aptivcloudengineeringintern",
@@ -387,6 +388,7 @@
     "berkshirehathawayenergysoftwareengineeringintern",
     "besteggsoftwareengineeringintern",
     "betatechnologiessummer2027softwarecontrolsautonomyintern",
+    "beumergroup1aidevelopmentintern",
     "beumergroupaidevelopmentintern",
     "biodesixairesearchdevelopmentintern",
     "biodesixdataanalyticsbusinessintelligenceintern",
@@ -517,6 +519,10 @@
     "campingworldsoftwareengineerintern",
     "cantorfitzgeraldtechnologyinfrastructureautomationintern",
     "cantorfitzgeraldtechnologyinterndevelopment",
+    "capitalbluecrosscybersecurityintern",
+    "capitalbluecrossdataengineeringintern",
+    "capitalbluecrossdatascienceanalyticsaiintern",
+    "capitalbluecrossitbusinessengineeringintern",
     "capitalgroupglobaltechnologyassociateintern",
     "capitaloneintern",
     "capitaloneinternshipisnowopen",
@@ -1317,6 +1323,7 @@
     "highmarkhealthsoftwareengineerintern",
     "highmarkhealthtechnicalanalystinternengenundergraduate",
     "highmarkhealthvulnerabilitymanagementanalystundergraduateintern",
+    "hiidevopsengineerintern",
     "hitachitestengineeringintern",
     "hivefinancialsystemsanalyticsintern",
     "hivefinancialsystemssoftwareengineerintern",
@@ -1385,6 +1392,7 @@
     "idmeanalyticsengineerintern",
     "idmeproductsecurityengineeringintern",
     "igsenergysoftwareengineerintern",
+    "illinoispolicyanalyticsintern",
     "illinoistoolworkssoftwareengineeringintern",
     "illinoistoolworkssoftwareengineerintern",
     "illinoistoolworkssoftwareengineerinternapplicationsoftware",
@@ -1728,6 +1736,7 @@
     "mckessoncmmtechnologyintern",
     "mckessonsoftwareengineerintern",
     "medpaceclinicalinformaticscoop",
+    "medpaceclinicalintelligenceintern",
     "medpacepythondeveloperintern",
     "memxdataengineerintern",
     "memxinformationsecurityintern",
@@ -1915,6 +1924,7 @@
     "nexsoftwareengineerinternsportsfitnessgamedevelopment",
     "nexteraenergysoftwareengineeringinterntechnical",
     "nexusonedataengineeringintern",
+    "nhaitsecurityintern",
     "nianticspatialsoftwareengineerinternnativesdkmobileplatforms",
     "nightwingvulnerabilityresearcherintern",
     "ninjaholdingsdatascienceintern",
@@ -2251,6 +2261,7 @@
     "rosaiclabscpuarchitectureperformanceengineerintern",
     "rosaiclabscpudesignverificationengineerintern",
     "rosaiclabssoftwareengineeringintern",
+    "rotocreativedeveloperintern",
     "rrdonnelleyitsoftwareintegrationautomationintern",
     "rrdonnelleysoftwaredeveloperintern",
     "rtxcontroldiagnosticsoftwareintern",
@@ -2525,6 +2536,7 @@
     "swbcdevopsintern",
     "swbcintegrationanalystintern",
     "swbcsoftwareengineeringintern",
+    "swissreclientdatamanagementintern",
     "sycamorememberoftechnicalstaffintern",
     "sycamorememberoftechnicalstaffinterninfrastructure",
     "symboticrobotmanipulationintern",
@@ -2687,6 +2699,7 @@
     "tmobiletadssoftwareengineeringintern",
     "togetheraihardwaresecurityengineerintern",
     "togetherairesearchinternfrontierspeculativedecoding",
+    "toshibaamericaelectroniccomponentsfirmwareengineerintern",
     "toshibainternationalcorporationfirmwareengineerintern",
     "totalqualitylogisticsdatascienceanalyticsintern",
     "totalqualitylogisticssoftwaredevelopmentintern",
@@ -2880,6 +2893,7 @@
     "viamsoftwareengineeringintern",
     "viasatdigitalandprogrammablelogicengineerintern",
     "viasatembeddedsoftwareengineerintern",
+    "viasatembeddedsoftwareengineerinterngovernment",
     "viasatsoftwareengineerintern",
     "viavisolutionsdigitalhardwareengineeringintern",
     "viavisolutionsroboticsintern",
@@ -3038,7 +3052,7 @@
   "sources": {
     "APM List (PM internships)": {
       "last_count": 14,
-      "last_ok": "2026-11-26T18:45:20+00:00",
+      "last_ok": "2026-11-26T21:07:42+00:00",
       "seen": [
         "adobeinternshipopen",
         "amazoninternshipopen",
@@ -4137,7 +4151,7 @@
     },
     "Amazon": {
       "last_count": 453,
-      "last_ok": "2026-11-26T18:44:41+00:00",
+      "last_ok": "2026-11-26T21:07:06+00:00",
       "seen": [
         "10387501",
         "10391774",
@@ -6882,6 +6896,7 @@
         "10610836",
         "10610878",
         "10610882",
+        "10610906",
         "10610933",
         "10610935",
         "10610936",
@@ -13297,7 +13312,7 @@
     },
     "EY / EY-Parthenon": {
       "last_count": 279,
-      "last_ok": "2026-11-26T18:44:27+00:00",
+      "last_ok": "2026-11-26T21:06:51+00:00",
       "seen": [
         "1002856701",
         "1005882301",
@@ -22306,8 +22321,8 @@
       ]
     },
     "Federal Reserve System": {
-      "last_count": 145,
-      "last_ok": "2026-11-25T18:55:55+00:00",
+      "last_count": 146,
+      "last_ok": "2026-11-26T21:07:13+00:00",
       "seen": [
         "R-0000029562",
         "R-0000030430",
@@ -22820,6 +22835,7 @@
         "R-0000034115",
         "R-0000034129",
         "R-0000034138",
+        "R-0000034148",
         "R-0000034150",
         "R-0000034152",
         "R-0000034167",
@@ -22829,7 +22845,7 @@
     },
     "Google": {
       "last_count": 19,
-      "last_ok": "2026-11-26T18:45:18+00:00",
+      "last_ok": "2026-11-26T21:07:40+00:00",
       "seen": [
         "100460871561421510",
         "100648618540573382",
@@ -32237,8 +32253,8 @@
       ]
     },
     "Summer 2027 Internships (vanshb03)": {
-      "last_count": 1931,
-      "last_ok": "2026-11-26T18:45:20+00:00",
+      "last_count": 1945,
+      "last_ok": "2026-11-26T21:07:41+00:00",
       "seen": [
         "1stsourceinformationsecurityintern",
         "42dotfoundationmodelsintern",
@@ -32468,6 +32484,7 @@
         "appliedmaterialssoftwareengineerintern",
         "appliedresearchassociatessoftwareengineerintern",
         "appliedresearchassociatessoftwarequalityassuranceintern",
+        "aptimaincalljobsaiengineerintern",
         "aptimaincalljobssoftwareengineerintern",
         "aptivaiproductanalystintern",
         "aptivcloudengineeringintern",
@@ -32630,6 +32647,7 @@
         "berkshirehathawayenergysoftwareengineeringintern",
         "besteggsoftwareengineeringintern",
         "betatechnologiessummer2027softwarecontrolsautonomyintern",
+        "beumergroup1aidevelopmentintern",
         "beumergroupaidevelopmentintern",
         "bibliocommonsjuniorfullstackengineerintern",
         "biodesixairesearchdevelopmentintern",
@@ -32778,6 +32796,10 @@
         "canadiansolardataengineeringintern",
         "cantorfitzgeraldtechnologyinfrastructureautomationintern",
         "cantorfitzgeraldtechnologyinterndevelopment",
+        "capitalbluecrosscybersecurityintern",
+        "capitalbluecrossdataengineeringintern",
+        "capitalbluecrossdatascienceanalyticsaiintern",
+        "capitalbluecrossitbusinessengineeringintern",
         "capitalderecherchetowermachinelearningintern",
         "capitalderecherchetowersoftwaredeveloperintern",
         "capitalgroupglobaltechnologyassociateintern",
@@ -33452,6 +33474,7 @@
         "highmarkhealthsoftwareengineerintern",
         "highmarkhealthtechnicalanalystinternengenundergraduate",
         "highmarkhealthvulnerabilitymanagementanalystundergraduateintern",
+        "hiidevopsengineerintern",
         "hitachitestengineeringintern",
         "hivefinancialsystemsanalyticsintern",
         "hivefinancialsystemssoftwareengineerintern",
@@ -33527,6 +33550,7 @@
         "idmeanalyticsengineerintern",
         "idmeproductsecurityengineeringintern",
         "igsenergysoftwareengineerintern",
+        "illinoispolicyanalyticsintern",
         "illinoistoolworkssoftwareengineeringintern",
         "illinoistoolworkssoftwareengineerintern",
         "illinoistoolworkssoftwareengineerinternapplicationsoftware",
@@ -33899,6 +33923,7 @@
         "mckessoncmmtechnologyintern",
         "mckessonsoftwareengineerintern",
         "medpaceclinicalinformaticscoop",
+        "medpaceclinicalintelligenceintern",
         "medpacepythondeveloperintern",
         "medtronicsoftwareengineeringintern",
         "meliussoftwareengineeringintern",
@@ -34104,6 +34129,7 @@
         "nexsoftwareengineerinternsportsfitnessgamedevelopment",
         "nexteraenergysoftwareengineeringinterntechnical",
         "nexusonedataengineeringintern",
+        "nhaitsecurityintern",
         "nianticspatialsoftwareengineerinternnativesdkmobileplatforms",
         "nightwingsoftwarehardwareengineeringintern",
         "nightwingvulnerabilityresearcherintern",
@@ -34513,6 +34539,7 @@
         "rosaiclabscpuarchitectureperformanceengineerintern",
         "rosaiclabscpudesignverificationengineerintern",
         "rosaiclabssoftwareengineeringintern",
+        "rotocreativedeveloperintern",
         "royalbankofcanadaaiengineercoopcapitalmarketsglobalequities",
         "royalbankofcanadadataengineerintern",
         "royalbankofcanadadeveloperintern",
@@ -34799,6 +34826,7 @@
         "swbcdevopsintern",
         "swbcintegrationanalystintern",
         "swbcsoftwareengineeringintern",
+        "swissreclientdatamanagementintern",
         "sycamorememberoftechnicalstaffintern",
         "sycamorememberoftechnicalstaffinterninfrastructure",
         "symboticrobotmanipulationintern",
@@ -35003,6 +35031,7 @@
         "tobogganlabsdatascienceintern",
         "togetheraihardwaresecurityengineerintern",
         "togetherairesearchinternfrontierspeculativedecoding",
+        "toshibaamericaelectroniccomponentsfirmwareengineerintern",
         "toshibainternationalcorporationfirmwareengineerintern",
         "totalqualitylogisticsdatascienceanalyticsintern",
         "totalqualitylogisticssoftwaredevelopmentintern",
@@ -35116,6 +35145,7 @@
         "viamsoftwareengineeringintern",
         "viasatdigitalandprogrammablelogicengineerintern",
         "viasatembeddedsoftwareengineerintern",
+        "viasatembeddedsoftwareengineerinterngovernment",
         "viasatsoftwareengineerintern",
         "viavisolutionsdigitalhardwareengineeringintern",
         "viavisolutionsroboticsintern",
@@ -35529,7 +35559,7 @@
     },
     "USAJOBS (federal)": {
       "last_count": 370,
-      "last_ok": "2026-11-26T18:44:50+00:00",
+      "last_ok": "2026-11-26T21:07:14+00:00",
       "seen": [
         "846709100",
         "846709200",
@@ -38161,7 +38191,7 @@
     },
     "Underclassmen Internships (zapplyjobs)": {
       "last_count": 46,
-      "last_ok": "2026-11-26T18:45:19+00:00",
+      "last_ok": "2026-11-26T21:07:41+00:00",
       "seen": [
         "8vcfellowship",
         "abbqualityengineer",
@@ -38776,7 +38806,7 @@
     },
     "Underclassmen Opportunities (Cruz-Lopez)": {
       "last_count": 78,
-      "last_ok": "2026-11-26T18:45:18+00:00",
+      "last_ok": "2026-11-26T21:07:40+00:00",
       "seen": [
         "21stcenturyscholars",
         "aauwaauwlocalbranchundergraduatescholarshipsallmajorsdeadlinerollingbylocalbranc",
@@ -39035,7 +39065,7 @@
     },
     "Underclassmen Opportunities (LuisaE)": {
       "last_count": 137,
-      "last_ok": "2026-11-26T18:45:19+00:00",
+      "last_ok": "2026-11-26T21:07:41+00:00",
       "seen": [
         "8vcfellowships",
         "abercrombiefitchsophomoresummit",
