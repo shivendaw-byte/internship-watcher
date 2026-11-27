@@ -1,5 +1,5 @@
 {
-  "last_email": "2026-11-27T05:58:19+00:00",
+  "last_email": "2026-11-27T16:07:07+00:00",
   "seen_fingerprints": [
     "1stsourceinformationsecurityintern",
     "42dotfoundationmodelsintern",
@@ -1132,6 +1132,7 @@
     "gcmgrosvenorsoftwareengineerintern",
     "geckoroboticsembeddedsoftwareengineerinternrobosplatfieldinfra",
     "geiconsultantswebdeveloperintern",
+    "genentechcommunitycollegeprograminterninformatics",
     "genentechproducttechnicaldevelopmentinterndigitalsciencesfocus",
     "genentechservicedataandanalyticsintern",
     "genentechsoftwareengineerinternroboticslabautomation",
@@ -1208,6 +1209,7 @@
     "gileadsciencesresearchinternstrategyinnovationportfolioai",
     "ginkgobioworkssoftwareinternautonomouslab",
     "gleansoftwareengineerintern",
+    "globalfoundriesaienabledpdkdevelopmentintern",
     "globalfoundriesaimlanalyticsinterndigitalmanufacturing",
     "globalfoundriesaimlsystemsengineeringintern",
     "globalfoundriesaiprocessorhardwaresoftwareintegrationengineerintern",
@@ -1326,6 +1328,7 @@
     "highmarkhealthdataanalystengenundergraduateintern",
     "highmarkhealthdataanalystintern",
     "highmarkhealthenterprisearchitecturesoftwareengineerarchitectintern",
+    "highmarkhealthnetworkcybersecurityengineerundergraduateintern",
     "highmarkhealthproviderdeliverysoftwareengineerintern",
     "highmarkhealthsoftwareengineerintern",
     "highmarkhealthtechnicalanalystinternengenundergraduate",
@@ -2429,8 +2432,10 @@
     "shureapplicationsoftwaredevelopmentintern",
     "shurecloudsoftwareengineeringintern",
     "shureembeddedsoftwareintern",
+    "siemensagenticanalyticsdataintern",
     "siemensdigitalindustriessoftwarestrategicstudentprogramdigitalenterpri",
     "siemenspythonbackenddeveloperinternenergyflexibilityplatform",
+    "siemenssoftwareengineerintern",
     "sierranevadacorporationcybersecurityanalystintern",
     "sierranevadacorporationdevopsengineerintern",
     "sierranevadacorporationfirmwareengineeringintern",
@@ -2907,6 +2912,7 @@
     "vermeerembeddedsoftwareengineerintern",
     "versant3technologyproductdesignengineeringintern",
     "versanttechnologyproductdesignengineeringinterngolfnowfullswingrottent",
+    "vertexpharmaceuticalsdigitalpathologyandaivalidationintern",
     "vertivaiintern",
     "vertivdataanalyticsintern",
     "vertivdesignengineeringintern",
@@ -3075,7 +3081,7 @@
   "sources": {
     "APM List (PM internships)": {
       "last_count": 14,
-      "last_ok": "2026-11-27T05:58:18+00:00",
+      "last_ok": "2026-11-27T16:07:05+00:00",
       "seen": [
         "adobeinternshipopen",
         "amazoninternshipopen",
@@ -4173,8 +4179,8 @@
       ]
     },
     "Amazon": {
-      "last_count": 452,
-      "last_ok": "2026-11-27T05:57:45+00:00",
+      "last_count": 442,
+      "last_ok": "2026-11-27T16:06:15+00:00",
       "seen": [
         "10387501",
         "10391774",
@@ -7004,6 +7010,7 @@
         "10615129",
         "10615130",
         "10615132",
+        "10615936",
         "3071340",
         "3088741",
         "3104589",
@@ -13344,7 +13351,7 @@
     },
     "EY / EY-Parthenon": {
       "last_count": 271,
-      "last_ok": "2026-11-27T05:57:33+00:00",
+      "last_ok": "2026-11-27T16:05:57+00:00",
       "seen": [
         "1002856701",
         "1005882301",
@@ -20290,6 +20297,7 @@
         "1442096333",
         "1442109733",
         "1442119633",
+        "1442135533",
         "1442146533",
         "1442175333",
         "1442213533",
@@ -22264,6 +22272,9 @@
         "1460836933",
         "1460837933",
         "1461078033",
+        "1461273433",
+        "1461376033",
+        "1461439533",
         "695560401",
         "696384101",
         "696385901",
@@ -22914,7 +22925,7 @@
     },
     "Google": {
       "last_count": 19,
-      "last_ok": "2026-11-27T05:58:16+00:00",
+      "last_ok": "2026-11-27T16:07:02+00:00",
       "seen": [
         "100460871561421510",
         "100648618540573382",
@@ -32322,8 +32333,8 @@
       ]
     },
     "Summer 2027 Internships (vanshb03)": {
-      "last_count": 1950,
-      "last_ok": "2026-11-27T05:58:18+00:00",
+      "last_count": 1914,
+      "last_ok": "2026-11-27T16:07:04+00:00",
       "seen": [
         "1stsourceinformationsecurityintern",
         "42dotfoundationmodelsintern",
@@ -33360,6 +33371,7 @@
         "gcmgrosvenorsoftwareengineerintern",
         "geckoroboticsembeddedsoftwareengineerinternrobosplatfieldinfra",
         "geiconsultantswebdeveloperintern",
+        "genentechcommunitycollegeprograminterninformatics",
         "genentechproducttechnicaldevelopmentinterndigitalsciencesfocus",
         "genentechservicedataandanalyticsintern",
         "genentechsoftwareengineerinternroboticslabautomation",
@@ -33440,6 +33452,7 @@
         "gileadsciencesresearchinternstrategyinnovationportfolioai",
         "ginkgobioworkssoftwareinternautonomouslab",
         "gleansoftwareengineerintern",
+        "globalfoundriesaienabledpdkdevelopmentintern",
         "globalfoundriesaimlanalyticsinterndigitalmanufacturing",
         "globalfoundriesaimlsystemsengineeringintern",
         "globalfoundriesaiprocessorhardwaresoftwareintegrationengineerintern",
@@ -33546,6 +33559,7 @@
         "highmarkhealthdataanalystengenundergraduateintern",
         "highmarkhealthdataanalystintern",
         "highmarkhealthenterprisearchitecturesoftwareengineerarchitectintern",
+        "highmarkhealthnetworkcybersecurityengineerundergraduateintern",
         "highmarkhealthproviderdeliverysoftwareengineerintern",
         "highmarkhealthsoftwareengineerintern",
         "highmarkhealthtechnicalanalystinternengenundergraduate",
@@ -34785,8 +34799,10 @@
         "shureapplicationsoftwaredevelopmentintern",
         "shurecloudsoftwareengineeringintern",
         "shureembeddedsoftwareintern",
+        "siemensagenticanalyticsdataintern",
         "siemensdigitalindustriessoftwarestrategicstudentprogramdigitalenterprisesoftware",
         "siemenspythonbackenddeveloperinternenergyflexibilityplatform",
+        "siemenssoftwareengineerintern",
         "sierranevadacorporationcybersecurityanalystintern",
         "sierranevadacorporationdevopsengineerintern",
         "sierranevadacorporationfirmwareengineeringintern",
@@ -35226,6 +35242,7 @@
         "vermeerembeddedsoftwareengineerintern",
         "versant3technologyproductdesignengineeringintern",
         "versanttechnologyproductdesignengineeringinterngolfnowfullswingrottentomatoesfan",
+        "vertexpharmaceuticalsdigitalpathologyandaivalidationintern",
         "vertivaiintern",
         "vertivdataanalyticsintern",
         "vertivdesignengineeringintern",
@@ -35651,7 +35668,7 @@
     },
     "USAJOBS (federal)": {
       "last_count": 372,
-      "last_ok": "2026-11-27T05:57:52+00:00",
+      "last_ok": "2026-11-27T16:06:24+00:00",
       "seen": [
         "846709100",
         "846709200",
@@ -38289,7 +38306,7 @@
     },
     "Underclassmen Internships (zapplyjobs)": {
       "last_count": 46,
-      "last_ok": "2026-11-27T05:58:17+00:00",
+      "last_ok": "2026-11-27T16:07:03+00:00",
       "seen": [
         "8vcfellowship",
         "abbqualityengineer",
@@ -38904,7 +38921,7 @@
     },
     "Underclassmen Opportunities (Cruz-Lopez)": {
       "last_count": 78,
-      "last_ok": "2026-11-27T05:58:17+00:00",
+      "last_ok": "2026-11-27T16:07:03+00:00",
       "seen": [
         "21stcenturyscholars",
         "aauwaauwlocalbranchundergraduatescholarshipsallmajorsdeadlinerollingbylocalbranc",
@@ -39163,7 +39180,7 @@
     },
     "Underclassmen Opportunities (LuisaE)": {
       "last_count": 137,
-      "last_ok": "2026-11-27T05:58:17+00:00",
+      "last_ok": "2026-11-27T16:07:03+00:00",
       "seen": [
         "8vcfellowships",
         "abercrombiefitchsophomoresummit",
