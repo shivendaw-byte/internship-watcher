@@ -1,5 +1,5 @@
 {
-  "last_email": "2026-11-28T03:10:17+00:00",
+  "last_email": "2026-11-28T05:39:58+00:00",
   "seen_fingerprints": [
     "1stsourceinformationsecurityintern",
     "42dotfoundationmodelsintern",
@@ -522,6 +522,7 @@
     "cambridgeinvestmentresearchsoftwareengineeringintern",
     "campbellsoupcompanydatascienceintern",
     "campingworldaisecurityintern",
+    "campingworldbiaianalystintern",
     "campingworldjunioraiengineeringintern",
     "campingworldsoftwareengineerintern",
     "cantorfitzgeraldtechnologyinfrastructureautomationintern",
@@ -1463,6 +1464,7 @@
     "integratesoftwareengineerintern",
     "integrationinnovationi3datamanagementintern",
     "integrationinnovationi3embeddedsystemsreverseengineerintern",
+    "inteldesignverificationengineerintern",
     "inteldesignverificationintern",
     "interclypsejuniorfullstacksoftwareengineerintern",
     "intercontinentalexchangeagenticaidatascienceintern",
@@ -3100,7 +3102,7 @@
   "sources": {
     "APM List (PM internships)": {
       "last_count": 14,
-      "last_ok": "2026-11-28T03:10:16+00:00",
+      "last_ok": "2026-11-28T05:39:56+00:00",
       "seen": [
         "adobeinternshipopen",
         "amazoninternshipopen",
@@ -4199,7 +4201,7 @@
     },
     "Amazon": {
       "last_count": 442,
-      "last_ok": "2026-11-28T03:09:38+00:00",
+      "last_ok": "2026-11-28T05:39:17+00:00",
       "seen": [
         "10387501",
         "10391774",
@@ -13373,7 +13375,7 @@
     },
     "EY / EY-Parthenon": {
       "last_count": 266,
-      "last_ok": "2026-11-28T03:09:25+00:00",
+      "last_ok": "2026-11-28T05:39:05+00:00",
       "seen": [
         "1002856701",
         "1005882301",
@@ -22995,7 +22997,7 @@
     },
     "Google": {
       "last_count": 19,
-      "last_ok": "2026-11-28T03:10:14+00:00",
+      "last_ok": "2026-11-28T05:39:54+00:00",
       "seen": [
         "100460871561421510",
         "100648618540573382",
@@ -32403,8 +32405,8 @@
       ]
     },
     "Summer 2027 Internships (vanshb03)": {
-      "last_count": 1924,
-      "last_ok": "2026-11-28T03:10:15+00:00",
+      "last_count": 1927,
+      "last_ok": "2026-11-28T05:39:56+00:00",
       "seen": [
         "1stsourceinformationsecurityintern",
         "42dotfoundationmodelsintern",
@@ -32525,6 +32527,7 @@
         "alteraundergradtechnicalintern",
         "alwarrenoilcompanysoftwaredeveloperintern",
         "amazonasicengineerintern",
+        "amazonassociatedeliveryconsultantinternaimlawsprofessionalservices",
         "amazonbusinessintelligenceengineerintern",
         "amazoncloudhardwaredevelopmentengineerintern",
         "amazondatabaseengineerintern",
@@ -32948,6 +32951,7 @@
         "cambridgeinvestmentresearchsoftwareengineeringintern",
         "campbellsoupcompanydatascienceintern",
         "campingworldaisecurityintern",
+        "campingworldbiaianalystintern",
         "campingworldjunioraiengineeringintern",
         "campingworldsoftwareengineerintern",
         "canadiansolardataengineeringintern",
@@ -33773,6 +33777,7 @@
         "integrationinnovationi3datamanagementintern",
         "integrationinnovationi3embeddedsystemsreverseengineerintern",
         "intelcompilerengineeringintern",
+        "inteldesignverificationengineerintern",
         "inteldesignverificationintern",
         "interclypsejuniorfullstacksoftwareengineerintern",
         "intercontinentalexchangeagenticaidatascienceintern",
@@ -35755,8 +35760,8 @@
       ]
     },
     "USAJOBS (federal)": {
-      "last_count": 374,
-      "last_ok": "2026-11-28T03:09:45+00:00",
+      "last_count": 370,
+      "last_ok": "2026-11-28T05:39:27+00:00",
       "seen": [
         "846709100",
         "846709200",
@@ -35800,6 +35805,7 @@
         "850129300",
         "850129400",
         "851700900",
+        "852274600",
         "852338100",
         "852682400",
         "853711900",
@@ -35823,6 +35829,7 @@
         "864312900",
         "864614800",
         "864695500",
+        "864894100",
         "864990500",
         "865006100",
         "865062100",
@@ -38243,6 +38250,7 @@
         "893347900",
         "893358800",
         "893361700",
+        "893377100",
         "893382500",
         "893382800",
         "893384300",
@@ -38260,6 +38268,7 @@
         "893457100",
         "893469600",
         "893479200",
+        "893483000",
         "893484100",
         "893494200",
         "893500700",
@@ -38290,6 +38299,7 @@
         "893673100",
         "893677400",
         "893677700",
+        "893687800",
         "893690300",
         "893695100",
         "893695600",
@@ -38328,11 +38338,13 @@
         "893849400",
         "893864400",
         "893882500",
+        "893898400",
         "893903400",
         "893907400",
         "893910600",
         "893917600",
         "893935200",
+        "893936300",
         "893944300",
         "893946000",
         "893948100",
@@ -38340,6 +38352,7 @@
         "893953700",
         "893956100",
         "893972200",
+        "893979500",
         "893981700",
         "893991700",
         "893992400",
@@ -38360,22 +38373,28 @@
         "894102600",
         "894106400",
         "894108000",
+        "894108400",
         "894111800",
         "894116500",
         "894117300",
         "894126700",
         "894129700",
         "894136100",
+        "894141500",
         "894143300",
         "894168800",
         "894174100",
         "894176800",
         "894180600",
+        "894181700",
         "894196500",
+        "894229200",
         "894230200",
         "894237000",
         "894241300",
         "894244900",
+        "894249600",
+        "894250200",
         "894254100",
         "894258100",
         "894271500",
@@ -38383,9 +38402,11 @@
         "894273900",
         "894277500",
         "894285600",
+        "894289700",
         "894293600",
         "894324000",
         "894333200",
+        "894336500",
         "894349300",
         "894369700",
         "894381400",
@@ -38399,7 +38420,7 @@
     },
     "Underclassmen Internships (zapplyjobs)": {
       "last_count": 46,
-      "last_ok": "2026-11-28T03:10:15+00:00",
+      "last_ok": "2026-11-28T05:39:55+00:00",
       "seen": [
         "8vcfellowship",
         "abbqualityengineer",
@@ -39014,7 +39035,7 @@
     },
     "Underclassmen Opportunities (Cruz-Lopez)": {
       "last_count": 78,
-      "last_ok": "2026-11-28T03:10:14+00:00",
+      "last_ok": "2026-11-28T05:39:55+00:00",
       "seen": [
         "21stcenturyscholars",
         "aauwaauwlocalbranchundergraduatescholarshipsallmajorsdeadlinerollingbylocalbranc",
@@ -39273,7 +39294,7 @@
     },
     "Underclassmen Opportunities (LuisaE)": {
       "last_count": 137,
-      "last_ok": "2026-11-28T03:10:14+00:00",
+      "last_ok": "2026-11-28T05:39:55+00:00",
       "seen": [
         "8vcfellowships",
         "abercrombiefitchsophomoresummit",
